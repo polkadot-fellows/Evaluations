@@ -8,8 +8,8 @@
 
 ## Member details
 
-- Name:
-- Polkadot address: 
+### Name:
+### Polkadot address: 
 - Github username: 
 - Date of initial induction:
 - Area(s) of Expertise/Interest: 
@@ -22,13 +22,7 @@
 - End date: DD/MM/YYYY
 
 
-## Evidence - TO DO
-
-- Area(s)
-- Title (s):  
-- Category(ies):
-- Task(s):
-- Link(s): 
+## Evidence
 
 |  Areas of Contribution | Titles   | Tasks  | Links   |Notes   |
 |---|---|---|---|---|
@@ -39,9 +33,9 @@
 |   |   |   |   |   |
 
 
-## Other
+## Misc
 
-- Questions: 
-- Concerns: 
-- Requests: 
+[] Question(s): 
+[] Concern(s): 
+[] Request(s): 
 
