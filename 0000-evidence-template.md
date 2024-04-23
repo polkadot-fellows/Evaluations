@@ -39,5 +39,5 @@
 
 - [ ] Concern(s): 
 
-- [ ] Request(s): 
+- [ ] Comment(s): 
 
