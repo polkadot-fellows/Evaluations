@@ -8,8 +8,8 @@
 
 ## Member details
 
-### Name:
-### Polkadot address: 
+- Name:
+- Polkadot address: 
 - Github username: 
 - Date of initial induction:
 - Area(s) of Expertise/Interest: 
@@ -36,6 +36,8 @@
 ## Misc
 
 [] Question(s): 
+
 [] Concern(s): 
+
 [] Request(s): 
 
