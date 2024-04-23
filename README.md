@@ -37,7 +37,7 @@ These Evidences are a proof of work to indicate the Fellowship's commitment to i
 The process for submitting Evidences is open to all existing Fellowship members. Anyone may provide comments on submitted Evidences.
 
 To submit an Evidence, follow these steps:
-  * Copy the `0000-Evidence-template.md` file into the `evidence` folder and rename to match the title of your rank request
+  * Copy the `0000-evidence-template.md` file into the `evidence` folder and rename to match the title of your rank request
   * Fill out the Evidence template and open a PR.
   * Rename the file to correspond to the GitHub pull request number and update the "Evidence PR" field in the file.
 
