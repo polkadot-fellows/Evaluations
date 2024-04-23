@@ -1,10 +1,9 @@
-# Evidence-0000: Rank Request here
+# Evidence-0000: Retention at/Promotion to Rank ____
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
 | **Report Date** | Date of initial submission                                                                  |
-| **Description** | One-sentence description of your request                                                    |
-| **Proposer**    |                                                                                             |
+| **Submitted by**| Name of the proposer                                                                        |
 
 
 ## Member details
@@ -13,11 +12,11 @@
 - Polkadot address: 
 - Github username: 
 - Date of initial induction:
-- Area(s) of Expertise or Interest: 
+- Area(s) of Expertise/Interest: 
 - Current rank: 
 
 
-## Report period
+## Reporting period
 
 - Start date: DD/MM/YYYY
 - End date: DD/MM/YYYY
