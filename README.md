@@ -32,7 +32,7 @@ These Evidences are scoped to the subset of these concerns which must be held co
 These Evidences are a proof of work to indicate the Fellowship's commitment to implement and maintain designs and architectures for Polkadot and its ecosystem, as well as participate in discussion and social consensus according to open-source principles.
 
 
-## Process - TBC
+## Process
 
 The process for submitting Evidences is open to all existing Fellowship members. Anyone may provide comments on submitted Evidences.
 
@@ -41,14 +41,14 @@ To submit an Evidence, follow these steps:
   * Fill out the Evidence template and open a PR.
   * Rename the file to correspond to the GitHub pull request number and update the "Evidence PR" field in the file.
 
-The Fellowship will decide, via an on-chain voting mechanism including members III-Dan or above, when to approve and reject Evidences. It does so by issuing an on-chain remark with the body `EVIDENCE_APPROVE(xxxx, h)` from the `Fellows` origin on the Polkadot Collectives blockchain, where xxxx is the number of the Evidence and h is the blake2-256 hash of the raw submission text. Once this remark has been made, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The fellowship should not approve more than one Evidence with the same number.
+The Fellowship will decide via an on-chain voting mechanism when to approve and reject Evidences. It does so by issuing an on-chain remark with the body `EVIDENCE_APPROVE(xxxx, h)` from the `Fellows` origin on the Polkadot Collectives blockchain, where xxxx is the number of the Evidence and h is the blake2-256 hash of the raw submission text. Once this remark has been made, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The fellowship should not approve more than one Evidence with the same number.
 
 The Fellowship may also decide to reject an Evidence by issuing a remark with the text `EVIDENCE_REJECT(xxxx, h)`. This is a formality to provide clarity on when PRs (or their analogue on non-GitHub platforms) may be closed. PRs may be closed by their author, as well. PRs may be closed when sufficiently stale, as well - after a period of 3 months without acceptance.
 
 
 ## Bots - TBC
 
-?? [![RFC Cron](https://github.com/polkadot-fellows/RFCs/actions/workflows/Evidence??-referenda-notifications.yml/badge.svg)](https://github.com/polkadot-fellows/Evaluations??/actions/workflows/Evidence??-referenda-notifications.yml)
+??
 
 The repository provides a bot for:
 
