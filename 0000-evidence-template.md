@@ -33,7 +33,9 @@
 
 |  Areas of Contribution | Titles   | Tasks  | Links   |Notes   |
 |---|---|---|---|---|
-|Polkadot SDK   | Multi Block Migrations  | Specification & Implementation  | [RFC 13](https://github.com/polkadot-fellows/RFCs/pull/13) & [SDK PR 1781](https://github.com/paritytech/polkadot-sdk/pull/1781)  | This is an example.  |
+|Polkadot SDK   | Multi Block Migrations  | Specification & Implementation  | [RFC 13](https://github.com/polkadot-fellows/RFCs/pull/13) & [SDK 1781](https://github.com/paritytech/polkadot-sdk/pull/1781)  | This is an example.  |
+|   |   |   |   |   |
+|   |   |   |   |   |
 |   |   |   |   |   |
 |   |   |   |   |   |
 
