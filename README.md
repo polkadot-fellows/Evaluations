@@ -54,7 +54,7 @@ To submit an Evidence, follow these steps:
 
 The Fellowship will decide via an on-chain voting mechanism when to approve and reject Evidences. It does so by issuing an on-chain remark with the body `EVIDENCE_APPROVE(xxxx, h)` from the `Fellows` origin on the Polkadot Collectives blockchain, where xxxx is the number of the Evidence and h is the blake2-256 hash of the raw submission text. Once this remark has been made, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number.
 
-The Fellowship may also decide to reject an Evidence by issuing a remark with the text `EVIDENCE_REJECT(xxxx, h)`. This is a formality to provide clarity on when PRs (or their analogue on non-GitHub platforms) may be closed. PRs may be closed by their author, as well. PRs may be closed when sufficiently stale, as well - after a period of 3 months without acceptance.
+The Fellowship may also decide to reject an Evidence by issuing a remark with the text `EVIDENCE_REJECT(xxxx, h)`. This is a formality to provide clarity on when PRs (or their analogue on non-GitHub platforms) may be closed. PRs may be closed by their author, as well. PRs may be closed when sufficiently stale, as well - after a period of 6 months without acceptance.
 
 
 ## Communication channels
