@@ -10,10 +10,11 @@
 
 - Name:
 - Polkadot address: 
-- Github username: 
-- Date of initial induction:
-- Area(s) of Expertise/Interest: 
+- Github username:
 - Current rank: 
+- Date of initial induction:
+- Date of last report: 
+- Area(s) of Expertise/Interest: 
 
 
 ## Reporting period
