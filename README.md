@@ -40,6 +40,8 @@ Evidences are scoped to the subset of these concerns which must be held consiste
 
 Evidences are a proof of work to indicate the Fellowship's commitment to implement and maintain designs and architectures for Polkadot (and its ecosystem???), as well as participate in discussion and social consensus according to open-source principles.
 
+All members that are on standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their Evidences once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
+
 
 ## Process
 
