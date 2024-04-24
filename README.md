@@ -1,6 +1,6 @@
 # Evaluations
 
-This repository contains all the Evidences filed as part of the Retention and Promotion of members of the Polkadot Technical Fellowship. These Evidences have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
+This repository contains all the Evidences filed as part of the Continuation and Promotion of members of the Polkadot Technical Fellowship. These Evidences have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
 
 
 ## Scope
@@ -33,7 +33,7 @@ However, some technologies/code fall out of this scope, notably:
  * ‘subxt‘ (useful tooling, but not required for Polkadot’s continued operation); and
  * ‘ink!’ (useful tooling, but not required for Polkadot’s continued operation).
 
-Evidences are scoped to the subset of these concerns which must be held consistent across all evaluations for Retention and Promotion.
+Evidences are scoped to the subset of these concerns which must be held consistent across all evaluations for Continuation and Promotion.
 
 
 ## Significance
@@ -48,7 +48,7 @@ All members that are on standard allowance as per the [Fellowship Salaries](http
 The process for submitting Evidences is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Evidences.
 
 To submit an Evidence, follow these steps:
-  * Copy the `0000-evidence-template.md` file into the `evidence` folder and rename to match the title of your rank request
+  * Copy the `0000-evidence-template.md` file into the `evidence` folder and rename to match the title of your request
   * Fill out the Evidence template and open a PR.
   * Rename the file to correspond to the GitHub pull request number and update the "Evidence PR" field in the file.
 
