@@ -1,8 +1,8 @@
-# Evidence-0000: Retention at/Promotion to Rank ____
+# Evidence-0000: Continuation at/Promotion to Rank ____
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| **Report Date** | Date of initial submission                                                                  |
+| **Report Date** | Date of submission                                                                          |
 | **Submitted by**| Name of the proposer                                                                        |
 
 
@@ -25,13 +25,13 @@
 
 ## Evidence
 
-|  Areas of Contribution | Titles   | Tasks  | Links   |Notes   |
-|---|---|---|---|---|
-|Polkadot SDK   | Multi Block Migrations  | Specification & Implementation  | [RFC 13](https://github.com/polkadot-fellows/RFCs/pull/13) & [SDK 1781](https://github.com/paritytech/polkadot-sdk/pull/1781)  | *This is an example.*  |
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+|  Areas of Contribution | Tasks  | Links   |Notes   |
+|---|---|---|---|
+|Polkadot SDK   | Specification & Implementation of Multi Block Migrations   | [RFC 13](https://github.com/polkadot-fellows/RFCs/pull/13) & [SDK 1781](https://github.com/paritytech/polkadot-sdk/pull/1781)  | *This is an example.*  |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
 
 
 ## Misc
