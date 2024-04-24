@@ -6,7 +6,7 @@ This repository contains all the Evidences filed as part of the Continuation and
 ## Scope
 
 The Fellowship is about retaining protocol expertise from developers, but also ideators, designers, formalisers and research analysts.
-According to the [Fellowship Manifesto](https://github.com/polkadot-fellows/manifesto/blob/0c3df46d76625980b8b48742cb86f4d8fa6dda8d/manifesto.pdf), members of the Polkadot Fellowship are responsible for *expertise on a technology (or a specific implementation of it) required and primarily used for the Polkadot (Main) Network to continue operating and improving*. 
+According to Section 4 of the [Fellowship Manifesto](https://github.com/polkadot-fellows/manifesto/blob/0c3df46d76625980b8b48742cb86f4d8fa6dda8d/manifesto.pdf), members of the Polkadot Fellowship are responsible for *expertise on a technology (or a specific implementation of it) required and primarily used for the Polkadot (Main) Network to continue operating and improving*. 
 
 Specifically, this expertise may cover contributions in the following areas:
  * the internals of all functional Polkadot node implementations;
