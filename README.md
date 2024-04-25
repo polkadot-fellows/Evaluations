@@ -53,10 +53,9 @@ To submit an Evidence, follow these steps:
   * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request
   * Fill out the Evidence template and open a PR.
   * Rename the file to correspond to the GitHub pull request number and update the "Evidence PR" field in the file.
+  * Submit the evidence on-chain with the `fellowshipCore.submitEvidence(wish, evidence)` call on the Polkadot Collectives blockchain, where *wish* is the nature of the request (Retention or Promotion) and *evidence* is the blake2-256 hash of the raw evidence text/Github link to the evidence PR ???.
 
-??? The Fellowship will decide via an on-chain voting mechanism when to approve and reject Evidences for Continuation and Promotion. It does so by proposing an on-chain referendum with the `fellowshipCore.submitEvidence(wish, evidence)` call on the Polkadot Collectives blockchain, where *wish* is the nature of the request (Retention or Promotion) and *evidence* is the blake2-256 hash of the raw evidence text/Github link to the evidence.
-
-Once the referendum has been approved, the PR can be merged. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval.
+Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
 
 
 ## Communication channels
