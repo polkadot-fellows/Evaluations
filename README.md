@@ -48,13 +48,15 @@ All members that have been inducted for standard allowance as per the [Fellowshi
 The process for submitting Evidences is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Evidences.
 
 To submit an Evidence, follow these steps:
-  * Copy the `0000-evidence-template.md` file into the `evidence` folder and rename to match the title of your request
+  * Clone the `Evidences` repository
+  * Create a new folder in the `evidence` folder and rename it to match your Github username
+  * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request
   * Fill out the Evidence template and open a PR.
   * Rename the file to correspond to the GitHub pull request number and update the "Evidence PR" field in the file.
 
-The Fellowship will decide via an on-chain voting mechanism when to approve and reject Evidences. It does so by issuing an on-chain remark with the body `EVIDENCE_APPROVE(xxxx, h)` from the `Fellows` origin on the Polkadot Collectives blockchain, where xxxx is the number of the Evidence and h is the blake2-256 hash of the raw submission text. Once this remark has been made, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number.
+??? The Fellowship will decide via an on-chain voting mechanism when to approve and reject Evidences for Continuation and Promotion. It does so by proposing an on-chain referendum with the `fellowshipCore.submitEvidence(wish, evidence)` call on the Polkadot Collectives blockchain, where *wish* is the nature of the request (Retention or Promotion) and *evidence* is the blake2-256 hash of the raw evidence text/Github link to the evidence.
 
-The Fellowship may also decide to reject an Evidence by issuing a remark with the text `EVIDENCE_REJECT(xxxx, h)`. This is a formality to provide clarity on when PRs (or their analogue on non-GitHub platforms) may be closed. PRs may be closed by their author, as well. PRs may be closed when sufficiently stale, as well - after a period of 6 months without acceptance.
+Once the referendum has been approved, the PR can be merged. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval.
 
 
 ## Communication channels
