@@ -10,7 +10,6 @@
 
 - Name:
 - Polkadot address: 
-- Github username:
 - Current rank: 
 - Date of initial induction:
 - Date of last report: 
