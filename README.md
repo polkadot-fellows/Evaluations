@@ -1,4 +1,4 @@
-# Evaluations
+# Evidences
 
 This repository contains all the Evidences filed as part of the Continuation and Promotion of members of the Polkadot Technical Fellowship. These Evidences have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
 
