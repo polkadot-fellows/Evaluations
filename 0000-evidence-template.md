@@ -8,7 +8,6 @@
 
 ## Member details
 
-- Name:
 - Polkadot address: 
 - Current rank: 
 - Date of initial induction:
