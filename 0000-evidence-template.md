@@ -8,6 +8,7 @@
 
 ## Member details
 
+- Matrix username: 
 - Polkadot address: 
 - Current rank: 
 - Date of initial induction:
