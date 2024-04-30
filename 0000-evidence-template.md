@@ -2,7 +2,7 @@
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| **Report Date** | Date of submission                                                                          |
+| **Report Date** | Date of submission (YYYY/MM/DD)                                                             |
 | **Submitted by**| Name of the proposer                                                                        |
 
 
