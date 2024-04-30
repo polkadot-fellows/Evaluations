@@ -42,6 +42,8 @@ Evidences are a proof of work to indicate the Fellowship's commitment to impleme
 
 All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their Evidences once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
 
+All members must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. 
+
 
 ## Process
 
