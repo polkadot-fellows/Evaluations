@@ -18,8 +18,8 @@
 
 ## Reporting period
 
-- Start date: DD/MM/YYYY
-- End date: DD/MM/YYYY
+- Start date: YYYY/MM/DD
+- End date: YYYY/MM/DD
 
 
 ## Evidence
