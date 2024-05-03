@@ -29,7 +29,7 @@ Aside smaller contributions, I worked on the following projects:
   - **Description:** Allow parachains to make full use of their PoV-size by reclaiming storage weight that was overestimated due to worst-case benchmarking.
   - **PRs:** [Runtime Side](https://github.com/paritytech/polkadot-sdk/pull/3002), [Node Side](https://github.com/paritytech/polkadot-sdk/pull/1462), [Integration Guide](https://github.com/paritytech/polkadot-sdk/pull/4244)
 - **Pinning Improvements:**
-  - **Description:** Revisited substrate internal management of notification-based block pinning. Resolves issue where blocks were pinned too long.
+  - **Description:** Revisited Substrate internal management of notification-based block pinning. Resolves issue where blocks were pinned too long.
   - **PRs:** [Introduce Notification Pinning Limit](https://github.com/paritytech/polkadot-sdk/pull/2935)
 - **Parachain Authoring Overhaul:**
   - **Description:** Work in progress to prepare parachain nodes for upcoming elastic-scaling changes. This will make the parachain block authoring more flexible by introducing authoring on multiple cores and preparing future, more dynamic, authoring models.
