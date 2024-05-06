@@ -42,7 +42,7 @@ Below are my contributions that are important to the Polkadot Fellowship Program
 
 ### Maintainance
 
-- **Description:** I attempted to make reap_identity take batch of accounts, though the issue was later clsoed as it was considered redundant
+- **Description:** I attempted to make reap_identity take batch of accounts, though the issue was later closed as it was considered redundant
     - **PR:** [reap_identity should take batch of accounts](https://github.com/paritytech/polkadot-sdk/pull/3516)
 
 - **Description:** Download KeyValues in remote externalities early
