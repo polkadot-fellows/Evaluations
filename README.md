@@ -27,7 +27,7 @@ Specifically, this expertise may cover contributions in the following areas:
  * user-interface code required to practically execute upgrades to the Polkadot (Main) Network; and
  * code or technology required by, and utilised primarily for, any code or technology already included.
 
-However, some technologies/code fall out of this scope, notably: 
+However, some technologies/code fall out of this scope, notably:
  * Rust language (required by realisations of the Polkadot Network, but not primarily used for them);
  * libp2p (required by the Polkadot Network but not primarily used for it);
  * ‘subxt‘ (useful tooling, but not required for Polkadot’s continued operation); and
@@ -54,7 +54,8 @@ To submit an Evidence, follow these steps:
   * Create a new folder in the `evidence` folder and rename it to match your Github username
   * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request
   * Fill out the Evidence template and open a PR.
-  * Submit the evidence on-chain with the `fellowshipCore.submitEvidence(wish, evidence)` call on the [Polkadot Collectives chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsys.ibp.network%2Fcollectives-polkadot#/extrinsics/decode/0x3f0700081230), where *wish* is the nature of the request (Retention or Promotion) and *evidence* is the blake2-256 hash of the raw evidence text.
+  * Announce the evidence to the fellowship and wait at least one week.
+  * If there are no major push backs by the fellowship, submit the evidence on-chain with the `fellowshipCore.submitEvidence(wish, evidence)` call on the [Polkadot Collectives chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsys.ibp.network%2Fcollectives-polkadot#/extrinsics/decode/0x3f0700081230), where *wish* is the nature of the request (Retention or Promotion) and *evidence* is the blake2-256 hash of the raw evidence text.
 
 Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
 
