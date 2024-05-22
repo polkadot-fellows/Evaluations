@@ -1,0 +1,20 @@
+name: Evidences action
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  evidences-action:
+    name: Handle an Evidence command
+    if: ${{ github.event.issue.pull_request && startsWith(github.event.comment.body, '/evidence') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: paritytech/evidences-action@59d1296adf6e8da83904b2dfde61f22d1dbea88c # main
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
