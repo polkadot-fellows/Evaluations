@@ -1,0 +1,1 @@
+At first, brenzi submitted evidence for retention at rank I. After some feedback, he changed the wish to promotion. for consistency with onchain data, the index 0001 is preserved although the PR for 0001 was closed
