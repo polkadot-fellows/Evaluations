@@ -10,7 +10,7 @@
 - Matrix username: @jan:parity.io
 - Polkadot address: 15tRXfXoZXkjScB3Awv8s2saPjaicKYAyL1WZ3JP5kycoG9n
 - Current rank: 2
-- Date of initial induction: 2024/01/08
+- Date of initial induction: seeding
 - Date of last report: NA
 - Area(s) of Expertise/Interest: Substrate Node, Virtual Machines, WebAssembly, Host <-> Runtime Interface, Performance
 
