@@ -47,7 +47,7 @@ All members must serve a minimum period of service of 12 months at their current
 
 ## Timelines
 
-Members can individually monitor the progress of their demotion period on the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare. Members can also set up an [ical feed](Link ?? – TBC by wirenkod and bckhr) to set reminders and get updates for their membership.
+Members can individually monitor the progress of their demotion period on the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare. Members will soon be able to set up an ical feed to set reminders and get updates for their membership status.
 
 It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
 - For retentions: no later than **30 days** prior to the end of the demotion period
