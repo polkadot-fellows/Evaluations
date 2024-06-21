@@ -52,7 +52,7 @@ Members can also add an ical feed for Fellowship-related data directly into thei
 
 It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
 - For retentions: no later than **30 days** prior to the end of the demotion period
-- For promotions: no later than **40 days** prior to the end of the demotion period
+- For promotions: no later than **40 days** prior to the end of the demotion period AND **more than 12 months** after the last promotion
 
 
 ## Process
