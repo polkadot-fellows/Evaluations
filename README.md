@@ -42,12 +42,12 @@ Evidences are a proof of work to indicate the Fellowship's commitment to impleme
 
 All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their Evidences once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
 
-All members of Rank II-VI must ensure that they have served the minimum period of service (12 months) at their current rank before seeking promotion to a higher rank.
+All members must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. There is no minimum period of service for candidates seeking to become members.
 
 
 ## Timelines
 
-Members should individually monitor the progress of their demotion period on the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare. 
+Members should individually monitor the progress of their demotion and promotion periods on the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare. 
 Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
 
 It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
