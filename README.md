@@ -42,7 +42,17 @@ Evidences are a proof of work to indicate the Fellowship's commitment to impleme
 
 All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their Evidences once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
 
-All members must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. 
+All members (Ranks I-VI) must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. There is no minimum period of service for Candidates seeking to become members.
+
+
+## Timelines
+
+Members should individually monitor the progress of their demotion and promotion periods on the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare. Alternatively, members can check their individual status directly on the chain state via [Polkadot-JS](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsys.ibp.network%2Fcollectives-polkadot#/chainstate).
+Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
+
+It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
+- For retentions: no later than **30 days** prior to the end of the demotion period
+- For promotions: no later than **40 days** prior to the end of the demotion period
 
 
 ## Process
@@ -50,12 +60,12 @@ All members must serve a minimum period of service of 12 months at their current
 The process for submitting Evidences is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Evidences.
 
 To submit an Evidence, follow these steps:
-  * Fork the `Evidences` repository
-  * Create a new folder in the `evidence` folder and rename it to match your Github username
-  * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request
+  * Fork the `Evidences` repository.
+  * Create a new folder in the `evidence` folder and rename it to match your Github username.
+  * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request.
   * Fill out the Evidence template and open a PR.
-  * Announce the evidence to the fellowship and wait at least one week.
-  * If there are no major push backs by the fellowship, submit the evidence on-chain with the `fellowshipCore.submitEvidence(wish, evidence)` call on the [Polkadot Collectives chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsys.ibp.network%2Fcollectives-polkadot#/extrinsics/decode/0x3f0700081230), where *wish* is the nature of the request (Retention or Promotion) and *evidence* is the blake2-256 hash of the raw evidence text.
+  * Announce the evidence to the Fellowship and wait at least one week.
+  * If there are no major pushbacks by the Fellowship, submit the evidence on-chain via the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare.
 
 Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
 
