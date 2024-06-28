@@ -1,4 +1,4 @@
-# Evidence-0001: Promotion to Rank II
+# Evidence-0001: Retention at rank I
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -37,12 +37,3 @@ Other contributions
 - A couple of other smaller PRs: https://github.com/paritytech/polkadot-sdk/pull/3778 & https://github.com/paritytech/polkadot-sdk/pull/3874
 - running elastic scaling tests on Versi private testnet
 - Polkadot SDK reviews: https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+reviewed-by%3Aalindima
-
-## Other evidence
-
-Document for initial induction to rank I: https://hackmd.io/@k-1PToxXTnuLArMnC4ivmA/B1EsZduCp
-
-Considering this is a proposal for promotion to rank II, I believe several work items from my initial
-induction doc (for rank I) are supportive of rank II, especially:
-- systematic availability recovery: [RFC#47](https://github.com/polkadot-fellows/RFCs/pull/47) and [PR](https://github.com/paritytech/polkadot-sdk/pull/1644)
-- elastic scaling PRs: [runtime support](https://github.com/paritytech/polkadot-sdk/pull/3479) and others: [#3233](https://github.com/paritytech/polkadot-sdk/pull/3233), [#3160](https://github.com/paritytech/polkadot-sdk/pull/3160)
