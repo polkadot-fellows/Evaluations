@@ -23,7 +23,7 @@
 
 Hello everyone, My name is Eclesio and I have been a Gossamer Core Developer from almost 3 years. Since last year my challenge is to make Gossamer a stable node and make it sync to the Westend network tip. Along this path I was able to understand a lot of the Polkadot internals, how pallets works and are composed.
 
-As one requirement for promote to rank 2 I've also written a long-form post explaining how Polkadot epochs works from the host point of view (there is a small explanation on how it works on the runtime side): https://hackmd.io/q5O1XJ2YRw2UbU-xHEpK5g
+I've also written a long-form post explaining how Polkadot epochs works from the host point of view (there is a small explanation on how it works on the runtime side): https://hackmd.io/q5O1XJ2YRw2UbU-xHEpK5g
 
 | Areas of Contribution      | Tasks                                                                                                                                                                   | Links                                             | Notes                                                                                                                     |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
