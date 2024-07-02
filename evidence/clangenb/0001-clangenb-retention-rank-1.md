@@ -15,7 +15,6 @@
 - Date of last report: `NA`
 - Area(s) of Expertise/Interest: `Parachain Builder, Runtime, Clients`
 
-
 ## Reporting period
 
 - Start date: 2024/05/07
@@ -36,3 +35,12 @@
 * [Polkadart](https://github.com/leonardocustodio/polkadart): implement simple support for CheckMetadataHash signed extension [#460](https://github.com/leonardocustodio/polkadart/pull/460)
 * [substrate-api-client](https://github.com/scs/substrate-api-client): implement simple support for CheckMetadataHash [signed extension](https://github.com/scs/substrate-api-client/tree/crates-io-v0.17.0-patch-for-stable-check-metadata-hash-sdk-1.13)
 
+## Additional Note
+I am partially employed by Integritee, Encointer and Ajuna. I did not receive
+salary by them for the evidences that I stated above unless I state that explicitly. However, my polkadot/substrate expertise
+is also growing by implementing tasks paid by ecosystem projects. Good examples are:
+
+* Pioneering in implementing multiblock-migrations: [Bajun Parachain #43](https://github.com/ajuna-network/bajun-parachain/pull/43) & [Ajuna Pallets](https://github.com/ajuna-network/ajuna-pallets/pull/44)
+* Implement Cross Chain Asset Transfer for Ajuna and Bajun: [Bajun Parachain #51](https://github.com/ajuna-network/bajun-parachain/pull/51/files) & [Ajuna Parachain #30](https://github.com/ajuna-network/ajuna-parachain/pull/30)
+* Emergency Fix for the CheckMetadataHash signed extension for the encointer wallet [Encointer Wallet #1682](https://github.com/encointer/encointer-wallet-flutter/pull/1682)
+* Implement & Pioneer in deploying Async Backing for Ajuna & Bajun 
