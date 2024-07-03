@@ -11,7 +11,7 @@
 - Matrix username: `@serban.iorga:parity.io`
 - Polkadot address: `14oHMAJ5btnDCusHrTWraw1wTsLJwZeqPDLxusm1R1Zh3Vxa`
 - Current rank: `1`
-- Date of initial induction: `2024/04/22`
+- Date of initial induction: `2024/03/12`
 - Date of last report: `NA`
 - Area(s) of Expertise/Interest: 
   - `Bridges`
@@ -22,7 +22,7 @@
 
 ## Reporting period
 
-- Start date: 2024/04/22
+- Start date: 2024/03/12
 - End date: 2024/07/03
 
 
