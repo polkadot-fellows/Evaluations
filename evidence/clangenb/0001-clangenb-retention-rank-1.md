@@ -11,7 +11,7 @@
 - Matrix username: `@clang:matrix.org`
 - Polkadot address: `16YCL3UVpVWQLGW3p3Zx4k5WAEp9W1DwdDnxAbyAaPxVxnp3`
 - Current rank: `1`
-- Date of initial induction: `2024/05/07`
+- Date of initial induction: `2024/03/27`
 - Date of last report: `NA`
 - Area(s) of Expertise/Interest: `Parachain Builder, Runtime, Clients`
 
