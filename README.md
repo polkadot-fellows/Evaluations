@@ -44,6 +44,8 @@ All members that have been inducted for standard allowance as per the [Fellowshi
 
 All members (Ranks I-VI) must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. There is no minimum period of service for Candidates seeking to become members.
 
+Members seeking retention or promotion at Rank III-VI will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in section 4.5.4 of the Manifesto.
+
 
 ## Timelines
 
