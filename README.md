@@ -50,6 +50,7 @@ Members seeking retention or promotion at Rank III-VI will need to reflect on th
 ## Timelines
 
 Members should individually monitor the progress of their demotion and promotion periods on the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare. Alternatively, members can check their individual status directly on the chain state via [Polkadot-JS](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsys.ibp.network%2Fcollectives-polkadot#/chainstate).
+
 Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
 
 It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
