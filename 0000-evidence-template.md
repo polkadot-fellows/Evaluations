@@ -37,9 +37,9 @@
 ## Voting record
 *Provide your voting record in relation to required thresholds.* 
 
-|  Ranks | Activity threshold  | Agreement threshold| Link | Notes |
+|  Ranks | Activity thresholds | Agreement thresholds | Links | Comments |
 |---|---|---|---|---|
-|III|70%   |100%   [Regular voter across all referendum tracks](https://collectives.subsquare.io/user/13aYUFHB3umoPoxBEAHSv451iR3RpsNi3t5yBZjX2trCtTp6/votes) |*This is an example* |
+|III|70%   |100%  |[My votes](https://collectives.subsquare.io/user/13aYUFHB3umoPoxBEAHSv451iR3RpsNi3t5yBZjX2trCtTp6/votes) |*This is an example.* I have *[Never/Sometimes/Often/Always]* voted across all referendum tracks AND *[Never/Sometimes/Often/Always]* voted in line with expectations at rank. |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
