@@ -39,9 +39,7 @@
 
 |  Ranks | Activity threshold  | Agreement threshold| Link | Notes |
 |---|---|---|---|---|
-|I  |90%   |N/A   | [Votes and Participation rate](https://collectives.subsquare.io/user/15DCWHQknBjc5YPFoVj8Pn2KoqrqYywJJ95BYNYJ4Fj3NLqz/votes) |*This is an example* |
-|I  |90%   |N/A   |   |  |
-|II |80%   |N/A   |   |  |
+|III|70%   |100%   [Regular voter across all referendum tracks](https://collectives.subsquare.io/user/13aYUFHB3umoPoxBEAHSv451iR3RpsNi3t5yBZjX2trCtTp6/votes) |*This is an example* |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
