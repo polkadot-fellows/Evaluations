@@ -40,6 +40,8 @@
 |  Ranks | Activity thresholds | Agreement thresholds | Links | Comments |
 |---|---|---|---|---|
 |III|70%   |100%  |[My votes](https://collectives.subsquare.io/user/13aYUFHB3umoPoxBEAHSv451iR3RpsNi3t5yBZjX2trCtTp6/votes) |*This is an example.* I have *[Never/Sometimes/Often/Always]* voted across all referendum tracks AND *[Never/Sometimes/Often/Always]* voted in line with expectations at rank. |
+|I  |90%   |N/A   |   |  |
+|II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
