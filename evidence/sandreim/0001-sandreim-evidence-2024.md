@@ -61,6 +61,7 @@ PRs bootstraping the node side and runtime changes:
 - Benchbuilder improvements for elastic scaling: https://github.com/paritytech/polkadot-sdk/pull/3573
 - Collator protocol support: https://github.com/paritytech/polkadot-sdk/pull/3795
 - statement distribution support for multiple cores assigned to same parachain: https://github.com/paritytech/polkadot-sdk/pull/3879
+- Introduce `candidates_pending_availability` runtime API: https://github.com/paritytech/polkadot-sdk/pull/4027
 
 ### Elastic scaling open collator set - CoreIndex commitments
 Currently in the design stage, I have created two development plans discussed which one is best to follow in the current context: https://github.com/polkadot-fellows/RFCs/issues/92: 
@@ -68,6 +69,9 @@ Currently in the design stage, I have created two development plans discussed wh
 1. Repurposing of `CandidateDescriptor` and `CandidateCommitments` fields: https://hackmd.io/xrzVVZ_qSZemEIVdEV8cpA
 2. Introducing new versions for `CandidateDescriptor` and `CandidateCommitments`: https://hackmd.io/fWYvO8HQSFKjUlnpgwjcKw
 
+### Runtime fixes
+
+**CheckWeight signed extension**: Include extrinsic len as proof size https://github.com/paritytech/polkadot-sdk/pull/4765
 
 ### Support
 - Active in [Polkadot OpenGov](https://polkadot.polkassembly.io/user/sandreim) and [Kusama OpenGov](https://kusama.polkassembly.io/user/sandreim).
