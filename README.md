@@ -46,7 +46,7 @@ All members (Ranks I-VI) must serve a minimum period of service of 12 months at 
 
 Members seeking retentions or promotions for Rank III-VI will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in the Manifesto. 
 
-Members seeking promotions for Rank III-VI are required to attend an **in-person interview** before their request can be moved to on-chain voting.
+Members seeking promotions for Rank III-VI are required to attend an **in-person interview** so that their request can be moved to on-chain voting. The Fellowship Sub-Treasury can cover all costs incurred while attending these in-person evaluations. 
 
 
 ## Timelines
