@@ -1,4 +1,4 @@
-# Evidence-0001: Promotion to Rank III
+# Evidence-0001: Retain at Rank II
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -14,7 +14,6 @@
 - Date of initial induction: 2023/07/18
 - Date of last report: N/A
 - Area(s) of Expertise/Interest: Parachain Consensus, Elastic Scaling, Nodes (scalability/performance, observability,resilience), Zombienet & integration testing
-
 
 
 ## Reporting period
