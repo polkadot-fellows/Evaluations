@@ -39,7 +39,7 @@
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|III|70%   |100%  |I have voted on ?? out of ?? referenda available to me, at my current rank (i.e ?? % voting activity). Out of ?? referenda where members of higher ranks were in complete agreement, I have voted in the opposite direction ?? times (i.e ?? % voting agreement).  |*This is an example.* |
+|III|70%   |100%  |I have voted on ?? out of ?? referenda in which I was eligible to vote (i.e ?? % voting activity). Out of ?? referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus ?? times (i.e ?? % voting agreement).  |*This is an example.* |
 |I  |90%   |N/A   |   |  |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
