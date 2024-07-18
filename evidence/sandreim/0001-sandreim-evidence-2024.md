@@ -80,3 +80,13 @@ Currently in the design stage, I have created two development plans discussed wh
 - [Active in Polkadot forum](https://forum.polkadot.network/u/sandreim/activity).
 
 
+## Voting record
+
+|  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
+|---|---|---|---|---|
+|I  |90%   |N/A   |   |  |
+|II |80%   |N/A   | I have voted on 4 out of 21 referenda in which I was eligible to vote (19% voting activity) | I target to raise it to 80% at least for the next reporting period |
+|III|70%   |100%  |   |  |
+|IV |60%   |90%   |   |  |
+|V  |50%   |80%   |   |  |
+|VI |40%   |70%   |   |  |
