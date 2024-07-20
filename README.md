@@ -44,10 +44,15 @@ All members that have been inducted for standard allowance as per the [Fellowshi
 
 All members (Ranks I-VI) must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. There is no minimum period of service for Candidates seeking to become members.
 
+All Members seeking retentions or promotions will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in the Manifesto. 
+
+Members seeking promotions for Rank III-VI are required to attend an **in-person interview** before their request can be moved to on-chain voting. The Fellowship Sub-Treasury can cover all costs incurred while attending these in-person evaluations. 
+
 
 ## Timelines
 
 Members should individually monitor the progress of their demotion and promotion periods on the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare. Alternatively, members can check their individual status directly on the chain state via [Polkadot-JS](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsys.ibp.network%2Fcollectives-polkadot#/chainstate).
+
 Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
 
 It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:

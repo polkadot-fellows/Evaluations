@@ -23,6 +23,7 @@
 
 
 ## Evidence
+*Indicate your contributions in relation to Polkadot SDK.*
 
 |  Areas of Contribution | Tasks  | Links   |Notes   |
 |---|---|---|---|
@@ -31,6 +32,20 @@
 |   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
+
+
+## Voting record
+*Provide your voting record in relation to required thresholds.* 
+
+|  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
+|---|---|---|---|---|
+|III|70%   |100%  |I have voted on ?? out of ?? referenda in which I was eligible to vote (i.e ?? % voting activity). Out of ?? referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus ?? times (i.e ?? % voting agreement).  |*This is an example.* |
+|I  |90%   |N/A   |   |  |
+|II |80%   |N/A   |   |  |
+|III|70%   |100%  |   |  |
+|IV |60%   |90%   |   |  |
+|V  |50%   |80%   |   |  |
+|VI |40%   |70%   |   |  |
 
 
 ## Misc
