@@ -11,8 +11,8 @@ According to Section 4 of the [Fellowship Manifesto](https://github.com/polkadot
 Specifically, this expertise may cover contributions in the following areas:
  * the internals of all functional Polkadot node implementations;
  * cryptographic data-structures, algorithms, languages and APIs required for the continued upkeep of the Polkadot (Main) Network;
- * consensus algorithms concerning the Relay-chain (BABE \& GRANDPA);
- * trust-free bridges relying on said consensus algorithms (planned to be) utilised by system chains;
+ * consensus algorithms concerning the Relay-chain (BABE, BEEFY, GRANDPA, SASSAFRAS);
+ * trust-free bridges relying on said consensus algorithms utilised by system chains;
  * parachain consensus;
  * cross-chain message passing (XCMP, HRMP, DMP \& UMP);
  * the Polkadot libp2p-based peer networking protocol;
