@@ -10,7 +10,7 @@
 - Matrix username: `@andresilva:matrix.org`
 - Polkadot address: `14YDyDZ9o1Nr2hMqLSbjYpr4Wm5s1gux6CvjYZfUTJ4Np3w1`
 - Current rank: `5`
-- Date of initial induction: `2024/02/05`
+- Date of initial induction: `seeding`
 - Date of last report: `NA`
 - Area(s) of Expertise/Interest: `Consensus`
 
