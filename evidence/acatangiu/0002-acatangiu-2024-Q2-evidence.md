@@ -2,7 +2,7 @@
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| **Report Date** | Date of submission (2024/07/30)                                                             |
+| **Report Date** | 2024/07/30                                                             |
 | **Submitted by**| Adrian Catangiu                                                                             |
 
 
@@ -11,7 +11,7 @@
 - Matrix username: `@adrian:parity.io`
 - Polkadot address: `121dd6J26VUnBZ8BqLGjANWkEAXSb9mWq1SB7LsS9QNTGFvz`
 - Current rank: `2`
-- Date of initial induction: `06.12.2023`
+- Date of initial induction: `2023/06/12`
 - Date of last report: `2024/04/30`
 - Area(s) of Expertise/Interest: `Bridges, XCM, BEEFY, Asset Hub`
 
