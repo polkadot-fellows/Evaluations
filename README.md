@@ -42,10 +42,10 @@ Evidences are a proof of work to indicate the Fellowship's commitment to impleme
 
 All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their evidence report once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
 
-Evidences should:
-- describe why the work done is of sufficient quality and depth that it should be considered relevant for retention at the current rank.
-- explain what the member has learned during months of active protocol development.
-- connect the work done to the Manifesto and its requirements.
+**Evidences should:**
+- **describe why the work done is of sufficient quality and depth that it should be considered relevant for retention at the current rank.**
+- **explain what the member has learned during months of active protocol development.**
+- **connect the work done to the Manifesto and its requirements.**
 
 All members seeking retentions or promotions will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in the Manifesto. 
 
