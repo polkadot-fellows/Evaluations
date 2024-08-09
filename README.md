@@ -40,11 +40,16 @@ Evidences are scoped to the subset of these concerns which must be held consiste
 
 Evidences are a proof of work to indicate the Fellowship's commitment to implement and maintain designs and architectures for Polkadot (Main) Network, as well as participate in discussion and social consensus according to open-source principles.
 
-All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their evidences once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
+All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their evidence report once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
 
-All members (Ranks I-VI) must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. There is no minimum period of service for Candidates seeking to become members.
+Evidences should:
+- describe why the work done is of sufficient quality and depth that it should be considered relevant for retention at the current rank.
+- explain what the member has learned during months of active protocol development.
+- connect the work done to the Manifesto and its requirements.
 
 All members seeking retentions or promotions will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in the Manifesto. 
+
+All members (Ranks I-VI) must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. There is no minimum period of service for Candidates seeking to become members.
 
 Members seeking promotions for Rank III-VI are required to attend an **in-person interview** before their request can be moved to on-chain voting. The Fellowship Sub-Treasury can cover all costs incurred while attending these in-person evaluations. 
 
@@ -69,7 +74,7 @@ To submit an Evidence, follow these steps:
   * Create a new folder in the `evidence` folder and rename it to match your Github username.
   * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request.
   * Fill out the Evidence template and open a PR.
-  * Announce the evidence to the Fellowship and wait at least one week.
+  * Announce the evidence to the Fellowship and wait at least one week for the PR to be reviewed.
   * If there are no major pushbacks by the Fellowship, submit the evidence on-chain via the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare.
 
 Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
