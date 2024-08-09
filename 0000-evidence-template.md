@@ -23,23 +23,16 @@
 
 
 ## Evidence
-*Indicate your contributions in relation to Polkadot SDK.*
+*Explain why your contributions in relation to the Polkadot SDK are worthy of retention/promotion. Refer to the terms of the [Manifesto](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf) and provide links to relevant content (i.e code, articles, media, etc.) to show that you are meeting all the requirements.*
 
-|  Areas of Contribution | Tasks  | Links   |Notes   |
-|---|---|---|---|
-|Polkadot SDK   | Specification & Implementation of Multi Block Migrations   | [RFC 13](https://github.com/polkadot-fellows/RFCs/pull/13) & [SDK 1781](https://github.com/paritytech/polkadot-sdk/pull/1781)  | *This is a 1st example.*  |
-|Roadmap/Vision   | Specification and implementation of Multi-Asset Sub-Treasuries  | [Forum post](https://forum.polkadot.network/t/collective-based-multi-asset-treasuries/2899) & delivery of a [Polkadot Treasury acquisition of USDT and USDC](https://polkadot.subsquare.io/referenda/457), and a [Fellowship sub-treasury and Fellowship Salary account funding with USDT](https://collectives.subsquare.io/fellowship/salary). |  *This is a 2nd example.* |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
 
 
 ## Voting record
-*Provide your voting record in relation to required thresholds.* 
+*Provide your voting record in relation to required thresholds for your rank.* 
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|III|70%   |100%  |I have voted on ?? out of ?? referenda in which I was eligible to vote (i.e ?? % voting activity). Out of ?? referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus ?? times (i.e ?? % voting agreement).  |*This is an example.* |
+|III|70%   |100%  |I have voted on x out of xx referenda in which I was eligible to vote (i.e xx % voting activity). Out of xx referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus x times (i.e xx % voting agreement).  |*This is an example.* |
 |I  |90%   |N/A   |   |  |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
