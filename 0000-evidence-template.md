@@ -23,7 +23,7 @@
 
 
 ## Evidence
-*Explain why your contributions in relation to the Polkadot SDK are worthy of retention/promotion. Refer to the terms of the [Manifesto](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf) and provide links to relevant content (i.e code, articles, media, etc.) to show that you are meeting all the requirements.*
+*Explain why your contributions in relation to the Polkadot SDK are worthy of retention/promotion. Refer to the terms in Section 6 of the [Manifesto](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf) and provide links to relevant content (i.e code, articles, media, etc.) to show that you are meeting all the requirements.*
 
 
 
