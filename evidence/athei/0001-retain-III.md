@@ -11,7 +11,7 @@
 - Matrix username: @alex:parity.io
 - Polkadot address: 15db5ksZgmhWE9U8MDq4wLKUdFivLVBybztWV8nmaJvv3NU1
 - Current rank: III
-- Date of initial induction: 2024/03/07
+- Date of initial induction: Seeding
 - Date of last report: N/A
 - Area(s) of Expertise/Interest: System Chain Pallets (Smart Contracts), WebAssembly, Virtual Machines, Host Functions
 
