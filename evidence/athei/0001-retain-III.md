@@ -65,3 +65,11 @@ In the last two months, my voting activity was nearly `100%` and I am committed 
 threshold in the next reporting period.
 
 Please keep in mind that in the absence of better tooling, I derived those numbers by manually inspecting subsquare.
+
+## Misc
+
+- [ ] Question(s):
+
+- [ ] Concern(s):
+
+- [ ] Comment(s):
