@@ -47,8 +47,8 @@ Still a lot to learn, overall I am enjoying my experience working with the Polka
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|III|70%   |100%  |I have voted on 0 out of 0 referenda in which I was eligible to vote (100% voting activity) | There are not many things a Rank I can vote on, looking forward to vote in the future |
-|I  |90%   |N/A   |   |  |
+|III|70%   |100%  |I have voted on x out of xx referenda in which I was eligible to vote (i.e xx % voting activity). Out of xx referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus x times (i.e xx % voting agreement).  |*This is an example.* |
+|I  |90%   |N/A   | I have voted on 0 out of 0 referenda, during this duration there where 2 proposals up on my assigned track but was unware of them at the time | looking forward to voting in the future  |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
