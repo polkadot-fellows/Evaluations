@@ -37,9 +37,8 @@ I also took over the asset rewards pallet and brought it to a state ready for re
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|II |50%   |100%   | I have voted on 1 out of 2 referenda in which I was eligible to vote during this reporting period (i.e 50% voting activity). Out of 1 referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus 1 time (i.e 100 % voting agreement). | [ref 150](https://collectives.subsquare.io/fellowship/referenda/150) |
 |I  |90%   |N/A   |   |  |
-|II |80%   |N/A   |   |  |
+|II |80%   |N/A   | I have voted on 1 out of 2 referenda in which I was eligible to vote during this reporting period (i.e 50% voting activity). Out of 1 referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus 1 time (i.e 100 % voting agreement). | [ref 150](https://collectives.subsquare.io/fellowship/referenda/150) |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
