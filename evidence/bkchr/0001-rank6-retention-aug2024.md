@@ -56,12 +56,3 @@ For the past 6 years, I have dedicated myself to Polkadot to help the network be
 |V  |50%   |80%   |   |  |
 |VI |40%   |70%   |   | There currently doesn't exist any aggregation of the data, but I'm leading in the number of votes and should clearly fulfill the requirements. |
 
-
-## Misc
-
-- [ ] Question(s): 
-
-- [ ] Concern(s): 
-
-- [ ] Comment(s): 
-
