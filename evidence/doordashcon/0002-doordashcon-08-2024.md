@@ -25,8 +25,6 @@
 ## Evidence
 I believe my contributions over the past period demonstrate my commitment to Polkadot's development and are in accordance with a Rank I member of The Fellowship.
 
-I have been actively involved in the development on the Polkadot runtime and continued maintenance of the FRAME module of the Polkadot-SDK.
-
 Grateful that I have been active in adding new features and collaborated with some higher ranked members of the fellowship, their guidiance has been invaluable to me.
 
 ### Features
