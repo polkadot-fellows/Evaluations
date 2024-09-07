@@ -37,7 +37,7 @@ Refactoring the storage traits, with V1 pallet syntax removed the `generator` tr
 
 Members should not be required to manually call `bump` to begin the next salaly cycle, this adds a service task [Task(bump) Pallet Salary](https://github.com/paritytech/polkadot-sdk/pull/5163). 
 
-In the future I aim to take on more design decisions regarding Frame.
+In the future I aim to take on more design decisions regarding FRAME.
 
 Still a lot to learn, overall I am enjoying my experience working with the Polkadot Ecosystem.
 
