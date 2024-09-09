@@ -13,7 +13,7 @@
 - Current rank: `1`
 - Date of initial induction: `2022/09/29`
 - Date of last report: `2024/05/04`
-- Area(s) of Expertise/Interest: `Frame & Runtime`
+- Area(s) of Expertise/Interest: `FRAME & Runtime`
 
 
 ## Reporting period
