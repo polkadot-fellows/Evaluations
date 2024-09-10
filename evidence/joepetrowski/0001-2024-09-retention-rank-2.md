@@ -1,4 +1,4 @@
-# Evidence-0001: Retention at Rank 2
+# Evidence-0002: Retention at Rank 2
 
 |                  |            |
 | ---------------- | ---------- |
@@ -20,9 +20,27 @@
 - End date: 2024/08/31
 
 ## Evidence
-*Explain why your contributions in relation to the Polkadot SDK are worthy of retention/promotion. Refer to the terms in Section 6 of the [Manifesto](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf) and provide links to relevant content (i.e code, articles, media, etc.) to show that you are meeting all the requirements.*
 
+In the time since my [last evaluation
+submission](https://github.com/polkadot-fellows/Evaluations/pull/8/files), I have been less focused
+on technical implementation work and more on roadmap and management work at Parity.
 
+The project I have been most involved in is the integration of Solidity-compatible smart contracts
+on Asset Hub and the migration of Polkadot's primary sub-systems (Staking, Governance, and Balances)
+from the Relay Chain to Asset Hub.
+
+At this stage, my work has primarily been the project's specification and developing concrete plans
+for delivery of the project and ensuring that it goes smoothly with all of the stakeholders
+(parachains, apps and UIs, exchanges, tooling, etc.).
+
+Besides working on the future of Asset Hub, I have also contributed to:
+
+- Review of Fellowship PRs and release coordination (including the release of Polkadot's Coretime
+  chain).
+- Launch of the Polkadot People chain and migration of identities there.
+
+I also stay active in the community, attending events like Decoded and participating on the forum,
+governance platforms, and group chats.
 
 ## Voting record
 
@@ -41,5 +59,7 @@
 
 - [ ] Concern(s): 
 
-- [ ] Comment(s): 
+- [ ] Comment(s): My last evaluation was for "promotion to rank III". However, since the referendum
+  did not pass within the demotion period, I was demoted to rank I and promoted back to II. Since I
+  am still within the promotion period at that rank, this evaluation is for retention at rank II.
 
