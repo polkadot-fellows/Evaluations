@@ -30,7 +30,7 @@ on Asset Hub and the migration of Polkadot's primary sub-systems (Staking, Gover
 from the Relay Chain to Asset Hub.
 
 At this stage, my work has primarily been the project's specification and developing concrete plans
-for delivery of the project and ensuring that it goes smoothly with all of the stakeholders
+for delivery of the project and ensuring that it will go smoothly with all of the stakeholders
 (parachains, apps and UIs, exchanges, tooling, etc.).
 
 Besides working on the future of Asset Hub, I have also contributed to:
@@ -38,6 +38,7 @@ Besides working on the future of Asset Hub, I have also contributed to:
 - Review of Fellowship PRs and release coordination (including the release of Polkadot's Coretime
   chain).
 - Launch of the Polkadot People chain and migration of identities there.
+- Further diversification of the multi-asset Treasury.
 
 I also stay active in the community, attending events like Decoded and participating on the forum,
 governance platforms, and group chats.
@@ -60,6 +61,6 @@ governance platforms, and group chats.
 - [ ] Concern(s): 
 
 - [ ] Comment(s): My last evaluation was for "promotion to rank III". However, since the referendum
-  did not pass within the demotion period, I was demoted to rank I and promoted back to II. Since I
-  am still within the promotion period at that rank, this evaluation is for retention at rank II.
-
+  did not pass within the demotion period, I was demoted to rank I and then promoted back to II.
+  Since I am still within the promotion period at that rank, this evaluation is for retention at
+  rank II.
