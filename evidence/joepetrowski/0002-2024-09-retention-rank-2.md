@@ -3,7 +3,7 @@
 |                  |            |
 | ---------------- | ---------- |
 | **Report Date**  | 2024/09/13 |
-| **Submitted by** |Joe         |
+| **Submitted by** | Joe        |
 
 ## Member details
 
