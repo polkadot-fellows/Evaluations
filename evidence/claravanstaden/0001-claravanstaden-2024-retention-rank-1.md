@@ -12,7 +12,7 @@
 * Polkadot address: 12aoZXwbUzsv3z5HF5HCrtEwBJYCeKne6rYsxFEKDZ86Wdv8
 * Current rank: 1
 * Date of initial induction: 2024/06/17
-* Date of last report: 2024/06/17
+* Date of last report: N/A
 * Area(s) of Expertise/Interest: Snowbridge
 
 ## **Reporting period**
