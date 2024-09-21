@@ -53,7 +53,7 @@ Polkadot SDK PRs:
 Social:
 
 - [Announcement presentation of Polkadot Developer Console initiative](https://x.com/rossbulat/status/1825967285896380659)
-Continue to engage with staking related activities.
+- Continue to engage with staking related activities.
 
 
 Documentation / Education:
