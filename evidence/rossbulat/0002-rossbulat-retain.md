@@ -11,7 +11,7 @@
 - Matrix username: @rossbulat:matrix.org
 - Polkadot address: 1hYiMW8KSfUYChzCQSPGXvMSyKVqmyvMXqohjKr3oU5PCXF
 - Current rank: 1
-- Date of initial induction: 15th July 2024
+- Date of initial induction: 6th December 2023
 - Date of last report: 28th May 2024
 - Area(s) of Expertise/Interest: Pallets, staking, nomination pools, developer tools, pro-sumer applications.
 
