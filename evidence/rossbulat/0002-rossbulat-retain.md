@@ -84,7 +84,7 @@ There are too many PRs / commits to list here, so the evidence instead points to
 |---|---|---|---|---|
 |   |   |   |   |   |
 
-Out of the 2 **Member origin** referenda posted in this period that I was eligible to vote on, I did not vote on either of them. Snowbridge is currently outside of my area of expertise re #150, and I did do not currently have sufficient knowledge of JAM implementation requirements to justify my vote in #117.
+Out of the 2 **Member origin** referenda posted in this period that I was eligible to vote on, I did not vote on either of them. Snowbridge is currently outside of my area of expertise re #150, and I do not currently have sufficient knowledge of JAM implementation requirements to justify my vote in #117.
 ## Misc
 
 - [x] Comment(s): 
