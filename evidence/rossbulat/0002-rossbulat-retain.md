@@ -79,8 +79,12 @@ Developer Console:
 There are too many PRs / commits to list here, so the evidence instead points to the source code of Developer Console that was rapidly iterated leading up to its public alpha release, as well as the public presentation.
 
 ## Voting record
-N/A
 
+|  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
+|---|---|---|---|---|
+|   |   |   |   |   |
+
+Out of the 2 **Member origin** referenda posted in this period that I was eligible to vote on, I did not vote on either of them. Snowbridge is currently outside of my area of expertise re #150, and I did do not currently have sufficient knowledge of JAM implementation requirements to justify my vote in #117.
 ## Misc
 
 - [x] Comment(s): 
