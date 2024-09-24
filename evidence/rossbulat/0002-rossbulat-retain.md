@@ -82,7 +82,7 @@ There are too many PRs / commits to list here, so the evidence instead points to
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|I  |90%   |N/A   |   | Out of the 1 **Member origin** referendum posted in this period that I was eligible to vote on, I did not vote on it as Snowbridge is currently outside of my area of expertise (referendum #150). |
+|I  |90%   |N/A   |   | Out of the 1 **Member origin** referendum posted in this period that I was eligible to vote on, I did not vote on it as Snowbridge is currently outside of my area of expertise (referendum #150). I also did not realise this referendum was active in a viable timeframe that would have allowed me to do research and cast a vote. |
 |II |80%   |N/A   |   |  |
 |III|70%   |N/A   |   |  |
 |IV |60%   |N/A   |   |  |
