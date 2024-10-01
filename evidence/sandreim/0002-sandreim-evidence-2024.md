@@ -11,12 +11,12 @@
 - Polkadot address: 13QdJvnJgfoitjrxESwrCWTaLMN8KvXxufDUucXM6EWGuxqh
 - Current rank: 2
 - Date of initial induction: 2023/07/18
-- Date of last report: N/A
+- Date of last report: 2024/07/09
 - Area(s) of Expertise/Interest: Parachain Consensus, Elastic Scaling, Nodes (scalability/performance, observability,resilience), Zombienet & integration testing
 
 ## Reporting period
 
-- Start date: 2024/07/09
+- Start date: 2024/07/10
 - End date: 2024/10/01
 
 ## Evidence
