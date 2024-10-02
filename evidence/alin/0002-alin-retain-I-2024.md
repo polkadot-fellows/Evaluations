@@ -66,7 +66,6 @@ RFCs reviewed: https://github.com/polkadot-fellows/RFCs/pulls?q=is%3Apr+reviewed
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|III|70%   |100%  |I have voted on x out of xx referenda in which I was eligible to vote (i.e xx % voting activity). Out of xx referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus x times (i.e xx % voting agreement).  |*This is an example.* |
 |I  |90%   |N/A   |I have voted on 0 out of 1 referenda in which I was eligible to vote (i.e 0 % voting activity).   |I will make sure to pay closer attention to referendums that I am allowed to vote on.  |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
