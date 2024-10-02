@@ -33,6 +33,23 @@ The most important lessons I have learned from this work include:
 Additionally, I have minor contributions to Omni-Node, primarily by focusing on chain specifications and genesis configuration across various runtimes through reviews. Some related small PRs include: [#4678](https://github.com/paritytech/polkadot-sdk/pull/4678), [#5813](https://github.com/paritytech/polkadot-sdk/pull/5813), and [#4739](https://github.com/paritytech/polkadot-sdk/pull/4739).
 
 ## Voting record
+*Provide your voting record in relation to required thresholds for your rank.* 
 
-None. I'll try to improve it.
+|  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
+|---|---|---|---|---|
+|I  |90%   |N/A   | None. | I'll try to improve it.  |
+|II |80%   |N/A   |   |  |
+|III|70%   |100%  |   |  |
+|IV |60%   |90%   |   |  |
+|V  |50%   |80%   |   |  |
+|VI |40%   |70%   |   |  |
+
+
+## Misc
+
+- [ ] Question(s): 
+
+- [ ] Concern(s): 
+
+- [ ] Comment(s): 
 
