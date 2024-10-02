@@ -9,7 +9,7 @@
 ## Member details
 
 - Matrix username: `@michal:parity.io`
-- Polkadot address: <a target='_blank' href='https://collectives.statescan.io/#/accounts/14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo'>14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo</a>
+- Polkadot address: [14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo](https://collectives.statescan.io/#/accounts/14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo)
 - Current rank: 1
 - Date of initial induction: `2024/06/02`
 - Date of last report: N/A
