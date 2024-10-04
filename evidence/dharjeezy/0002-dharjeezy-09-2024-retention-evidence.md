@@ -25,7 +25,7 @@
 ## Evidence
 I discussed about how to ensure that pallet MQ message processing is transactional and I also implemented the enforcement of transactional processing to [Pallet MQ message processing](https://github.com/paritytech/polkadot-sdk/pull/5198).
 
-I also had to refractor what I did before when I introduced a new extrinsic for full unbonding in pallet staking, but it was later advised that instead of introducing a new extrinsic, it will make sense
+I also had to refactor what I did before when I introduced a new extrinsic for full unbonding in pallet staking, but it was later advised that instead of introducing a new extrinsic, it will make sense
 to actually support chilling first when a user calls unbond to unbond all amount staked. You can find details of the implementation [here](https://github.com/paritytech/polkadot-sdk/pull/3811).
 
 I added a new invariant [try state check](https://github.com/paritytech/polkadot-sdk/pull/5465) in the nomination-pools pallet for checking that a pool's point can never be lower than the stake in the same pool.
