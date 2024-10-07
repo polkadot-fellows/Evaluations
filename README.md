@@ -53,7 +53,7 @@ All members (Ranks I-VI) must serve a minimum period of service of 12 months at 
 
 Members seeking promotions for Rank III-VI are required to attend an **in-person interview** before their request can be moved to on-chain voting. The Fellowship Sub-Treasury can cover all costs incurred while attending these in-person evaluations. 
 
-More information can be found in the [FAQ](https://github.com/polkadot-fellows/Evaluations/blob/main/faq.md).
+More information can be found in the [FAQ](faq.md).
 
 
 ## Timelines
