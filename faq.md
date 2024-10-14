@@ -46,9 +46,3 @@ If you are seeking promotion to Ranks 3+, you will need to:
 
 Make sure to contact Rank 5+ members ASAP to agree on a new date and time. If you are unable to secure a new interview and your demotion period is ending in less than 30 days, you must submit a request for retention at your current rank <u>so that you do not become liable for demotion</u>. This also means that you will need to postpone your request for promotion.
 
-4. What if I am unable to attend an in-person interview due to Visa restrictions?
-
-This will need to be discussed with Rank 5+ members for a decision to be made on a case-by-case basis. 
-
-
-
