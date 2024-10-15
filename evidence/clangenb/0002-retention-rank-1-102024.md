@@ -50,5 +50,5 @@ I don't have any other hard evidence, but naturally, I have continued staying ac
 
 - [x] Comment(s):
     * As mentioned above, I was unaware that I can vote on referenda with rank I. I am now monitoring the referenda to prevent this from happening again.
-    * Even though I am only rank I and I consider the bugfix above quite valuable, I think I should have more evidences. I was periodically checking for other small issues in the relevant repositories, but couldn't find suitable ones. I will become more proactive in the community to identify my proper role in the fellowship.
+    * Even though I am only rank I and I consider the bugfix above quite valuable, I think I should have more evidences (although my total salary claimed is still low with 3.33K USDT). I have periodically been checking for other small issues in the relevant repositories, but couldn't find suitable ones. I will become more proactive in the community to identify my proper role in the fellowship.
 
