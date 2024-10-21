@@ -24,20 +24,12 @@
 
 
 ## Evidence
-During the reporting period, I primarily focused on the scalability and observability of Polkadot:
+During the reporting period, I primarily focused on the scalability and observability of Polkadot. There are the most impactful directions:
 
-- Optimized PVF execution:
-    - Validators prepare the PVF in advance for a session where they are authority: [#4791](https://github.com/paritytech/polkadot-sdk/pull/4791), [#5606](https://github.com/paritytech/polkadot-sdk/pull/5606).
-    - Added PVF execution priority to maintain finality when nodes are overloaded: [#4837](https://github.com/paritytech/polkadot-sdk/pull/4837).
-    - Drop execution of postponed backing jobs that are no longer viable: [#5616](https://github.com/paritytech/polkadot-sdk/pull/5616).
-- Started working on benchmarking the networking stack.
-    - Added understanding of the task (work consist of protocol and subsystem benchmarks): [HackMD](https://hackmd.io/IPtg6eGgS6yFkDND6UDscA)
-    - Added protocol benchmarks for libp2p based network backends: [#6077](https://github.com/paritytech/polkadot-sdk/pull/6077)
-- Also:
-    - Prepared for the increase `max_pov_size` to 10MB: [#5753](https://github.com/paritytech/polkadot-sdk/pull/5753), [#5924](https://github.com/paritytech/polkadot-sdk/pull/5924).
-    - Refactored Polkadot code: [5707](https://github.com/paritytech/polkadot-sdk/pull/5707), [6015](https://github.com/paritytech/polkadot-sdk/pull/6015).
-    - Updated Rust version in Fellowship Runtimes: [473](https://github.com/polkadot-fellows/runtimes/pull/473).
-    - Improved stability of the polkadot-introspector, which we use to monitor parachain consensus on Polkadot, Kusama, and testnets.: e.g. [#770](https://github.com/paritytech/polkadot-introspector/pull/770), [#796](https://github.com/paritytech/polkadot-introspector/pull/796).
+- **Backing back pressure.** In cases of high load, we decided to prioritize PVF execution for disputes and approvals over backing to maintain finality. Splitting the queues by job kind revealed a problem where we executed backing jobs even when the candidate was no longer viable. We resolved this issue by dropping stale jobs. See: [#4837](https://github.com/paritytech/polkadot-sdk/pull/4837), [#5616](https://github.com/paritytech/polkadot-sdk/pull/5616).
+- **Finaluty lag stabilization.** We experienced increased finality lag at session boundaries because new validators began preparing the PVF artifacts only after the session started. Now, they should prepare them one session in advance. See: [#4791](https://github.com/paritytech/polkadot-sdk/pull/4791), [#5606](https://github.com/paritytech/polkadot-sdk/pull/5606).
+- **Benchmarking the networking stack.** Work on replacing the high-consuming libp2p with litep2p is in progress. To make this project efficient, we need to measure improvements and regressions using protocol and subsystem benchmarks. As a first step, we have added protocol benchmarks for libp2p-based network backends. See: [understanding of the task](https://hackmd.io/IPtg6eGgS6yFkDND6UDscA), [#6077](https://github.com/paritytech/polkadot-sdk/pull/6077)
+
 
 In the upcoming period, I will continue working on the scalability and observability of Polkadot, focusing on the performance of the networking stack.
 
