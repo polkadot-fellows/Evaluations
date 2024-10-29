@@ -35,7 +35,7 @@ I worked on a quick fix to alleviate the impact of #5229 ([#5281](https://github
 
 ### Slot-based collator
 
-Another workstream has been the continuation of the slot-based collator improvements #6066. The MVP is in place and works for elastic scaling chains which want to produce blocks at fixed intervals, with one block per slot.
+Another workstream has been the continuation of the slot-based collator improvements [#6066](https://github.com/paritytech/polkadot-sdk/pull/6066). The MVP is in place and works for elastic scaling chains which want to produce blocks at fixed intervals, with one block per slot.
 However, the slot-based collator should aim to fully replace our existing collator implementations with the following improvements:
 
 - Simplified modification of block production timings and conditions
