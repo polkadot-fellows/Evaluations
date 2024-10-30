@@ -49,8 +49,9 @@ Work on this has started but is not yet presentable.
 I invested time in supportive work:
 
 - Sparred with Michal on the fork-aware transaction pool and spent a significant amount of time on its review [#4639](https://github.com/paritytech/polkadot-sdk/pull/4639)
-- Reviewing fellowship RFC [#103](https://github.com/polkadot-fellows/RFCs/pull/103)
-- Reviewing runtime PRs [list](https://github.com/polkadot-fellows/runtimes/pulls?q=is%3Apr+reviewed-by%3Askunert+)
+- Reviewed fellowship RFC [#103](https://github.com/polkadot-fellows/RFCs/pull/103)
+- Reviewed runtime PRs (3) [list](https://github.com/polkadot-fellows/runtimes/pulls?q=is%3Apr++reviewed-by%3Askunert+created%3A2024-07-30..2024-10-30+)
+- Reviewed polkadot-sdk PRs (69) [list](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+reviewed-by%3Askunert+created%3A2024-07-30..2024-10-30+)
 
 ## Voting record
 
