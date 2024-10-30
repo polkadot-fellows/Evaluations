@@ -18,8 +18,8 @@
 
 ## Reporting period
 
-- Start date: 2024/08/24
-- End date: 2024/10/24
+- Start date: 2024/07/30
+- End date: 2024/10/30
 
 
 ## Evidence
