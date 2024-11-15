@@ -1,4 +1,4 @@
-# Evidence-0001: Retention at to Rank 1
+# Evidence-0001: Retention at Rank 1
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -11,7 +11,7 @@
 - Matrix username: `@george.pisaltu:parity.io`
 - Polkadot address: `128pmEUBSGjGeXZXNaAmomAJgVn77L74YT7Zdjd3fP63HWNP`
 - Current rank: `1`
-- Date of initial induction: `2024/09/09`
+- Date of initial induction: `2024/08/16`
 - Date of last report: `-`
 - Area(s) of Expertise/Interest: `System Parachains, FRAME`
 
@@ -24,7 +24,7 @@
 
 ## Evidence
 
-During my first three months as a fellow, I have mainly been focused on delivering the new
+During my first three months as a member, I have mainly been focused on delivering the new
 [`TransactionExtension`](https://github.com/paritytech/polkadot-sdk/blob/1b0cbe99ab8537fa188952a203bdb73b0e5fdd3f/substrate/primitives/runtime/src/traits/transaction_extension/mod.rs#L161) interface to `polkadot-sdk`, which has now safely landed on `master`.
 
 The introduction of `TransactionExtension` to replace `SignedExtension` was a huge effort and the
