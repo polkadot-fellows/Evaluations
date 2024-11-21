@@ -34,8 +34,8 @@ I have completed the implementation work on the pallet for Meta Transactions, an
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
 |I  |90%   |N/A   |   |  |
-|II |80%   |N/A   |   | There was nothing to vote on. |
-|III|70%   |100%  |   | There was nothing to vote on. |
+|II |80%   |N/A   |   |  |
+|III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
 |VI |40%   |70%   |   |  |
