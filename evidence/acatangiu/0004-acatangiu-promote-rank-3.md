@@ -98,6 +98,8 @@ Created [a plan for exposing builder-facing bridging components on Asset Hub](ht
 
 I have created and actively maintain this [Roadmap project board for the Parity Bridges+XCM team](https://github.com/orgs/paritytech/projects/145/views/8) to inform downstream users of what is being worked on and when it will be delivered, but also show what's not yet scheduled or not even on our radar. I am hoping builders and users can let us know when they think we are missing something or we should prioritize something different.
 
+I also published [an article on the Parity blog](https://www.parity.io/blog/polkadot-xcm-improvements) discussing the XCM recent and future roadmap, trying to raise awareness and get more engagement.
+
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
 
