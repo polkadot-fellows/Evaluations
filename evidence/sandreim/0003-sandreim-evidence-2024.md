@@ -22,8 +22,8 @@ Stress and integration testing
 
 ## Evidence
 
-During the reporting period, I have played an important role in the design, development, and 
-deployment of a few major changes to Polkadot that had a significant impact:
+During the reporting period, I have played an important role in the design, development, and
+deployment of a few major projects to Polkadot that had a significant impact:
 
 - better decentralization and security by increasing parachain validators from 200 to 500
 - more blockspace by increasing the number of usable cores to 100
