@@ -1,4 +1,4 @@
-# Evidence-0002: Retention at to Rank 1
+# Evidence-0002: Retention at Rank 1
 
 |                 |                                 |
 | --------------- |---------------------------------|
