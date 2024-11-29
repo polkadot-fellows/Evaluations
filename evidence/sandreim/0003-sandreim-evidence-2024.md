@@ -2,7 +2,7 @@
 
 | | |
 | --------------- | ------------------------------------------------------------------------------------------ |
-| **Report Date** | 2024/11/26 |
+| **Report Date** | 2024/11/29 |
 | **Submitted by**| Andrei Sandu |
 
 ## Member details
@@ -17,37 +17,44 @@
 ## Reporting period
 
 - Start date: 2023/07/18
-- End date: 2024/11/26
+- End date: 2024/11/29
 
 ## Evidence
 
-During the reporting period I have played an important role in the design, development and deployment of a few major contributions to Polkadot that had significant impact:
+During the reporting period I have played an important role in the design, development and deployment of a few major changes to Polkadot that had significant impact:
 
 - better decentralization and security by increasing parachain validators from 200 to 500
 - more blockspace by increasing the number of usable cores to 100
 - lowering the latency and increasing maximum throughput of parachains with Elastic Scaling
 - faster and lower cost parachain consensus protocol performance engineering with Subsystem Benchmarks
 
-I've been an active participant in OpenDev calls and in the [Polkadot forum](https://forum.polkadot.network/u/sandreim/activity), constantly giving updates on the progress of the implementation, testing, and deployment.
+I've been an active participant in OpenDev calls and in the
+[Polkadot forum](https://forum.polkadot.network/u/sandreim/activity), consistently giving updates
+on the progress of the implementation, testing, and deployment of Elastic Scaling.
 
 I consider that this evidence, detailed in the next section, is aligned both in quality and quantity with the Fellowship for a rank 3 promotion.
 
 ### Increasing number of validators and cores
 
-This is a multiyear project that is still on going. I have started this project by searching for bottlenecks.
-in the node protocols implementation, network stack and runtime. At the time Polkadot had 200 validators.
-and 40 cores. I lead the [project planning](https://github.com/paritytech/roadmap/issues/26),
-development, testing, and deployment of protocol changes to scale up to 500 validators and 100.
+I have started working on this project before being inducted in the fellowship.
+That work consisted of load testing, benchmarking and research to find parachain consensus
+protocol and implementation bottlenecks on the node and runtime implementation. At the time
+Polkadot had 200 validators and 40 cores.  I created the
+[scalability roadmap](https://github.com/paritytech/roadmap/issues/26) which includes
+multiple changes and ideas I contributed as improvements in major parachain consensus protocols:
+availability, approval voting and the overall node side subsystem architecture.
 
 Major design and code contributions:
 
-- **Assignment certificates v2**: Introduces a new kind of assignment certificate that batches multiple tranche0 in a single certificate/message: https://github.com/paritytech/polkadot-sdk/pull/1178
+- **[Assignment certificates v2](https://github.com/paritytech/polkadot-sdk/pull/1178)**:
+This is an enhancement of the approval voting protocol aimed at reducing the usage
+of netwoprk/CPU resources by a factor of up to 6 in perfect network conditions.
 
-- **Approval voting re-design**:
-[new design](https://github.com/paritytech/polkadot-sdk/issues/1617) that would allow the
-approval voting subsystems to process messages in parallel. This design was further
-refined and has been fully implemented and proven by benchmark tests that approval voting is no
-longer a bottleneck at a scale of 1000 validators and 200 cores.
+- **[Approval voting subsystem re-write](https://github.com/paritytech/polkadot-sdk/issues/1617)**:
+Proposal of a simpler and scalable subsystem architecture. The two existing approval voting
+subsytems are merged into a single one. The new subsystem introduces message processing parallelism
+to make use of more CPU resources in order to handle the load at a scale of 1000 validators and
+500 cores.
 
 I've communicated with the ecosystem about scaling up plans in forum posts and Element chats:
 [Kusama](https://forum.polkadot.network/t/update-parachain-validator-set-size-increase-on-kusama/8218),
@@ -55,14 +62,20 @@ I've communicated with the ecosystem about scaling up plans in forum posts and E
 
 ### Parachain consensus performance benchmarks
 
-I designed and implemented multiple modular components that are used to emulate the network
+My main motivation to build this was to replace the old ways of doing load testing by
+running very large networks. It was expensive, slow and produced huge amounts of data
+that was very hard to analyze and reason about. The output of my work is a
+[new tool](https://github.com/paritytech/polkadot-sdk/tree/master/polkadot/node/subsystem-bench)
+which is required for continous improvement of the scalability and resilience of the parachain
+consensus protocols and Polkadot.
+
+I designed and implemented [multiple modular components](https://github.com/paritytech/polkadot-sdk/tree/master/polkadot/node/subsystem-bench#reusable-test-components) that are used to emulate the network
 traffic and load found in large-scale networks on local development machines. It performs stress
-test of one or more parachain consensus subsystems without the need to run the network of that
+tests of one or more parachain consensus subsystems without the need to run the network of that
 size. It collects granular CPU usage and network metrics and is an integral part of ongoing
 scalability and performance optimization development and CI performance regression testing.
 
-**Availability read benchmarks PR** https://github.com/paritytech/polkadot-sdk/pull/2528
-**Availability write benchmarks PR** https://github.com/paritytech/polkadot-sdk/pull/2970
+**Subsytem benchmarks PRs**: [1](https://github.com/paritytech/polkadot-sdk/pull/2528), [2](https://github.com/paritytech/polkadot-sdk/pull/2970)
 
 ### Elastic scaling (MVP)
 
@@ -79,9 +92,11 @@ the node side and runtime implementation:
 
 ### Elastic scaling (RFC103)
 
-Initial design work: [Github](https://github.com/polkadot-fellows/RFCs/issues/92)
+Played a primary role in initial design work: [Github](https://github.com/polkadot-fellows/RFCs/issues/92)
 
-Authored [RFC 103](https://github.com/polkadot-fellows/RFCs/blob/main/text/0103-introduce-core-index-commitment.md) and led it's [planning](https://github.com/orgs/paritytech/projects/119/views/25) and development.
+Authored [RFC 103](https://github.com/polkadot-fellows/RFCs/blob/main/text/0103-introduce-core-index-commitment.md)
+and led the [planning](https://github.com/orgs/paritytech/projects/119/views/25) and
+it's full implementation in multiple parachain consensus protocol components.
 
 Significant code contributions in both runtime and node side:
 
