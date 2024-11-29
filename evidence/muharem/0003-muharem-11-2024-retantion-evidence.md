@@ -27,7 +27,7 @@ During this reporting period, my main focus has been on researching, understandi
 
 I am currently mentoring a new engineer (@davidk-pt) in the ecosystem who is working on the next iteration of Treasury and Bounty pallets, following the plan I outlined in my previous report ([polkadot-sdk/5500](https://github.com/paritytech/polkadot-sdk/issues/5500)). We have completed implementing new indexes for child bounties ([polkadot-sdk/6255](https://github.com/paritytech/polkadot-sdk/pull/6255)) and added a new call to streamline the bounty and curator approval process ([polkadot-sdk/5961](https://github.com/paritytech/polkadot-sdk/pull/5961)). We're also making progress on refactoring the pallets to use new payout mechanics, which will enable proposals in various assets and multi-chain payouts ([polkadot-sdk/6189](https://github.com/paritytech/polkadot-sdk/pull/6189)).
 
-I have completed the implementation work on the pallet for Meta Transactions, and the PR is now ready for review ([polkadot-sdk/6428](https://github.com/paritytech/polkadot-sdk/pull/6428)).
+I have completed the implementation of the Meta Transactions pallet, and the PR is now ready for review ([polkadot-sdk/6428](https://github.com/paritytech/polkadot-sdk/pull/6428)). This feature enables free transactions and introduces new flows for dapps, such as improved proxy account workflows and custom transaction payment schemes. It addresses a key item from the community’s wishlist ([polkadot-sdk/3901](https://github.com/paritytech/polkadot-sdk/pull/3901)). You can read more about the use cases here ([polkadot-sdk/266](https://github.com/paritytech/polkadot-sdk/pull/266)).
 
 ## Voting record
 
