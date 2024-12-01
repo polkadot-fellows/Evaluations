@@ -5,7 +5,6 @@
 | **Report Date** | Date of submission (2024/12/01)                                                             |
 | **Submitted by**| `kianenigma`
 
-
 ## Member details
 
 - Matrix username: @kianenigma
@@ -17,7 +16,7 @@
     - FRAME
     - Staking / Inflatio
     - JAM
-
+- Status: **Inactive / Part-time** (salary divided by half)
 
 ## Reporting period
 
@@ -38,18 +37,17 @@
 * Exploring new ideas such as [FLITE](https://github.com/kianenigma/flite), which have been a [source of inspiration](https://github.com/OpenZeppelin/polkadot-runtime-templates/issues/257#issuecomment-2278749395) for [OpenZeppelin templates](https://github.com/OpenZeppelin/polkadot-runtime-templates/pull/300). 
   
 
-
-
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|IV|60%   |90%  |I have voted on x out of xx referenda in which I was eligible to vote (i.e xx % voting activity). Out of xx referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus x times (i.e xx % voting agreement).  |*This is an example.* |
+|IV|48%   |100%  | 51 votes out of 10.7, leading to a 48% rate, starting from ref 148 onwards, which was my retention in June  | |
 
 
 ## Misc
 
 - Comment(s): 
 Being in a position of leadership within both Parity and the ecosystem, I want to acknowledge that some of the work that I named above is achieved with the help of other individuals, and I played the role of a mentor/coordinator. I am grateful to work with all of the with other Parity employees and Fellowship members, for example @ggwpez to name one.
+- I will strive to improve my voting rate, and apply for a promotion to Rank 5 in June 2025. I will still retain my part time salary only. My main intention to promote myself would be to eligible to vote on more proposals, and remove the burdeon on the current rank 5+ members for promotions to rank 3+, and so on. 
 
