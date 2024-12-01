@@ -14,7 +14,7 @@
 - Date of last report: [22/05/2024](https://github.com/polkadot-fellows/Evaluations/pull/28)
 - Area(s) of Expertise/Interest: 
     - FRAME
-    - Staking / Inflatio
+    - Staking / Inflation
     - JAM
 - Status: **Inactive / Part-time** (salary divided by half)
 
