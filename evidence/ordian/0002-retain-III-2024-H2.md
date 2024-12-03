@@ -21,7 +21,7 @@
 
 ## Salaryless
 
-As you can see [here](https://collectives.subsquare.io/user/13aYUFHB3umoPoxBEAHSv451iR3RpsNi3t5yBZjX2trCtTp6/fellowship), I haven't claimed any fellowship salary and not goint to in the next salary period as well.
+As you can see [here](https://collectives.subsquare.io/user/13aYUFHB3umoPoxBEAHSv451iR3RpsNi3t5yBZjX2trCtTp6/fellowship), I haven't claimed any fellowship salary and not going to in the next salary period as well.
 
 ## Evidence
 
