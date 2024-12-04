@@ -49,5 +49,5 @@
 
 - Comment(s): 
 Being in a position of leadership within both Parity and the ecosystem, I want to acknowledge that some of the work that I named above is achieved with the help of other individuals, and I played the role of a mentor/coordinator. I am grateful to work with all of the with other Parity employees and Fellowship members, for example @ggwpez to name one.
-- I will strive to improve my voting rate, and apply for a promotion to Rank 5 in June 2025. I will still retain my part time salary only. My main intention to promote myself would be to eligible to vote on more proposals, and remove the burdeon on the current rank 5+ members for promotions to rank 3+, and so on. 
+- I will strive to improve my voting rate, and apply for a promotion to Rank 5 in June 2025. I will still retain my part time salary only. My main intention to promote myself would be to eligible to vote on more proposals, and remove the burden on the current rank 5+ members for promotions to rank 3+, and so on. 
 
