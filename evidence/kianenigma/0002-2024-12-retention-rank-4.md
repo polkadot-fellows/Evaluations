@@ -42,7 +42,7 @@
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|IV|48%   |100%  | 51 votes out of 107, leading to a 48% rate, starting from ref 148 onwards, which was my retention in June  | |
+|IV| 60% | 90% | 51 votes out of 107, leading to a 48% rate, starting from ref 148 onwards, which was my retention in June | |
 
 
 ## Misc
