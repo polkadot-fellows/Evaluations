@@ -29,7 +29,7 @@ In this period I have been studying abstraction of code and how to better formal
 
 I have focused on user support and engagement, something that has been lacking in the past. Discord has been set up, and over 100 Polkadot users have joined and are communicating staking improvements and requests.
 
-I have  bootstrapped an API service for Polkadot staking, that solves usability issues around staking on Polkadot. User rewards are now fetched instantly. This service will expand to validator performance, fast unstake checking, and validator / pool performance data, that will dramatically speed up workflows. This is a significant improvement over the current state of affairs, where node-only data fetching is becoming unviable as the staking system scales - e.g. 297 to 500 validators, now 30k+ nominators, etc.
+I have  bootstrapped an API service for Polkadot staking, that solves usability issues around staking on Polkadot. User rewards are now fetched instantly. This service will expand to validator performance, fast unstake checking, and validator / pool performance data, that will dramatically speed up workflows. This is a significant improvement over the current state of affairs, where node-only data fetching is becoming unviable as the staking system scales - e.g. 297 to 500 validators, now 30k+ nominators, etc, and where Subscan has strict throttle limits for free API usage that is becoming unviable for high user open source projects like staking dashboard.
 
 Staking dashboard also crossed the milestone of being light client by default. This was necessary to not exhaust RPC connections with the latest JSON RPC spec.
 
