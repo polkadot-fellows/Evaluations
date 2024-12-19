@@ -94,7 +94,7 @@ Improvements to existing components also highlight the progress. The Polkicon co
 
 ### PR List
 
-#### Communiy asset supoort
+#### Community asset supoort
 - [PR for including Frog nodes in the staking dashboard](https://github.com/w3ux/w3ux-library/pull/148) 
 - [Addition of ProStakers.com validator in the community page](https://github.com/w3ux/w3ux-library/pull/147) 
 
