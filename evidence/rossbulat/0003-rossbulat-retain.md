@@ -133,4 +133,6 @@ Improvements to existing components also highlight the progress. The Polkicon co
 
 - [x] Comment(s): 
 
-With the staking system evolving rapidly, I have been focused on ensuring the Staking Dashboard is up to date and user-friendly. The API service I have bootstrapped will be a significant improvement for users, and I am excited to see how it will be received. I believe this period up to AssetHub migration should focus on maintaining usability, ensuring our current infrastructure is working as expected & does not break at the cost of alienating Polkadot users.
+As the staking system continues to evolve, my focus has been on keeping the Staking Dashboard up-to-date and as user-friendly as possible. I'm particularly excited about the new API service I’ve bootstrapped, which I believe will bring significant improvements to the user experience—I'm excited to see how it’s received. 
+
+Looking ahead to the AssetHub migration, I’m committed to maintaining a seamless and reliable experience throughout the migration process, ensuring that our current infrastructure remains stable and supports Polkadot users without disruption. This is an exciting time, and I’m optimistic about the future as we continue to build and refine our tools for the community.
