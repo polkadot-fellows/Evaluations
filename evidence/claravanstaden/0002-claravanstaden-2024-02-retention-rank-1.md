@@ -58,18 +58,18 @@ Social Media Contributions:
 
 - All posts from the [Snowbridge account](https://x.com/_snowbridge) since September 2024.
 
+### Snowbridge UI
+
+I have worked on improving the Snowbridge UI to enhance its visual appeal and user experience. The updated design is set to launch in January 2025 and is intended to bring more personality and professionalism to the platform.
+
+PR: https://github.com/Snowfork/snowbridge-app/pull/41
+
 ### Other Work
 
 Some smaller work items I have completed during the quarter:
 
 - **Polkadot upgrade to `stable-2409`**: Updating the Polkadot runtime to support the release of Snowbridge Polkadot native assets on Ethereum and free Ethereum consensus updates, as part of the upgrade to Polkadot `stable-2409`. ([pandres95#2](https://github.com/pandres95/runtimes/pull/2), [pandres95#3](https://github.com/pandres95/runtimes/pull/3), [pandres95#4](https://github.com/pandres95/runtimes/pull/4))
 - **Improved testing of Snowbridge:** Set up daily end-to-end smoketests against the latest stable branch of the polkadot-sdk, to ensure no regressions are introduced ([Github Actions runner](https://github.com/Snowfork/snowbridge/actions/runs/12388724871), [snowbridge#1287](https://github.com/Snowfork/snowbridge/pull/1287)).
-
-### Snowbridge UI
-
-I have worked on improving the Snowbridge UI to enhance its visual appeal and user experience. The updated design is set to launch in January 2025 and is intended to bring more personality and professionalism to the platform.
-
-PR: https://github.com/Snowfork/snowbridge-app/pull/41
 
 ## **Voting record**
 
