@@ -43,7 +43,7 @@ The recent series of pull requests showcases significant progress and key improv
 
 On the architectural side, the migration to a monorepo structure and the introduction of modular packages such as ui-structure, assets, and types mark a foundational transformation aimed at improving scalability and maintainability. Refactoring efforts, including the removal of lodash dependencies, abstracting hooks like useSize, and transitioning to ESLint 9, have further optimized the codebase. Additionally, new features such as WalletConnect support, proxy logic enhancements for the Polkadot API, and the inclusion of the Staking API GraphQL plugin emphasize a focus on expanding interoperability and modernizing the platform's core capabilities. Collectively, these updates signal a robust and forward-thinking evolution of the staking dashboard, setting the stage for enhanced functionality and user experience.
 
-### PR LIst:
+### PR List
 
 #### Security 
 - [feat: Add 100% validator commission prompt.](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2358) 
@@ -53,10 +53,10 @@ On the architectural side, the migration to a monorepo structure and the introdu
 - [feat(fix): Abstract LeavePool, use as depositor unbond](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2370) 
 - [feat: Use pool points for unbonding / leaving pool](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2369) 
 
-#### Web Extensions / Wallet Support
+#### Web Extensions / wallet support
 - [feat: Wallet Connect support](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2276) 
 
-#### Adapting to Pallet-Side changes
+#### Adapting to Pallet-side changes
 - [feat: Disable dual staking](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2368) 
 - [feat: Replace maxElectingVoters const with counterForNominators storage](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2319) 
 
@@ -79,11 +79,11 @@ On the architectural side, the migration to a monorepo structure and the introdu
 - [feat(refactor): Use useOnResize, remove lodash.throttle.](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2313) 
 - [feat(refactor): Generalise useSize hook](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2312) 
 
-#### PJS -> Polkadot API Migration
+#### PJS -> Polkadot API migration
 - [Polkadot API (PAPI) Integration PR](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2335) 
 - [fix: Proxy support logic for Polkadot API](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2359) 
 
-#### User Experience
+#### User experience
 - [feat: Support options refresh with Discord and Mail](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2331) 
 
 ### Relevant PRs w3ux Library
@@ -92,11 +92,19 @@ The recent updates to the w3ux library reflect significant progress in expanding
 
 Improvements to existing components also highlight the progress. The Polkicon component has been completely rewritten and enhanced under @w3ux/react-polkicon, now supporting additional customization through a fontSize prop and improved rendering semantics. Refactoring efforts, such as removing bignumber.js and obsolete utilities, streamlining the unit utilities, and updating Substrate bindings for the AccountId codec, demonstrate a commitment to optimizing the library for efficiency and modern usage with Polkadot API. Community and project-specific contributions, such as the addition of ProStakers.com to the community page and Frog nodes support in the staking dashboard, further emphasize the library's adaptability and focus on the blockchain ecosystem's evolving needs. Together, these updates solidify w3ux as a robust and versatile toolkit for Web3 developers.
 
-#### PR List:
+### PR List
+
+#### Communiy asset supoort
 - [PR for including Frog nodes in the staking dashboard](https://github.com/w3ux/w3ux-library/pull/148) 
 - [Addition of ProStakers.com validator in the community page](https://github.com/w3ux/w3ux-library/pull/147) 
+
+#### Fixes
 - [feat(fix): Initial active account formatting correctly](https://github.com/w3ux/w3ux-library/pull/146) 
+
+#### Discontinued Features
 - [feat(refactor): Remove ChainSafe Snap](https://github.com/w3ux/w3ux-library/pull/145) 
+
+#### Library enhancements
 - [feat: Add useTimeleft hook and utils to @w3ux/hooks](https://github.com/w3ux/w3ux-library/pull/143) 
 - [feat: add fontSize prop to Polkicon, div -> span](https://github.com/w3ux/w3ux-library/pull/141) 
 - [feat: Rewrite and improve Polkicon - @w3ux/react-polkicon](https://github.com/w3ux/w3ux-library/pull/139) 
@@ -106,8 +114,9 @@ Improvements to existing components also highlight the progress. The Polkicon co
 - [feat: Add useSize hook to @w3ux/hooks](https://github.com/w3ux/w3ux-library/pull/134) 
 - [feat(utils):unit fn enhancements + more tests](https://github.com/w3ux/w3ux-library/pull/133) 
 - [feat(refactor): Removes bignumber.js as utils dependency, remove obsolete utils, enhance unit utils](https://github.com/w3ux/w3ux-library/pull/130) 
-- [chore: substrate bindings for AccountId codec](https://github.com/w3ux/w3ux-library/pull/129) 
 
+#### PJS -> Polkadot API migration
+- [chore: substrate bindings for AccountId codec](https://github.com/w3ux/w3ux-library/pull/129) 
 
 ## Voting record
 
