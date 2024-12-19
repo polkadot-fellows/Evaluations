@@ -37,7 +37,14 @@ Also in this period, I replaced PJS API with PAPI in the staking dashboard, and 
 
 More validators have been onboarded into the validator community data source.
 
-Relevant PRs Staking Dashboard:
+### Relevant PRs Staking Dashboard
+
+The recent series of pull requests showcases significant progress and key improvements to the Polkadot Staking Dashboard. A major highlight is the introduction of enhanced staking functionalities, including abstracting LeavePool logic and utilizing pool points for unbonding and leaving pools. The transition from Subscan to the Staking API for fetching nominator rewards demonstrates a shift towards a more integrated and streamlined data flow. Moreover, the dashboard now provides a 100% validator commission prompt to improve user awareness and facilitate proactive decision-making.
+
+On the architectural side, the migration to a monorepo structure and the introduction of modular packages such as ui-structure, assets, and types mark a foundational transformation aimed at improving scalability and maintainability. Refactoring efforts, including the removal of lodash dependencies, abstracting hooks like useSize, and transitioning to ESLint 9, have further optimized the codebase. Additionally, new features such as WalletConnect support, proxy logic enhancements for the Polkadot API, and the inclusion of the Staking API GraphQL plugin emphasize a focus on expanding interoperability and modernizing the platform's core capabilities. Collectively, these updates signal a robust and forward-thinking evolution of the staking dashboard, setting the stage for enhanced functionality and user experience.
+
+#### PR LIst:
+
 - [feat(fix): Abstract LeavePool, use as depositor unbond](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2370) 
 - [feat: Use pool points for unbonding / leaving pool](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2369) 
 - [feat: Disable dual staking](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2368) 
@@ -64,7 +71,13 @@ Relevant PRs Staking Dashboard:
 - [feat(refactor): Generalise useSize hook](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2312) 
 - [feat: Wallet Connect support](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2276) 
 
-Relevant PRs w3ux Library:
+### Relevant PRs w3ux Library
+
+The recent updates to the w3ux library reflect significant progress in expanding its utility and enhancing its core components. A notable addition is the inclusion of the useTimeleft and useSize hooks under the @w3ux/hooks package, which provide reusable functionality for developers managing responsive and time-sensitive components. The addition of the @w3ux/crypto package offers cryptographic utilities tailored for blockchain applications. Furthermore, the withProviders feature in the new @w3ux/factories package simplifies provider integration, promoting consistency and ease of use across the library.
+
+Improvements to existing components also highlight the progress. The Polkicon component has been completely rewritten and enhanced under @w3ux/react-polkicon, now supporting additional customization through a fontSize prop and improved rendering semantics. Refactoring efforts, such as removing bignumber.js and obsolete utilities, streamlining the unit utilities, and updating Substrate bindings for the AccountId codec, demonstrate a commitment to optimizing the library for efficiency and modern usage with Polkadot API. Community and project-specific contributions, such as the addition of ProStakers.com to the community page and Frog nodes support in the staking dashboard, further emphasize the library's adaptability and focus on the blockchain ecosystem's evolving needs. Together, these updates solidify w3ux as a robust and versatile toolkit for Web3 developers.
+
+#### PR List:
 - [PR for including Frog nodes in the staking dashboard](https://github.com/w3ux/w3ux-library/pull/148) 
 - [Addition of ProStakers.com validator in the community page](https://github.com/w3ux/w3ux-library/pull/147) 
 - [feat(fix): Initial active account formatting correctly](https://github.com/w3ux/w3ux-library/pull/146) 
