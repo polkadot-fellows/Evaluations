@@ -94,14 +94,14 @@ Improvements to existing components also highlight the progress. The Polkicon co
 
 ### PR List
 
-#### Community asset supoort
+#### Community asset support
 - [PR for including Frog nodes in the staking dashboard](https://github.com/w3ux/w3ux-library/pull/148) 
 - [Addition of ProStakers.com validator in the community page](https://github.com/w3ux/w3ux-library/pull/147) 
 
 #### Fixes
 - [feat(fix): Initial active account formatting correctly](https://github.com/w3ux/w3ux-library/pull/146) 
 
-#### Discontinued Features
+#### Discontinued features
 - [feat(refactor): Remove ChainSafe Snap](https://github.com/w3ux/w3ux-library/pull/145) 
 
 #### Library enhancements
