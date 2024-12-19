@@ -35,8 +35,8 @@ Over the past three months, I have concentrated on the following four major area
 
 The majority of my efforts this quarter have been dedicated to Snowbridge V2. I have been responsible for implementing two critical components of the design:
 
-- **Inbound Queue v2:** Implemented the new message format and mapping from an Ethereum command to XCM v5. ([polkadot-sdk#6578](https://github.com/paritytech/polkadot-sdk/pull/6578))
-- **Unified Rewards:** Adding to the bridge-relayers pallet to support tracking relayer rewards and payout to any account on AssetHub. [polkadot-sdk#6697](https://github.com/paritytech/polkadot-sdk/pull/6697)
+- **Inbound Queue v2:** Implemented the new message format and mapping from an Ethereum command to XCM v5. ([polkadot-sdk#6697](https://github.com/paritytech/polkadot-sdk/pull/6697))
+- **Unified Rewards:** Adding to the bridge-relayers pallet to support tracking relayer rewards and payout to any account on AssetHub. ([polkadot-sdk#6578](https://github.com/paritytech/polkadot-sdk/pull/6578))
 
 ### Decentralize Snowbridge relayers
 
