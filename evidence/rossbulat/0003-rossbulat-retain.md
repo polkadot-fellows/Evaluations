@@ -43,33 +43,48 @@ The recent series of pull requests showcases significant progress and key improv
 
 On the architectural side, the migration to a monorepo structure and the introduction of modular packages such as ui-structure, assets, and types mark a foundational transformation aimed at improving scalability and maintainability. Refactoring efforts, including the removal of lodash dependencies, abstracting hooks like useSize, and transitioning to ESLint 9, have further optimized the codebase. Additionally, new features such as WalletConnect support, proxy logic enhancements for the Polkadot API, and the inclusion of the Staking API GraphQL plugin emphasize a focus on expanding interoperability and modernizing the platform's core capabilities. Collectively, these updates signal a robust and forward-thinking evolution of the staking dashboard, setting the stage for enhanced functionality and user experience.
 
-#### PR LIst:
+### PR LIst:
 
+#### Security 
+- [feat: Add 100% validator commission prompt.](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2358) 
+
+#### Nomination Pools
+- [feat(refactor): Pool rewards to controller, pool types to types package](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2344) 
 - [feat(fix): Abstract LeavePool, use as depositor unbond](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2370) 
 - [feat: Use pool points for unbonding / leaving pool](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2369) 
+
+#### Web Extensions / Wallet Support
+- [feat: Wallet Connect support](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2276) 
+
+#### Adapting to Pallet-Side changes
 - [feat: Disable dual staking](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2368) 
+- [feat: Replace maxElectingVoters const with counterForNominators storage](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2319) 
+
+#### Scalability and performance
+- [feat: Init Staking API GraphQL Plugin, discontinue Binance Spot](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2332) 
 - [feat: Nominator Rewards from Staking API, discontinue Subscan nominator rewards](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2365) 
-- [feat(refactor): Add assets package, move svgs to package](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2361) 
-- [fix: Proxy support logic for Polkadot API](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2359) 
-- [feat: Add 100% validator commission prompt.](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2358) 
-- [feat(refactor): Pool rewards to controller, pool types to types package](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2344) 
+
+#### Refactoring and modernization
+- [feat: Init monorepo, app and ui-buttons packages](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2327) 
 - [feat(refactor): Migrate to ESLint 9](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2342) 
+- [feat(refactor): Add assets package, move svgs to package](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2361) 
 - [feat(refactor): Rm useSize hook, lodash deps](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2341) 
 - [feat(fix): Fix prettier organize imports, lint.](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2340) 
 - [feat(refactor): Locales to package, fixes and structural improvements.](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2338) 
 - [feat(fix): Ensure unclaimed payouts are ints](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2336) 
-- [Polkadot API (PAPI) Integration PR](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2335) 
-- [feat: Init Staking API GraphQL Plugin, discontinue Binance Spot](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2332) 
-- [feat: Support options refresh with Discord and Mail](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2331) 
 - [feat: init ui-structure, consts, styles packages, migrate Structure kit](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2330) 
-- [feat: Init monorepo, app and ui-buttons packages](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2327) 
-- [feat(refactor): Abstract useTimeleft](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2321) 
-- [feat: Replace maxElectingVoters const with counterForNominators storage](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2319) 
 - [feat(refactor): Use new Polkicon from @w3ux/polkicon](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2315) 
+- [feat(refactor): Abstract useTimeleft](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2321) 
 - [feat(refactor): Update withProviders from @w3ux/factories](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2314) 
 - [feat(refactor): Use useOnResize, remove lodash.throttle.](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2313) 
 - [feat(refactor): Generalise useSize hook](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2312) 
-- [feat: Wallet Connect support](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2276) 
+
+#### PJS -> Polkadot API Migration
+- [Polkadot API (PAPI) Integration PR](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2335) 
+- [fix: Proxy support logic for Polkadot API](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2359) 
+
+#### User Experience
+- [feat: Support options refresh with Discord and Mail](https://github.com/polkadot-cloud/polkadot-staking-dashboard/pull/2331) 
 
 ### Relevant PRs w3ux Library
 
