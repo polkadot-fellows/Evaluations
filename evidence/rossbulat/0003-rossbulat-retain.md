@@ -43,10 +43,10 @@ More validators have been onboarded into the validator community data source.
 
 Due to the pressing issues of the application side work, and the limited scope of a Rank 1 fellowship member, I have not made significant progress on the unbonding RFC. However, in this period I have:
 
-- Communicated the progress of the unbonding RFC to the community, explaining the progress made and next steps.
+- Communicated the progress of the unbonding RFC implementation to the community, explaining the progress made and next steps.
 - Had internal meetings with other fellowship members discussing its progress and what needs to be done.
 - Identified a deprecation and removal of old / duplicated unbonding logic.
-- Continued to resolve conflicts and keep the RFC up-to-date with the latest changes in the Polkadot-SDK codebase.
+- Continued to resolve conflicts and keep the PR up-to-date with the latest changes in the Polkadot-SDK codebase.
 
 ### Relevant PRs Staking Dashboard
 
