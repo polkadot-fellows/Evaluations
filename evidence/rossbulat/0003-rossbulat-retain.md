@@ -37,7 +37,7 @@ Also in this period, I replaced PJS API with PAPI in the staking dashboard, and 
 
 More validators have been onboarded into the validator community data source.
 
-#### Unbonding RFC
+#### Unbonding RFC implementation PR
 
 - [RFC-0097 Implementation to Decrease Unbonding Time.](https://github.com/paritytech/polkadot-sdk/pull/5715/) 
 
