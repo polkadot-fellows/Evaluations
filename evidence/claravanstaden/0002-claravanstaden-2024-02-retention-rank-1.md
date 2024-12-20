@@ -22,7 +22,7 @@
 
 ## **Evidence**
 
-My expertise in the Polkadot ecosystem lies primarily in Snowbridge, the community-owned Ethereum ⇄ Polkadot bridge that is part of the Polkadot SDK.
+My expertise in the Polkadot ecosystem lies primarily in Snowbridge, the community-owned Ethereum ⇄ Polkadot bridge that is part of the Polkadot SDK. Improving and building Snowbridge is valuable to the Polkadot community because it enables seamless, decentralized interoperability between Polkadot and Ethereum. It opens up new use cases, like leveraging Ethereum's liquidity on Polkadot.
 
 Over the past three months, I have concentrated on the following four major areas:
 
@@ -38,12 +38,16 @@ The majority of my efforts this quarter have been dedicated to Snowbridge V2. I 
 - **Inbound Queue v2:** Implemented the new message format and mapping from an Ethereum command to XCM v5. ([polkadot-sdk#6697](https://github.com/paritytech/polkadot-sdk/pull/6697))
 - **Unified Rewards:** Adding to the bridge-relayers pallet to support tracking relayer rewards and payout to any account on AssetHub. ([polkadot-sdk#6578](https://github.com/paritytech/polkadot-sdk/pull/6578))
 
+Snowbridge V2 is a necessary iteration of the bridge because lower fees and better UX lowers friction to use the bridge, likely driving more adoption.
+
 ### Decentralize Snowbridge relayers
 
 Another focus has been preparing Snowbridge relayers to operate independently of the core team. This involved creating infrastructure scripts and comprehensive documentation to simplify the setup process for external operators.
 
 - [Relayer infra](https://github.com/Snowfork/snowbrige-relayers-infra)
 - [Relayer setup docs](https://docs.snowbridge.network/operations/run-relayers)
+
+Decentralized infrastructure is a key part of decentralizing the bridge, ensuring longevity and reducing reliance on any single party.
 
 ### Improve Snowbridge Community Communication
 
@@ -58,11 +62,15 @@ Social Media Contributions:
 
 - All posts from the [Snowbridge account](https://x.com/_snowbridge) since September 2024.
 
+Keeping the community updated about a community funded project is necessary for accountability. It is also necessary to elicit feedback on the project roadmap, ensuring the community agrees with the project direction. Social media posts aid project and ecosystem discovery.
+
 ### Snowbridge UI
 
 I have worked on improving the Snowbridge UI to enhance its visual appeal and user experience. The updated design is set to launch in January 2025 and is intended to bring more personality and professionalism to the platform.
 
 PR: https://github.com/Snowfork/snowbridge-app/pull/41
+
+A positive user experience with the Snowbridge UI is essential for accelerating its adoption within the Polkadot ecosystem.
 
 ### Other Work
 
