@@ -37,6 +37,12 @@ Also in this period, I replaced PJS API with PAPI in the staking dashboard, and 
 
 More validators have been onboarded into the validator community data source.
 
+My work is relevant for the specific Manifesto requirements:
+- the Polkadot business-logic (aka the 'runtime');
+- pallets utilized by the Polkadot (Main) Network and its system chains;
+- runtime and host APIs
+- user-interface code required to practically execute upgrades to the Polkadot (Main) Network
+
 #### Unbonding RFC implementation PR
 
 - [RFC-0097 Implementation to Decrease Unbonding Time.](https://github.com/paritytech/polkadot-sdk/pull/5715/) 
