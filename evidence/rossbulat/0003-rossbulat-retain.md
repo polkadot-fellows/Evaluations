@@ -42,7 +42,7 @@ My work is relevant for the specific Manifesto requirements:
 - pallets utilized by the Polkadot (Main) Network and its system chains;
 - runtime and host APIs
 - user-interface code required to practically execute upgrades to the Polkadot (Main) Network
-
+- code or technology required by, and utilised primarily for, any code or technology already included
 #### Unbonding RFC implementation PR
 
 - [RFC-0097 Implementation to Decrease Unbonding Time.](https://github.com/paritytech/polkadot-sdk/pull/5715/) 
