@@ -61,7 +61,7 @@ https://github.com/paritytech/polkadot-sdk/pull/6764
     
 https://github.com/paritytech/polkadot-sdk/issues/6297
 
-To sum up, my work during the reporting period was valuable, and thus, I'm applying for retention at Rank I.
+I humbly request for retention at Rank I.
 
 
 
