@@ -23,7 +23,8 @@
 
 
 ## Evidence
-This period has been spent on maintaining the [Staking Dashboard](http://staking.polkadot.cloud) and surrounding tooling ensuring users can still stake on Polkadot.
+
+This period has been spent on maintaining the [Staking Dashboard](http://staking.polkadot.cloud) and surrounding tooling ensuring users can still stake on Polkadot. I have also continued maintaining and speaking about   RFC-0097 implementation; although other commitments prevented much progress in this PR, I have been keeping the community informed of progress and next steps, and keeping the PR up-to-date with the latest changes in the Polkadot-SDK codebase. It also came to light that AssetHub migration efforts meant that reviews would likely not come in time for the end of this reporting period, backing up the decision of focusing on other areas.
 
 In this period I have been studying abstraction of code and how to better formalise / organise packages for better maintainability. A range of refactors and upgrades have taken place to keep the codebase using latest packages, and simplifying syntax.
 
@@ -43,6 +44,7 @@ My work is relevant for the specific Manifesto requirements:
 - runtime and host APIs
 - user-interface code required to practically execute upgrades to the Polkadot (Main) Network
 - code or technology required by, and utilised primarily for, any code or technology already included
+
 #### Unbonding RFC implementation PR
 
 - [RFC-0097 Implementation to Decrease Unbonding Time.](https://github.com/paritytech/polkadot-sdk/pull/5715/) 
