@@ -1,4 +1,4 @@
-# Evidence-0003: Retention at Rank 2
+# Evidence-0003: Promotion to Rank 3
 
 |                  |            |
 | ---------------- | ---------- |
@@ -49,4 +49,4 @@ meetups) to talk about Polkadot and the roadmap.
 
 - [ ] Concern(s):
 
-- [ ] Comment(s):
+- [ ] Comment(s): Following an in-person interview, I have updated this for promotion to III Dan.
