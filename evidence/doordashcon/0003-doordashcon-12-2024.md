@@ -38,7 +38,7 @@ I have been involved in ongoing maintenance for the Fellowship Collective, focus
 
     3.1 Automating Salary Initialization
     
-One of the main priorities has been automating the salary initiation process for members within the Fellowship Collective. The goal is to eliminate manual intervention in payments. This is achieved by placing salary intialization in the task API enabling Node operators directly into the collective’s governance and operational workflows. Key aspects of this automation include:
+One of the main priorities has been automating the salary initiation process for members within the Fellowship Collective. The goal is to eliminate manual intervention in payments. This is achieved by placing salary initialization in the task API enabling Node operators directly into the collective’s governance and operational workflows. Key aspects of this automation include:
 
 https://github.com/paritytech/polkadot-sdk/pull/5163
     
