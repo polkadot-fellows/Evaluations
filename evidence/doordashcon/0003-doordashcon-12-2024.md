@@ -38,28 +38,18 @@ I have been involved in ongoing maintenance for the Fellowship Collective, focus
 
     3.1 Automating Salary Initialization
     
-One of the main priorities has been automating the salary initiation process for members within the Fellowship Collective. The goal is to eliminate manual intervention in payments. This is achieved by placing salary initialization in the task API enabling Node operators directly into the collective’s governance and operational workflows. Key aspects of this automation include:
-
-https://github.com/paritytech/polkadot-sdk/pull/5163
-    
-https://github.com/paritytech/polkadot-sdk/issues/6462
+One of the main priorities has been automating the [salary initiation](https://github.com/paritytech/polkadot-sdk/pull/5163) process for members within the Fellowship Collective, eliminating manual intervention in salary payouts. This is achieved by placing salary initialization in the task API.
 
 
     3.2 Adding a Chainspec Builder to CI Pipeline
 
-To further streamline development and ensure that new features and changes can be easily tested and deployed, I have been working on integrating a chainspec builder into the runtime.
-
-https://github.com/polkadot-fellows/runtimes/pull/505
+To further streamline development and ensure that new features and changes can be tested and deployed, I have been working on integrating the [chainspec builder](https://github.com/polkadot-fellows/runtimes/pull/505) into the runtime.
 
 
 ### 4. BlockNumberProvider for Pallets Migrating to AssetHub
 
-Migrating pallets from the Relay chain to Assets hub requires a more determinic clock, for this reason a configurable BlockNumberProvider is adopted to provide greater determinism. 
+Migrating pallets from the Relay chain to Assets hub requires a more determinic clock, for this reason a configurable [BlockNumberProvider](https://github.com/paritytech/polkadot-sdk/pull/6764) is adopted to provide greater determinism. 
 This approach simplifies the migration process because, in most cases, block numbers will no longer need to be manually mapped during the transition from the Relay Chain to AssetHub. It also ensures that the pallet state can migrate without disruptions or inconsistency due to block number discrepancies.
-
-https://github.com/paritytech/polkadot-sdk/pull/6764
-    
-https://github.com/paritytech/polkadot-sdk/issues/6297
 
 I humbly request for retention at Rank I.
 
