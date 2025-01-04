@@ -27,7 +27,7 @@
 
 During this reporting period, I completed my work with the [Secretary Collective](https://github.com/polkadot-fellows/runtimes/pull/347), implementing NoOp Polling for `pallet-ranked-collective`. This especially helps minimizing unnecessary operations within the runtime. The focus has been on ensuring that the runtime remains efficient and free from unnecessary overhead at the outset for the collective.
 
-currently awaiting the release of [2412](https://github.com/paritytech/polkadot-sdk/pull/6806) in the runtime repository in order to merge these changes.
+Currently awaiting the release of [2412](https://github.com/paritytech/polkadot-sdk/pull/6806) in the runtime repository in order to merge these changes.
 
 ### 2. Ecosystem Contributions and Community Engagement
 
