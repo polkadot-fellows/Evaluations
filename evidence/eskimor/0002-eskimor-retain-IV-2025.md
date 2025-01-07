@@ -87,7 +87,7 @@ To tackle both of these, we decided to buy cheap cores on Kusama and put the net
 1. It did have quite an impact marketing wise and the sentiment around Polkadot is slowly shifting (by far not only because of the Spammening, but it is an important ingredient).
 2. We actually identified weaknesses in the implementation which either have been fixed already or are being fixed, resulting in an even more resilient Polkadot network: The canary served its purpose once more!
 
-On a smaller scale I connected with the local Polkadot community and talked about Polkadot and the spammening in particular at the [Beefi meetup](https://www.meetup.com/web3-on-chain-dev-meetup-group/) in Prague.
+On a smaller scale I connected with the local Polkadot community and talked about Polkadot and the spammening in particular at the [Beerfi meetup](https://www.meetup.com/web3-on-chain-dev-meetup-group/) in Prague.
 
 ### Learnings
 
