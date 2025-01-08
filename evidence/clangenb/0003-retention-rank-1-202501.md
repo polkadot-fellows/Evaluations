@@ -1,9 +1,9 @@
-# Evidence-0002: Retention at Rank 1
+# Evidence-0003: Retention at Rank 1
 
 |                 |                                 |
 | --------------- |---------------------------------|
-| **Report Date** | Date of submission (2024/10/15) |
-| **Submitted by**| Christian Langenbacher           |
+| **Report Date** | Date of submission (2025/01/08) |
+| **Submitted by**| Christian Langenbacher          |
 
 
 ## Member details
@@ -23,11 +23,10 @@
 
 
 ## Evidence
-My sole code contribution this time, was identifying, reproducing, and fixing a bug in the polkadot-sdk, which resulted in a build error under some circumstances due to an unhygenic widely-used macro, namely the `format_runtime_string!` macro, see the fix in [PR #5632](https://github.com/paritytech/polkadot-sdk/pull/5632). This bug has indeed affected some parachain teams, and was backported into both `stable2407` and `stable2409`.
-
-I don't have any other hard evidence, but naturally, I have continued staying active in the ecosystem mostly as parachain a builder in Encointer, Integritee and Ajuna.
-
-
+My activity has mostly been smaller PRs in the polkadot-sdk, and commenting on some issues in the polkadot-sdk and fellowship runtime repositories. A full list can be found at the end of the document, but I will list a few things here:
+* Substantial contributions to the migration of the benchmarking v1 syntax to the benchmarking v2 syntax, see the [PRs](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+reviewed-by%3Aclangenb+created%3A2024-10-15..2025-01-08+).
+* Investigated how to enable admin transfers in the pallet-assets for frozen assets, see [comment](https://github.com/paritytech/polkadot-sdk/issues/3992#issuecomment-2553395720).
+* I made my first appearance on the fellowship OpenDev call, and I aspire to be a regular participant from now on.
 
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
