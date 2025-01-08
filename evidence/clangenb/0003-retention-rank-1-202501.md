@@ -23,7 +23,7 @@
 
 
 ## Evidence
-My activity has mostly been smaller PRs in the polkadot-sdk, and commenting on some issues in the polkadot-sdk and fellowship runtime repositories. A full list can be found at the end of the document, but I will list a few things here:
+My activity mostly consisted of smaller PRs in the polkadot-sdk, and commenting on some issues in the polkadot-sdk and fellowship runtime repositories. A full list can be found at the end of the document, but I will list a few things here:
 * Substantial contributions to the migration of the benchmarking v1 syntax to the benchmarking v2 syntax, see the [PRs](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+reviewed-by%3Aclangenb+created%3A2024-10-15..2025-01-08+). Note: Some of the contributions belong to the last reporting [period](https://collectives.subsquare.io/fellowship/referenda/231#4), but the majority of work has been done in this period.
 * Investigated how to enable admin transfers in the pallet-assets for frozen assets, see [comment](https://github.com/paritytech/polkadot-sdk/issues/3992#issuecomment-2553395720).
 * I made my first appearance on the fellowship OpenDev call, and I aspire to be a regular participant from now on.
@@ -49,7 +49,7 @@ My activity has mostly been smaller PRs in the polkadot-sdk, and commenting on s
 
 - [ ] Comment(s):
 
-### General Activity in reporting period
+### General activity in reporting period
 * [Authored 8 PRs in the polkadot-sdk](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+reviewed-by%3Aclangenb+created%3A2024-10-15..2025-01-08+). Two of those PRs were closed, but this is because the umbrella issue was a bit chaotic and another PR for the same subtask was done **after** my PR had been opened. Unfortunately (for me), the other PRs have been merged first, see [comment](https://github.com/paritytech/polkadot-sdk/issues/6202#issuecomment-2506383064).
 * [Involvement in 6 Fellowship issues](https://github.com/polkadot-fellows/runtimes/issues?q=is%3Aissue+involves%3Aclangenb+updated%3A2024-10-15..2025-01-08+).
 * [Involvement in 6 Polakdot-sdk issues](https://github.com/paritytech/polkadot-sdk/issues?q=is%3Aissue+involves%3Aclangenb+updated%3A2024-10-15..2025-01-08+).
