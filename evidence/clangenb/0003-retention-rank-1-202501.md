@@ -52,4 +52,4 @@ My activity mostly consisted of smaller PRs in the polkadot-sdk, and commenting 
 ### General activity in reporting period
 * [Authored 8 PRs in the polkadot-sdk](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+reviewed-by%3Aclangenb+created%3A2024-10-15..2025-01-08+). Two of those PRs were closed, but this is because the umbrella issue was a bit chaotic and another PR for the same subtask was done **after** my PR had been opened. Unfortunately (for me), the other PRs have been merged first, see [comment](https://github.com/paritytech/polkadot-sdk/issues/6202#issuecomment-2506383064).
 * [Involvement in 6 Fellowship issues](https://github.com/polkadot-fellows/runtimes/issues?q=is%3Aissue+involves%3Aclangenb+updated%3A2024-10-15..2025-01-08+).
-* [Involvement in 6 Polakdot-sdk issues](https://github.com/paritytech/polkadot-sdk/issues?q=is%3Aissue+involves%3Aclangenb+updated%3A2024-10-15..2025-01-08+).
+* [Involvement in 6 Polkadot-sdk issues](https://github.com/paritytech/polkadot-sdk/issues?q=is%3Aissue+involves%3Aclangenb+updated%3A2024-10-15..2025-01-08+).
