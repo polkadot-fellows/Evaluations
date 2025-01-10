@@ -26,10 +26,13 @@
 
 
 ## Evidence
+Past work before the reporting period:
 I contributed to the internals of the frame pallet framework by writing the FRAMEv2 pallet macro (updating from `decl_module!` to `#[pallet]` macro: https://github.com/paritytech/substrate/pull/6877).
 I designed and implemented the instantiable pallet concepts (https://github.com/paritytech/substrate/pull/1800), this allows multiple instances of the same pallet in the runtime, bringing greater flexibility to pallets.
 I implemented the counted storage map (https://github.com/paritytech/substrate/pull/9125), and the iterable storage map without linked list (https://github.com/paritytech/substrate/pull/4185). Those features ease development of new features in polkadot pallets.
-More recently I fixed tasks for instantiable pallets (https://github.com/paritytech/polkadot-sdk/pull/5194), further enhancing pallets flexibility.
+
+Work for the reporting period:
+I fixed tasks for instantiable pallets (https://github.com/paritytech/polkadot-sdk/pull/5194), further enhancing pallets flexibility.
 
 In the substrate runtime primitives I contributed to the transaction extension implementation, this feature allows more flexibility in the runtime and enables us to deliver more features in polkadot system chains:
 * I fixed implication order for tuple of tuple in transaction extension (https://github.com/paritytech/polkadot-sdk/pull/7028) making it easier to use the feature.
