@@ -53,7 +53,7 @@ The proposed solution involves incorporating `Arc` into the transaction function
 This change ensures efficient data sharing while maintaining performance and memory safety.  [TransactionPool trait](https://github.com/paritytech/polkadot-sdk/pull/7042)
 
 
-### 6. use RuntimeGenesisConfig in genesis config presets
+### 6. Use RuntimeGenesisConfig in genesis config presets
 
 I finalized the implementation to ensure that genesis configuration presets utilize a more appropriate `RuntimeGenesisConfig` definition. 
 This was made feasible by updates to certain pallets, which now support the use of the `[#serde(skip)]` annotation in their configurations where it was previously missing.
