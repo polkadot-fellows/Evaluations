@@ -12,7 +12,7 @@
 - Polkadot address: [14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo](https://collectives.statescan.io/#/accounts/14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo)
 - Current rank: 1
 - Date of initial induction: `2024/06/02`
-- Date of last report: 2024/10/02
+- Date of last report: `2024/10/02`
 - Area(s) of Expertise/Interest: `Substrate node` ,`Transaction Pool`, `ChainSpec/GenesisConfig`
 
 
