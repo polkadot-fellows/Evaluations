@@ -23,10 +23,11 @@
 
 ## Evidence
 
-The [pull request #4369](https://github.com/paritytech/polkadot-sdk/pull/4639) introducing the fork aware transaction pool implementation was merged. I am currently working on improving a fork-aware transaction pool to address the tasks outlined in
-the follow-up [ticket](https://github.com/paritytech/polkadot-sdk/issues/5472). 
+The fork-aware transaction pool implementation, introduced in [pull request #4639](https://github.com/paritytech/polkadot-sdk/pull/4639), has been successfully merged. I have published a [post](https://forum.polkadot.network/t/the-fork-aware-transaction-pool/10468) that provides a concise summary of this new transaction pool, explaining the necessity behind its development, the issues encountered with the previous implementation, and guidance on how to operate it. Additionally, the post includes links to the existing documentation for further reference.
 
-Addressing the challenge of properly handling the limits of transaction pool while taking into account transaction priorities was my main focus. I also did some preliminary performance evaulation for 2s blocks, which resulted in some easy improvements in initial implementation.
+The next milestone is achieving (feature completeness)[https://github.com/orgs/paritytech/projects/156/views/6], ensuring that transaction pool handles most edge cases correctly. Throughout the reporting period, I have focused on enhancing a fork-aware transaction pool to tackle the objectives detailed in the follow-up [ticket](https://github.com/paritytech/polkadot-sdk/issues/5472). My primary goal was to tackle the challenge of properly handling the limits of the transaction pool and transactions' priorities. During high-pressure situations, the transaction pool should accept higher-priority transactions and remove those with lower priority, preventing it from getting clogged with stalled transactions.
+
+I conducted initial performance evaluations for 2-second blocks, leading to some easy improvements in the initial implementation. 
 
 ## Voting record
 
