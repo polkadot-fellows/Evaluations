@@ -51,7 +51,7 @@ All members seeking retentions or promotions will need to reflect on their votin
 
 All members (Ranks I-VI) must serve a minimum period of service of 12 months at their current rank before seeking promotion to a higher rank. There is no minimum period of service for Candidates seeking to become members.
 
-Members seeking promotions for Rank III-VI are required to attend an **in-person interview** before their request can be moved to on-chain voting. The Fellowship Sub-Treasury can cover all costs incurred while attending these in-person evaluations. 
+Members seeking promotions for Rank III-VI are required to attend an **in-person interview** before their request can be moved to on-chain voting. The Fellowship Sub-Treasury can cover all costs incurred while attending these in-person evaluations. An evaluation checklist for promotions is available [here](https://docs.google.com/document/d/1ZucQ4V06rfNLIRV3ZIDHPwoN3Xa-ib671SNg8My4gao/edit?usp=sharing).
 
 More information can be found in the [FAQ](faq.md).
 
