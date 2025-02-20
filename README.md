@@ -1,7 +1,7 @@
 # Evaluations
 
 This repository contains all the Evidences filed as part of the Retention and Promotion of members of the Polkadot Technical Fellowship. These Evidences have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
-More information about Membership management can be found in the [Polkadot Technical Fellowship Dashboard](https://polkadot-fellows.xyz/#/membership).
+More information about Membership management can be found on the [Polkadot Technical Fellowship Dashboard](https://polkadot-fellows.xyz/#/membership).
 
 
 ## Scope
