@@ -1,4 +1,4 @@
-# Evidence-0000: Retention at/Promotion to Rank ____
+# Argument-0000: Retention at/Promotion to Rank ____
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -22,8 +22,13 @@
 - End date: YYYY/MM/DD
 
 
-## Evidence
+## Argument
 *Explain why your contributions in relation to the Polkadot SDK are worthy of retention/promotion. Refer to the terms in Section 6 of the [Manifesto](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf) and provide links to relevant content (i.e code, articles, media, etc.) to show that you are meeting all the requirements.*
+
+Below are some examples on how to write an argument for:
+- Retention: [Rank 1](https://collectives.subsquare.io/fellowship/referenda/289), [Rank 2](https://collectives.subsquare.io/fellowship/referenda/282), [Rank 3](https://collectives.subsquare.io/fellowship/referenda/244)
+- Promotion [Rank 1](https://collectives.subsquare.io/fellowship/referenda/272), [Rank 2](https://collectives.subsquare.io/fellowship/referenda/306), [Rank 3](https://collectives.subsquare.io/fellowship/referenda/255).
+
 
 
 
