@@ -69,7 +69,7 @@ Members should individually monitor the progress of their demotion and promotion
 
 Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
 
-It is recommended that members submit their argument for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
+It is recommended that members submit their Evidenced Argument for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
 - For retentions: no later than **30 days** prior to the end of the demotion period
 - For promotions: no later than **40 days** prior to the end of the demotion period
 
@@ -82,7 +82,7 @@ To submit an Evidenced Argument, follow these steps:
   * Fork the `Evaluations` repository.
   * Create a new folder in the `evidence` folder and rename it to match your Github username.
   * Copy the `0000-argument-template.md` file into the new folder and rename it to match the title of your request.
-  * Fill out the argument template and open a PR.
+  * Fill out the Argument template and open a PR.
   * Announce the argument to the Fellowship and wait at least one week.
   * If there are no major pushbacks by the Fellowship, submit the argument on-chain via the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare.
 
