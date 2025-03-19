@@ -10,7 +10,7 @@
 - **Matrix username**: @raymond:parity.io
 - **Polkadot address**: 14SRhqito1ZhxKD6yxPnNEonsMWRiB5CCCvfAtUNprPcAa3i
 - **Current rank**: Candidate
-- **Date of initial induction**: 2025/01/20
+- **Date of initial induction**: 2025/03/18
 - **Date of last report**: N/A
 - **Area(s) of Expertise/Interest**: XCM
 
