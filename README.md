@@ -6,7 +6,7 @@ More information about Membership management can be found on the [Polkadot Techn
 
 ## History
 
-"Evidenced Arguments" used to be called simply "evidence" and you may sometimes see this defunct term used. It was deprecated in favour of Evidenced Arguments (or simply Arguments) since people misconstrued their responsibilities regarding this information and tended to simply dump a dispassionate list of code changes. THIS IS UNACCEPTABLE.
+"Evidenced Arguments" used to be called simply "Evidence" and you may sometimes see this defunct term used. It was deprecated in favour of Evidenced Arguments (or simply Arguments) since people misconstrued their responsibilities regarding this information and tended to simply submit a list of code changes, which is unacceptable.
 
 ## Scope
 
@@ -41,15 +41,18 @@ However, some technologies/code fall out of this scope, notably:
 Evidenced Arguments are scoped to the subset of these concerns which must be held consistent across all evaluations for Retention and Promotion.
 
 
-## Significance
+## Structure
 
 Arguments may be made by members or candidates for the purpose of rank retention or promotion.
 
-Arguments must directly address each of the Rank Requirements as stated in the Manifesto for the rank to be retained or promoted to. If in doubt, copy and paste each requirement as stated in the Manifesto and write a short form answer, making links where necessary to evidence of your activity. Ensure all; evidence is __specific__ to the Manifesto requirements and __substantial__. Irrelevant or insubstantial evidence may result in an early dismissal of the proposal.
+Arguments must directly address each of the Rank Requirements as stated in the Manifesto for the rank to be retained or promoted to. If in doubt, copy and paste each requirement as stated in the Manifesto and write a short form answer, making links where necessary to prove of your activity. Ensure any proof is __specific__ to the Manifesto requirements and __substantial__. Irrelevant or insubstantial proofs may result in an early dismissal of the proposal.
 
-The Argument is not a place to insert primary sources. No deep code review should be needed to evaluate the argument and its evidence. Pre-existing peer reviews (whether code or academic writing), accepted answers on Q&A sites, presentation at high-quality conferences or publication in high-quality media may be used to help understand the depth and quality of the work.
+The Argument is not a place to insert primary sources. No deep code review should be needed to evaluate the argument and its proofs. Pre-existing peer reviews (whether code or academic writing), accepted answers on Q&A sites, presentation at high-quality conferences or publication in high-quality media may be used to help understand the depth and quality of the work.
 
-Any reviewer should be able consume your entire argument, including any auxilliary evidence, within __10 minutes__. 
+Any reviewer should be able consume your entire argument, including any auxilliary proofs, within __10 minutes__. 
+
+
+## Significance
 
 All members seeking retentions or promotions will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in the Manifesto. 
 
@@ -66,7 +69,7 @@ Members should individually monitor the progress of their demotion and promotion
 
 Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
 
-It is recommended that members submit their Argument for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
+It is recommended that members submit their argument for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
 - For retentions: no later than **30 days** prior to the end of the demotion period
 - For promotions: no later than **40 days** prior to the end of the demotion period
 
@@ -76,14 +79,14 @@ It is recommended that members submit their Argument for review (via GitHub) and
 The process for submitting Evidenced Arguments is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Evidenced Arguments.
 
 To submit an Evidenced Argument, follow these steps:
-  * Fork the `Evidences` repository.
+  * Fork the `Evaluations` repository.
   * Create a new folder in the `evidence` folder and rename it to match your Github username.
-  * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request.
-  * Fill out the Evidence template and open a PR.
-  * Announce the evidence to the Fellowship and wait at least one week.
-  * If there are no major pushbacks by the Fellowship, submit the evidence on-chain via the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare.
+  * Copy the `0000-argument-template.md` file into the new folder and rename it to match the title of your request.
+  * Fill out the argument template and open a PR.
+  * Announce the argument to the Fellowship and wait at least one week.
+  * If there are no major pushbacks by the Fellowship, submit the argument on-chain via the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare.
 
-Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
+Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Arguments are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Argument with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
 
 
 ## Communication channels
@@ -92,3 +95,4 @@ The Fellowship is using Matrix for communication. Right now there exists two cha
 
 - [Polkadot Technical Fellowship Channel](https://matrix.to/#/#fellowship-members:parity.io): The channel for all Fellowship members to discuss. To get voice rights, you need to be part of the Fellowship. However, the channel is readable by anyone.
 - [Polkadot Technical Fellowship - Open Channel](https://matrix.to/#/#fellowship-open-channel:parity.io): Open channel for anyone. Should be used to reach out to the Fellowship e.g. to request review or help on a topic.
+
