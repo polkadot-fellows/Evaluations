@@ -1,9 +1,12 @@
 # Evaluations
 
-This repository contains all the Evidences filed as part of the Retention and Promotion of members of the Polkadot Technical Fellowship. These Evidences have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
+This repository contains all the Evidenced Arguments filed as part of the Retention and Promotion of members of the Polkadot Technical Fellowship. These Arguments have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
 
 More information about Membership management can be found on the [Polkadot Technical Fellowship Dashboard](https://polkadot-fellows.xyz/#/membership).
 
+## History
+
+"Evidenced Arguments" used to be called simply "evidence" and you may sometimes see this defunct term used. It was deprecated in favour of Evidenced Arguments (or simply Arguments) since people misconstrued their responsibilities regarding this information and tended to simply dump a dispassionate list of code changes. THIS IS UNACCEPTABLE.
 
 ## Scope
 
@@ -35,19 +38,18 @@ However, some technologies/code fall out of this scope, notably:
  * ‘subxt‘ (useful tooling, but not required for Polkadot’s continued operation); and
  * ‘ink!’ (useful tooling, but not required for Polkadot’s continued operation).
 
-Evidences are scoped to the subset of these concerns which must be held consistent across all evaluations for Retention and Promotion.
+Evidenced Arguments are scoped to the subset of these concerns which must be held consistent across all evaluations for Retention and Promotion.
 
 
 ## Significance
 
-Evidences are a proof of work to indicate the Fellowship's commitment to implement and maintain designs and architectures for Polkadot (Main) Network, as well as participate in discussion and social consensus according to open-source principles.
+Arguments may be made by members or candidates for the purpose of rank retention or promotion.
 
-All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their Evidences once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
+Arguments must directly address each of the Rank Requirements as stated in the Manifesto for the rank to be retained or promoted to. If in doubt, copy and paste each requirement as stated in the Manifesto and write a short form answer, making links where necessary to evidence of your activity. Ensure all; evidence is __specific__ to the Manifesto requirements and __substantial__. Irrelevant or insubstantial evidence may result in an early dismissal of the proposal.
 
-**Evidences should:**
-- **describe why the work done is of sufficient quality and depth that it should be considered relevant for retention/promotion.**
-- **explain what the member has learned during the past months of active protocol development.**
-- **connect the work done to the Manifesto and its requirements.**
+The Argument is not a place to insert primary sources. No deep code review should be needed to evaluate the argument and its evidence. Pre-existing peer reviews (whether code or academic writing), accepted answers on Q&A sites, presentation at high-quality conferences or publication in high-quality media may be used to help understand the depth and quality of the work.
+
+Any reviewer should be able consume your entire argument, including any auxilliary evidence, within __10 minutes__. 
 
 All members seeking retentions or promotions will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in the Manifesto. 
 
@@ -64,16 +66,16 @@ Members should individually monitor the progress of their demotion and promotion
 
 Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
 
-It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
+It is recommended that members submit their Argument for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
 - For retentions: no later than **30 days** prior to the end of the demotion period
 - For promotions: no later than **40 days** prior to the end of the demotion period
 
 
 ## Process
 
-The process for submitting Evidences is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Evidences.
+The process for submitting Evidenced Arguments is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Evidenced Arguments.
 
-To submit an Evidence, follow these steps:
+To submit an Evidenced Argument, follow these steps:
   * Fork the `Evidences` repository.
   * Create a new folder in the `evidence` folder and rename it to match your Github username.
   * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request.
