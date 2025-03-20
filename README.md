@@ -76,7 +76,7 @@ It is recommended that members submit their Argument for review (via GitHub) and
 
 ## Process
 
-The process for submitting Arguments is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Arguments.
+The process for submitting Arguments is open to all existing Fellowship members (i.e. Rank I to IX). Anyone may provide comments on submitted Arguments.
 
 To submit an Argument, follow these steps:
   * Fork the `Evaluations` repository.
