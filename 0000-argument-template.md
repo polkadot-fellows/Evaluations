@@ -30,8 +30,6 @@ Below are some examples on how to write an argument for:
 - Promotion [Rank 1](https://collectives.subsquare.io/fellowship/referenda/272), [Rank 2](https://collectives.subsquare.io/fellowship/referenda/306), [Rank 3](https://collectives.subsquare.io/fellowship/referenda/255).
 
 
-
-
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
 
