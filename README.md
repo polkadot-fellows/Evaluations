@@ -45,7 +45,7 @@ Arguments are scoped to the subset of these concerns which must be held consiste
 
 Arguments may be made by members or candidates for the purpose of rank retention or promotion.
 
-Arguments must directly address each of the Rank Requirements as stated in the Manifesto for the rank to be retained or promoted to. If in doubt, copy and paste each requirement as stated in the Manifesto and write a short form answer, making links where necessary to prove of your activity. Ensure any proof is __specific__ to the Manifesto requirements and __substantial__. Irrelevant or insubstantial proofs may result in an early dismissal of the proposal.
+Arguments must directly address each of the Rank Requirements as stated in the Manifesto for the rank at which to be retained or at which to be promoted. If in doubt, copy and paste each requirement as stated in the Manifesto and write a short form answer, making links where necessary to demonstrate your activity. Ensure any proof is __specific__ to the Manifesto requirements and __substantial__. Irrelevant or insubstantial proofs may result in an early dismissal of the proposal.
 
 The Argument is not a place to insert primary sources. No deep code review should be needed to evaluate the argument and its proofs. Pre-existing peer reviews (whether code or academic writing), accepted answers on Q&A sites, presentation at high-quality conferences or publication in high-quality media may be used to help understand the depth and quality of the work.
 
