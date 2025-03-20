@@ -6,7 +6,7 @@ More information about Membership management can be found on the [Polkadot Techn
 
 ## History
 
-Arguments used to be called simply "Evidence" and you may sometimes see this defunct term used. It was deprecated in favour of "Arguments" since people misconstrued their responsibilities regarding this information and tended to simply submit a list of code changes, which is unacceptable.
+Arguments used to be called simply "Evidence" and you may sometimes see this defunct term used. It was deprecated in favour of "Arguments", since people misconstrued their responsibilities regarding this information and tended to simply submit a list of code changes.
 
 ## Scope
 
