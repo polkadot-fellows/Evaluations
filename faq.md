@@ -20,7 +20,7 @@ Members of Rank 3-6 will need to include data about voting agreement in % (i.e O
 
 5. How do I submit my voting record?
 
-You can use the ‘voting record’ section of the [evidence report template](https://github.com/polkadot-fellows/Evaluations/blob/main/0000-evidence-template.md).
+You can use the ‘voting record’ section of the [Argument template](https://github.com/polkadot-fellows/Evaluations/blob/main/0000-argument-template.md).
 
 6. I forgot to include my voting record but my retention/promotion proposal is already up for vote. What do I do?
 
@@ -38,7 +38,7 @@ You will need to attend an in-person interview whenever you are seeking to be pr
 If you are seeking promotion to Ranks 3+, you will need to:
 - Make sure that your [promotion period](https://collectives.subsquare.io/fellowship/core) has elapsed
 - Check that there is plenty of time left on your [demotion period](https://collectives.subsquare.io/fellowship/core)
-- Open a PR to submit your [evidence report](https://github.com/polkadot-fellows/Evaluations/blob/main/0000-evidence-template.md) for promotion
+- Open a PR to submit your [Argument](https://github.com/polkadot-fellows/Evaluations/blob/main/0000-argument-template.md) for promotion
 - Submit a sub-treasury proposal to obtain funding for interview-related costs (optional)
 - Attend the interview and demonstrate all the requirements for promotion to the requested rank. The on-chain proposal may be submitted on-chain during or after this interview.
 
