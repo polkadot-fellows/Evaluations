@@ -35,7 +35,7 @@ for enabling and configuring async backing. The reason for removing the static p
 using 3 cores. This is not ideal, since being a static parameter, it would apply to all parachains regardless of their assigned coretime, leading
 to increased resource usage on validators and less than ideal spam protection.
 
-This is one of the main blockers for enabling elastic scaling on polkadot. The PR also removes and refactors a lot of code which used to handle
+This is one of the main blockers for enabling elastic scaling on Polkadot. The PR also removes and refactors a lot of code which used to handle
 the potential of async backing not being enabled, which is no longer possible on production networks. Link to the PR: https://github.com/paritytech/polkadot-sdk/pull/7254.
 
 2. Collator protocol revamp
