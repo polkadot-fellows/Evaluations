@@ -1,4 +1,4 @@
-# Evidence-0004: Retention at Rank I
+# Argument-0004: Retention at Rank I
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@
 - End date: 2025/03/25
 
 
-## Evidence
+## Argument
 ### 1. Contributions to the Tooling Collective and Member Management
 During this reporting period, I worked on configurations for the tooling collective which led me to identify and resolved a critical benchmarking mismatch in `pallet_core_fellowship` generating invalid ranks exceeding runtime-configured `MaxRank` values ([#7720](https://github.com/paritytech/polkadot-sdk/pull/7720)). This manifested specifically in edge cases like `MaxRank=1`.
 
