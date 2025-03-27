@@ -1,4 +1,4 @@
-# Evidence-0002: Retention at Rank I
+# Argument-0002: Retention at Rank I
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -21,7 +21,7 @@
 - Start date: 2025/01/27
 - End date: 2025/04/27
 
-## Evidence
+## Argument
 
 My primary focus during the reporting period was XCM, particularly improving and simplifying fee-related code.
 
