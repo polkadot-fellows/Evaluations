@@ -29,6 +29,8 @@ On the development side, most of my work centered around building the new [Snowb
 
 Another major focus was preparing the Snowbridge Ethereum client for the Electra upgrade. This included [updating the light client protocol](https://github.com/paritytech/polkadot-sdk/pull/7075), as well as updating all [off-chain infrastructure](https://github.com/Snowfork/snowbridge/pull/1283) (relayers, E2E tests) to support the new protocol. The Electra updates were deployed to Westend and the hardfork was successfully tested on [Westend-Sepolia on 5 March](https://bridgehub-westend.subscan.io/event?page=1&time_dimension=date&module=ethereumbeaconclient).
 
+I found a [bug in a macro](https://github.com/paritytech/polkadot-sdk/pull/7913) used for asserting event fields, used throughout emulated tests. This bug could potentially mask issues in our test suite. I have fixed the bug and am busy updating the tests with the correct values.
+
 On the content side, I made sure Snowbridge had a consistent voice on X. I wrote all the [Snowbridge X account posts](https://x.com/_snowbridge) over the past quarter, and also shared a longer [update on the Polkadot Forum](https://forum.polkadot.network/t/snowbridge-march-2025-update/12307) summarizing recent progress.
 
 These contributions help ensure that Snowbridge — and by extension, Polkadot — is a secure, up-to-date, and user-friendly bridge for Ethereum interoperability. At the same time, increasing visibility through consistent communication helps educate the community and drive adoption.
