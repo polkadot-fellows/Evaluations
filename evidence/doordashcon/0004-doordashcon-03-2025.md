@@ -35,7 +35,7 @@ Continue to proactively strengthened developer engagement through hands-on mento
 
 Some contributor highlights this period include [Nathy-bajo](https://github.com/Nathy-bajo) and his contribution adding view functions to the Proxy pallet for runtime-specific type configuration([#7320](https://github.com/paritytech/polkadot-sdk/pull/7320)) along side other maintenance contributions.
 
-[Runcomet's](https://github.com/runcomet) creation of [genesis dev accounts](https://github.com/paritytech/polkadot-sdk/pull/7320) and ongoing implementation of [RFC 0097](https://github.com/paritytech/polkadot-sdk/pull/7398).
+[Runcomet's](https://github.com/runcomet) creation of [genesis dev accounts](https://github.com/paritytech/polkadot-sdk/pull/6267) and ongoing implementation of [RFC 0097](https://github.com/paritytech/polkadot-sdk/pull/7398).
 
 #### Next Phase
 Moving forward I will be taking the study group public through the Polkadot Africa initiative and look forward to fostering developers in the ecosystem, combining online sessions and in-person workshops to scale developer onboarding across traditional tech communities and undergraduate programs.
