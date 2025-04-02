@@ -1,4 +1,4 @@
-# Argument-0003: Retention at/Promotion to Rank I
+# Argument-0003: Retention at Rank I
 
 |                 |                  |
 | --------------- |------------------|
