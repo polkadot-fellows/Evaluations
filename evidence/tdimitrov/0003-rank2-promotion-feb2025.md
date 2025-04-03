@@ -1,4 +1,4 @@
-# Evidence-0003: Promotion to Rank 2
+# Argument-0003: Promotion to Rank 2
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@
 - End date: 2025/02/20
 
 
-## Evidence
+## Argument
 
 During this reporting period I worked on a refined version of the collation fairness ([polkadot-sdk
 issue-797](https://github.com/paritytech/polkadot-sdk/issues/1797)). The PR is incomplete since I
