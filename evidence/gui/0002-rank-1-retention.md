@@ -25,9 +25,11 @@
 
 
 ## Argument
-I focused mainly on proof of personhood, with George and Michal. Part of this work is now [public](https://github.com/paritytech/polkadot-sdk/pull/8164), my work include some feature and review in the people pallet and the implementation of origin restriction pallet.
-Apart from PoP, I reviewed some PR in polkadot-sdk, and made some minor PR too, also reviewed the upgrade of runtimes to version 2412.
-I continued the transaction extension horizon, a PR is open to easily migrate unsigned transaction to general transaction, currently in audit, and another PR to migrate in backward-compatible way the current unsigned transaction in polkadot-sdk to general transaction.
+I focused mainly on proof of personhood with George and Michal. Part of this work is now [public](https://github.com/paritytech/polkadot-sdk/pull/8164). My contributions include adding features and performing reviews in the people pallet, as well as implementing the origin restriction pallet.
+
+Apart from PoP, I reviewed several PRs in polkadot-sdk, submitted some minor PRs, and reviewed the upgrade of runtimes to version 2412.
+
+I continued working on the transaction extension horizon. A PR is currently open, aimed at simplifying the migration of unsigned transactions to general transactions, which is undergoing an audit. Another PR facilitates migrating existing unsigned transactions in polkadot-sdk to general transactions in a backward-compatible manner.
 
 ## Voting record
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
