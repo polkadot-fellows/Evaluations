@@ -26,7 +26,7 @@
 My argument mostly revolves around PRs and issues that I filed in the Polkadot-SDK repository, which will be elaborated below.
 
 ### Run `frame-omni-bencher` Overhead in CI for All Runtimes
-I implemented a CI job that [runs the `frame-omni-bencher-overhead` command for all runtimes](https://github.com/paritytech/polkadot-sdk/pull/7459). A seemingly simple PR, yet it required the runtimes to implement `genesis-dev-presets`—which most of them lacked at the time of filing the PR. As a result, I also took on the work described in the next section.
+I implemented a CI job that [runs the frame-omni-bencher-overhead command for all runtimes](https://github.com/paritytech/polkadot-sdk/pull/7459). A seemingly simple PR, yet it required the runtimes to implement `genesis-dev-presets`—which most of them lacked at the time of filing the PR. As a result, I also took on the work described in the next section.
 
 ### Add Genesis Presets for All Runtimes
 Since the required genesis presets were missing, as mentioned above, I proactively took ownership of the issue regarding [implementing genesis presets for all runtimes](https://github.com/paritytech/polkadot-sdk/issues/5704) and implemented them in a sequence of PRs.
@@ -46,7 +46,7 @@ Most of the integration was straightforward, but in some cases, it uncovered iss
 - **Immutability of Genesis Presets:** Currently, genesis presets are immutable, making them inflexible. I intend to expand their functionality by [allowing them to be patched](https://github.com/paritytech/polkadot-sdk/issues/7748) as my next task.
 
 ### Miscellaneous
-- I identified that the [`Incrementable` trait is not implemented according to the documentation](https://github.com/paritytech/polkadot-sdk/issues/7845), which caused saturation instead of returning `None`. This could, in theory, lead to new assets overwriting each other if `AssetId::MAX` were reached. Luckily, all chains are far from that limit. I also fixed this behavior by properly [returning `None` when the value would saturate](https://github.com/paritytech/polkadot-sdk/pull/7846).
+- I identified that the [`Incrementable` trait is not implemented according to the documentation](https://github.com/paritytech/polkadot-sdk/issues/7845), which caused saturation instead of returning `None`. This could, in theory, lead to new assets overwriting each other if `AssetId::MAX` were reached. Luckily, all chains are far from that limit. I also fixed this behavior with a PR by properly [returning `None` when the value would saturate](https://github.com/paritytech/polkadot-sdk/pull/7846).
 
 ## Voting record
 
