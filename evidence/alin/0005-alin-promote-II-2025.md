@@ -24,76 +24,136 @@
 
 ## Argument
 
-This letter details my work for the past year and 10 months (since I've started contributing to polkadot full-time),
-which are indicative of my promotion to rank II.
+Since joining the Polkadot Fellowship on April 26, 2024, I’ve spent the past year—and nearly two years overall as a
+full-time contributor—working deeply across critical areas of the Polkadot stack.
+My focus spans parachain consensus, elastic scaling, availability, and the collator protocol.
+The contributions I’ve made during this time reflect a high level of technical
+competency, autonomy, leadership and commitment, which I believe justifies my promotion from Rank I to Rank II.
 
-My contributions throughout the reporting period are centered around the following large projects:
+My most notable contributions are centered around the following large protocol-level enhancements:
 
-### Data availability
+### Optimizing Data Availability
 
-Data availability recovery is a large CPU consumer for Polkadot validator nodes, due to the expensive reed-solomon erasure coding.
-This is one of the limiting factors of scaling up the number of cores Polkadot and Kusama can offer.
-I lead the endeavour of optimising this process, via two main avenues:
+Data availability recovery has long been a bottleneck for Polkadot validator nodes, due in large part to the computational cost of Reed-Solomon erasure coding.
+Recognizing this as a core obstacle to scaling the number of parachain cores on Polkadot and Kusama, I led the initiative to optimize this subsystem both at the protocol and implementation level.
 
-1. implementing systematic recovery (which effectively brings down the cpu cost of decoding data to 0, by leveraging the nice property that the first n/3 chunks are an exact copy of the initial data). This is a protocol addition.
-2. optimising the underlying reed-solomon implementation
+The most significant improvement came through implementing [systematic 
+recovery](https://github.com/paritytech/polkadot-sdk/pull/1644), a protocol upgrade that eliminates 
+the decoding overhead in most cases by leveraging the property that the first third of the encoded 
+chunks are unaltered copies of the original data. In tandem with this, I also optimized the 
+underlying Reed-Solomon implementation itself, resulting in a combined reduction of approximately 
+**60% in CPU usage** for large PoVs, validated by [benchmarks on private 
+testnets](https://github.com/paritytech/polkadot-sdk/pull/1644#issuecomment-2129246105).
 
-These two work streams delivered a combined CPU consumption reduction of ~60% for large PoVs (as measured by my [tests on private testnets](https://github.com/paritytech/polkadot-sdk/pull/1644#issuecomment-2129246105)).
+To enable these changes, I undertook several foundational updates. First, I [refactored the 
+availability-recovery subsystem](https://github.com/paritytech/polkadot-sdk/pull/1457) to follow a 
+strategy pattern, improving extensibility and allowing graceful failovers. I authored 
+[RFC47](https://github.com/polkadot-fellows/RFCs/blob/main/text/0047-assignment-of-availability-chunks.md),
+which introduced a canonical shuffling of chunk indices to balance bandwidth usage and provided a 
+roadmap for protocol upgrade and deployment. The Fellowship accepted this RFC.
 
-The systematic recovery implementation was a complex multistep process, which solidifed me as one of the domain experts on these subsystems:
-- [Refactoring the availability-recovery subsystem to follow a strategy pattern](https://github.com/paritytech/polkadot-sdk/pull/1457), for increased extensibility and adding fail-over mechanisms
-- Authoring [RFC47](https://github.com/polkadot-fellows/RFCs/blob/main/text/0047-assignment-of-availability-chunks.md), which proposes a canonical shuffling of chunk indices to ensure fair distribution of network bandwidth usage for availability recovery. This also formalizes the new network protocol and the upgrade path. The RFC was accepted by the fellowship.
-- [Adding support for fallback requests to substrate networking](https://github.com/paritytech/polkadot-sdk/pull/2771), required in order to achieve backwards-compatibility between the old and new protocol versions.
-- [Adding a NodeFeatures runtime primitive for coordinating enablement of features on validators](https://github.com/paritytech/polkadot-sdk/pull/2177), in order to achieve consensus on when the new canonical chunk index shuffling can be atomically enacted. This primitive later ended up being used by multiple features, like elastic scaling just to name one.
-- [Main subsystem implementation](https://github.com/paritytech/polkadot-sdk/pull/1644), which adds the new recovery strategy, together with the new network protocol and comprehensive tests.
-- Testing extensively and benchmarking performance on private testnets.
-- [I optimised the cumulus recovery procedure to skip re-encoding](https://github.com/paritytech/polkadot-sdk/pull/2287), which was not required for protocol correctness and was consuming valuable CPU time.
+Ensuring compatibility between protocol versions, I [added fallback support to Substrate 
+networking](https://github.com/paritytech/polkadot-sdk/pull/2771) and implemented a 
+[NodeFeatures runtime primitive](https://github.com/paritytech/polkadot-sdk/pull/2177) to coordinate 
+feature enablement across validators. This primitive has since been adopted by other key subsystems, 
+such as elastic scaling.
 
-The work has been security-audited with no findings logged.
+The systematic recovery strategy and new protocol were delivered via the [main subsystem 
+implementation](https://github.com/paritytech/polkadot-sdk/pull/1644), with extensive integration 
+tests. Additionally, I [optimized the Cumulus recovery 
+procedure](https://github.com/paritytech/polkadot-sdk/pull/2287) to avoid unnecessary re-encoding, 
+further reducing CPU consumption.
 
-The work on optimising the reed-solomon implementation involved:
-- extensive benchmarking agains other implementations (our rust SIMD implementation and kagome's C++ port).
-- root-causing and fixing the large CPU consumption difference between the rust and C++ implementations: https://github.com/paritytech/reed-solomon-novelpoly/issues/14#issuecomment-1857666824. This involved diving deep up to assembly code, using different profilers and monitoring hardware performance counters.
-- discovering and applying micro-optimisations that improved the performance of the library: https://github.com/paritytech/reed-solomon-novelpoly/pull/34, https://github.com/paritytech/reed-solomon-novelpoly/pull/31, https://github.com/paritytech/reed-solomon-novelpoly/pull/24
+In parallel, I investigated the performance disparity between our Rust implementation of 
+Reed-Solomon and Kagome’s C++ version. After deep profiling—including analysis at the assembly 
+level—I identified key inefficiencies and proposed solutions ([analysis 
+here](https://github.com/paritytech/reed-solomon-novelpoly/issues/14#issuecomment-1857666824)). This 
+led to a series of [micro-optimizations](https://github.com/paritytech/reed-solomon-novelpoly/pull/34),
+[performance fixes](https://github.com/paritytech/reed-solomon-novelpoly/pull/31), and [code 
+improvements](https://github.com/paritytech/reed-solomon-novelpoly/pull/24) that significantly 
+improved the performance of the Rust implementation.
 
-### Elastic scaling
+All of this work has been successfully audited, with no security findings logged.
 
-I was one of the main developers responsible for implementing elastic scaling (together with fellows @sandreim and @skunert, with whom I closely collaborated and exchanged reviews). This was a complex project that spanned multiple subsystems, crucial to the scaling strategy of Polkadot for parachains like Mythos and Asset hub.
+### Implementing Elastic Scaling
 
-I owned and delivered multiple complex components of the implementation:
-- [Runtime implementation on the relay chain](https://github.com/paritytech/polkadot-sdk/pull/3479). This effectively lifts the limitation that a parachain can have only one backed candidate at a time. It brings support for backing candidate chains, increasing throughput.
-- Support for candidate chains in the provisioner subsystem: https://github.com/paritytech/polkadot-sdk/pull/3233 and https://github.com/paritytech/polkadot-sdk/pull/3778. Needed so that the relay chain runtime is able to request multiple backable candidates per para from the node.
-- Rewriting the prospective-parachains subsystem, a critical component of the backing pipeline. This was needed in order to allow backing candidates out of order, a key aspect of elastic scaling. PRs: https://github.com/paritytech/polkadot-sdk/pull/4035 and https://github.com/paritytech/polkadot-sdk/pull/4937.
-- Adding support for elastic scaling to cumulus pov-recovery component: https://github.com/paritytech/polkadot-sdk/pull/4733.
-- [Writing a documentation guide for enabling elastic scaling on parachains](https://github.com/paritytech/polkadot-sdk/pull/4663).
-- Implementing multiple parts of [RFC103](https://github.com/polkadot-fellows/RFCs/pull/103), which effectively lifts the MVP status of elastic scaling, bringing resilience against one collator distributing the same collation to all backing groups.
-    - v2 receipt checks in different subsystems: https://github.com/paritytech/polkadot-sdk/pull/6011, https://github.com/paritytech/polkadot-sdk/pull/5908.
-    - support for v2 receipts in cumulus: https://github.com/paritytech/polkadot-sdk/pull/5372, https://github.com/paritytech/polkadot-sdk/pull/5888.
-- [Removing support for the scheduling TTL from the coretime assignment pallet](https://github.com/paritytech/polkadot-sdk/pull/5461), which prevented parachains from sharing a core with interlaced assignments.
-- [Deprecating AsyncBackingParams](https://github.com/paritytech/polkadot-sdk/pull/7254), which were initially introduced for enabling and configuring async backing. This is one of the main blockers for enabling elastic scaling on Polkadot. The PR also removes and refactors a lot of code which used to handle
-the potential of async backing not being enabled, which is no longer possible on production networks. The reason for removing the static params is twofold:
-    - they have been made obsolete by the claim queue concept which was introduced for agile coretime.
-    - enabling elastic scaling on polkadot would have meant bumping the static max_candidate_depth value to at least 6 to allow for a parachain using 3 cores. This is not ideal, since being a static parameter, it would apply to all parachains regardless of their assigned coretime, leading
-    to increased resource usage on validators and less than ideal spam protection.
-- Another notable contribution was my involvement in the design discussions around [streamlined block production](https://github.com/paritytech/polkadot-sdk/issues/5190#issuecomment-2505949587)
-I researched and proposed an alternative implementation idea which would achieve the desired result in a much shorter time
-(thanks to the simpler design, despite it being less efficient). I successfully developed a PoC and tested it with gluttons and spammening parachains.
-The code is available here: https://github.com/paritytech/polkadot-sdk/tree/alindima/post-state-poc. We've so far chosen not to follow this route, as the current throughput requirements of parachains don't require such a quick solution.
-- Conducting extensive testing on private testnets, adding automated tests.
+Elastic scaling is one of Polkadot’s most ambitious recent upgrades, allowing parachains to scale 
+up by occupying more than one core. I was one of the core engineers driving this effort, 
+collaborating closely with @sandreim and @skunert. My role involved deep work across the runtime, 
+and different node subsystems.
+This was a complex protocol-level project which is crucial for the scaling strategy of parachains
+like Mythos and Asset hub.
+
+On the relay chain, I implemented the [runtime 
+changes](https://github.com/paritytech/polkadot-sdk/pull/3479) necessary to support multiple backed 
+candidates per parachain. This lifted a core limitation and enabled parallel backing. I extended 
+these capabilities to the provisioner subsystem via 
+[PR 3233](https://github.com/paritytech/polkadot-sdk/pull/3233) and 
+[PR 3778](https://github.com/paritytech/polkadot-sdk/pull/3778), enabling nodes to handle multiple 
+candidates per para.
+
+To support out-of-order backing, I rewrote the prospective-parachains subsystem, 
+which was a critical bottleneck. This was a very complex endeavour that I owned.
+The resulting updates are captured in 
+[PR 4035](https://github.com/paritytech/polkadot-sdk/pull/4035) and 
+[PR 4937](https://github.com/paritytech/polkadot-sdk/pull/4937).
+
+Elastic scaling also required updates to Cumulus, including support in the PoV recovery component, 
+which I delivered in [PR 4733](https://github.com/paritytech/polkadot-sdk/pull/4733). To support 
+adoption, I authored a [comprehensive documentation 
+guide](https://github.com/paritytech/polkadot-sdk/pull/4663) for parachain teams.
+
+Getting the elastic scaling feature from the MVP to the production status involved two threads of work: RFC103 and
+deprecating AsyncBackingParams.
+
+[RFC103](https://github.com/polkadot-fellows/RFCs/pull/103) addresses a potential vulnerability 
+where a collator could distribute the same collation to all backing groups. I contributed
+numerous times to the node-side implementation (https://github.com/paritytech/polkadot-sdk/pull/6011, https://github.com/paritytech/polkadot-sdk/pull/5908)
+and owned the Cumulus-side support: https://github.com/paritytech/polkadot-sdk/pull/5372, https://github.com/paritytech/polkadot-sdk/pull/5888.
+
+To enable dynamic resource allocation, I [removed support for scheduling 
+TTL](https://github.com/paritytech/polkadot-sdk/pull/5461) from the coretime assignment pallet and 
+[deprecated `AsyncBackingParams`](https://github.com/paritytech/polkadot-sdk/pull/7254), which had 
+become obsolete with the introduction of the claim queue concept. Removing these static parameters 
+reduced validator overhead and improved spam resistance.
+
+In parallel, I participated in the design of [streamlined block 
+production](https://github.com/paritytech/polkadot-sdk/issues/5190#issuecomment-2505949587), proposing 
+a simplified post-state-based approach. I developed a [proof of 
+concept](https://github.com/paritytech/polkadot-sdk/tree/alindima/post-state-poc) and tested it using 
+gluttons and spammening parachains. While the need for this implementation hasn’t yet materialized, 
+the groundwork remains valuable for future scaling needs and showcases my ability to innovate and meaningfully
+contribute to areas outside of my previous expertise.
 
 ### Collator protocol revamp
 
-This is an on-going project that I'm leading, which will improve the resilience of backing validators through a persisted reputation system for collators.
-I've conducted research on the topic based on [previous issues](https://github.com/paritytech/polkadot-sdk/issues/616) and discussions with other fellows. I've created a document which has been so far privately reviewed by other fellows and will be later turned into an RFC. I have created a development plan for this project, which can be viewed [here](https://github.com/orgs/paritytech/projects/119/views/2).
+In an effort to enhance the reliability of the parachain backing process, I started leading a 
+comprehensive revamp of the collator protocol, introducing a persistent reputation system for collators.
+This project builds on previous issues raised in the 
+ecosystem ([reference](https://github.com/paritytech/polkadot-sdk/issues/616)) and collaborative 
+discussions with other fellows.
 
-Implementation is on-going, some of the key components already merged or in the review process:
-- [PR](https://github.com/paritytech/polkadot-sdk/pull/7955) which adds and handles a new UMP signal. This is a mechanism for parachain runtimes to assign the merit of building a valid block to a particular network key (PeerId). This is a key attribute of the revamp.
-- [Adding a reputation-based peer manager component](https://github.com/paritytech/polkadot-sdk/pull/8191): the component which maintains connections to peers and stores their reputations.
+I created a detailed proposal, currently under private review (which will soon make it to an RFC),
+and outlined the development process (which I'm managing) in 
+an open [project plan](https://github.com/orgs/paritytech/projects/119/views/2).
+
+Early implementation work has already been merged or is in review. This includes a [new UMP 
+signal](https://github.com/paritytech/polkadot-sdk/pull/7955) that allows parachains to attribute 
+block-building merit to specific `PeerId`s—a key mechanism for enabling collator accountability. 
+Additionally, I authored the [reputation-based peer 
+manager](https://github.com/paritytech/polkadot-sdk/pull/8191), which will manage peer connections 
+based on historical behavior.
 
 ### Other notable contributions
 
-I've done many various refactors, bugfixes and small improvements.
-I regularly provide reviews in my areas of expertise and help other developers with technical issues.
+Beyond these major initiatives, I’ve continued to contribute across the codebase with bug fixes, 
+refactors, and performance enhancements. I actively review work in the areas of availability, 
+consensus, and collator protocol, and regularly provide technical support to other contributors.
+
+### Reference of published write-ups
+
+- [RFC47](https://github.com/polkadot-fellows/RFCs/blob/main/text/0047-assignment-of-availability-chunks.md)
+- [Elastic Scaling update guide](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/guides/enable_elastic_scaling_mvp/index.html)
 
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
