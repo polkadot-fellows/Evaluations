@@ -125,6 +125,8 @@ gluttons and spammening parachains. While the need for this implementation hasnâ
 the groundwork remains valuable for future scaling needs and showcases my ability to innovate and meaningfully
 contribute to areas outside of my previous expertise.
 
+The remaining work needed for the elastic scaling production launch is tracked [here](https://github.com/paritytech/polkadot-sdk/issues/5051).
+
 ### Collator protocol revamp
 
 In an effort to enhance the reliability of the parachain backing process, I started leading a 
