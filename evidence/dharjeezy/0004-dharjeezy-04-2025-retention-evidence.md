@@ -24,6 +24,11 @@
 
 ## Argument
 
+I’m applying for Rank I retention.
+
+Over the last cycle, I contributed across several areas including runtime and node related issues. My work focused on making systems more configurable, efficient, and reliable.
+Below is a summary of the key contributions:
+
 ### 1. BlockNumberProvider for Pallet Election Provider Multiphase
 To support the migration of pallets from the Relay Chain to Asset Hub, I extended the BlockNumberProvider pattern to [pallet-election-provider-multi-phase](https://github.com/paritytech/polkadot-sdk/pull/7515).
 This ensures that the pallet can deterministically use either the system block number or an externally provided block number, 
@@ -62,8 +67,6 @@ This change reduces memory allocations and improves efficiency, especially when 
 I am working on improving the [error handling in the WebRTC-related Noise handshake functions](https://github.com/paritytech/litep2p/pull/377) within the litep2p library.
 Currently, these functions make unchecked assumptions about message sizes and contain multiple unwrap() calls, which could lead to panics or undefined behavior in edge cases.
 The work done and to be done involves replacing these unchecked operations with proper error propagation and introducing well-defined error types.
-
-I am humbly applying for Rank I retention
 
 
 ## Voting record
