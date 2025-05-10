@@ -1,7 +1,12 @@
 # Evaluations
 
-This repository contains all the Evidences filed as part of the Retention and Promotion of members of the Polkadot Technical Fellowship. These Evidences have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
+This repository contains all the Arguments filed as part of the Retention and Promotion of members of the Polkadot Technical Fellowship. These Arguments have been submitted for the discussion and review of individual members' contributions and achievements, as well as for the Fellowship's on-chain bodies to signal approval or disapproval of.
 
+More information about Membership management can be found on the [Polkadot Technical Fellowship Dashboard](https://polkadot-fellows.xyz/#/membership).
+
+## History
+
+Arguments used to be called simply "Evidence" and you may sometimes see this defunct term used. It was deprecated in favour of "Arguments", since people misconstrued their responsibilities regarding this information and tended to simply submit a list of code changes.
 
 ## Scope
 
@@ -33,19 +38,21 @@ However, some technologies/code fall out of this scope, notably:
  * ‘subxt‘ (useful tooling, but not required for Polkadot’s continued operation); and
  * ‘ink!’ (useful tooling, but not required for Polkadot’s continued operation).
 
-Evidences are scoped to the subset of these concerns which must be held consistent across all evaluations for Retention and Promotion.
+Arguments are scoped to the subset of these concerns which must be held consistent across all evaluations for Retention and Promotion.
+
+
+## Guidelines
+
+Arguments may be made by members or candidates for the purpose of rank retention or promotion.
+
+Arguments must directly address each of the Rank Requirements as stated in the Manifesto for the rank at which to be retained or at which to be promoted. If in doubt, copy and paste each requirement as stated in the Manifesto and write a short form answer, making links where necessary to demonstrate your activity. Ensure any proof is __specific__ to the Manifesto requirements and __substantial__. Irrelevant or insubstantial proofs may result in an early dismissal of the proposal.
+
+The Argument is not a place to insert primary sources. No deep code review should be needed to evaluate the argument and its proofs. Pre-existing peer reviews (whether code or academic writing), accepted answers on Q&A sites, presentation at high-quality conferences or publication in high-quality media may be used to help understand the depth and quality of the work.
+
+Any reviewer should be able consume your entire argument, including any auxilliary proofs, within __10 minutes__. 
 
 
 ## Significance
-
-Evidences are a proof of work to indicate the Fellowship's commitment to implement and maintain designs and architectures for Polkadot (Main) Network, as well as participate in discussion and social consensus according to open-source principles.
-
-All members that have been inducted for standard allowance as per the [Fellowship Salaries](https://github.com/polkadot-fellows/RFCs/blob/main/text/0050-fellowship-salaries.md) must submit their Evidences once over a period of time (3 months for Rank I-II, 6 months for Rank III-VI) to avoid demotion to a lower rank. 
-
-**Evidences should:**
-- **describe why the work done is of sufficient quality and depth that it should be considered relevant for retention/promotion.**
-- **explain what the member has learned during the past months of active protocol development.**
-- **connect the work done to the Manifesto and its requirements.**
 
 All members seeking retentions or promotions will need to reflect on their voting record in relation to the thresholds for voting "activity" and voting "agreement" described in the Manifesto. 
 
@@ -62,24 +69,24 @@ Members should individually monitor the progress of their demotion and promotion
 
 Members can also add an ical feed for Fellowship-related data directly into their email client or their Google account using this link: **webcal://fellowship-calendar.kchr.de/?account=YOUR_ACCOUNT_ID**. The code for this widget can be found [here](https://github.com/bkchr/fellowship-ical). 
 
-It is recommended that members submit their evidence for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
+It is recommended that members submit their Argument for review (via GitHub) and on-chain (via Subsquare) as per the following deadlines:
 - For retentions: no later than **30 days** prior to the end of the demotion period
 - For promotions: no later than **40 days** prior to the end of the demotion period
 
 
 ## Process
 
-The process for submitting Evidences is open to all existing Fellowship members (i.e Rank I to IX). Anyone may provide comments on submitted Evidences.
+The process for submitting Arguments is open to all existing Fellowship members (i.e. Rank I to IX). Anyone may provide comments on submitted Arguments.
 
-To submit an Evidence, follow these steps:
-  * Fork the `Evidences` repository.
+To submit an Argument, follow these steps:
+  * Fork the `Evaluations` repository.
   * Create a new folder in the `evidence` folder and rename it to match your Github username.
-  * Copy the `0000-evidence-template.md` file into the new folder and rename it to match the title of your request.
-  * Fill out the Evidence template and open a PR.
-  * Announce the evidence to the Fellowship and wait at least one week.
-  * If there are no major pushbacks by the Fellowship, submit the evidence on-chain via the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare.
+  * Copy the `0000-argument-template.md` file into the new folder and rename it to match the title of your request.
+  * Fill out the Argument template and open a PR.
+  * Announce your Argument to the Fellowship and wait at least one week.
+  * If there are no major pushbacks by the Fellowship, submit your Argument on-chain via the [Core Fellowship UI](https://collectives.subsquare.io/fellowship/core) provided by Subsquare.
 
-Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Evidences are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Evidence with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
+Once the request has been approved via on-chain referendum, the PR can be merged. This on-chain process is designed to be resilient to where the Arguments are hosted and in what format, so it can be migrated away from GitHub in the future. The Fellowship should not approve more than one Argument with the same number. PRs may be closed by their author, when sufficiently stale, or after a period of 6 months without approval. 
 
 
 ## Communication channels
