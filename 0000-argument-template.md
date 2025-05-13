@@ -27,7 +27,7 @@
 
 Below are some examples on how to write an argument for:
 - Retention: [Rank 1](https://collectives.subsquare.io/fellowship/referenda/289), [Rank 2](https://collectives.subsquare.io/fellowship/referenda/282), [Rank 3](https://collectives.subsquare.io/fellowship/referenda/244)
-- Promotion [Rank 1](https://collectives.subsquare.io/fellowship/referenda/272), [Rank 2](https://collectives.subsquare.io/fellowship/referenda/306), [Rank 3](https://collectives.subsquare.io/fellowship/referenda/255).
+- Promotion [Rank 1](https://collectives.subsquare.io/fellowship/referenda/272), [Rank 2](https://collectives.subsquare.io/fellowship/referenda/336), [Rank 3](https://collectives.subsquare.io/fellowship/referenda/255).
 
 
 ## Voting record
