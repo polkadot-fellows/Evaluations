@@ -1,4 +1,4 @@
-# Evidence-0003: Promotion to Rank 3
+# Argument-0004: Retention at Rank 3
 
 |                  |            |
 | ---------------- | ---------- |
@@ -19,9 +19,25 @@
 - Start date: 2024/12/01
 - End date: 2024/05/31
 
-## Evidence
+## Argument
 
-TODO
+During this reporting period I have worked primarily on the on-chain protocol aspects of "Plaza" --
+namely the Asset Hub Migration and introduction of smart contracts via the Revive pallet.
+
+Both of these projects are on track with the timelines that we initially communicated late last
+year. The completion of these projects should reduce the barrier to entry for on-chain and off-chain
+developers and allow them to build better products and UX on the Polkadot stack.
+
+The Revive pallet was introduced on Westend and several hackathons have used this platform in the
+last six months. We have taken feedback from them to improve docs and integration compatibility.
+
+The Asset Hub Migration ran its first large scale test in May by performing a test migration on
+Westend. Although there were a few issues, we have the tools to be able to identify them in a test
+environment prior to running the Kusama and Polkadot migrations.
+
+I have been active in communicating the significance of these upgrades to Polkadot with regular
+participation in OpenDev calls and meetings with stakeholders (e.g. wallets, exchanges) to make the
+upgrades successful.
 
 ## Voting record
 
@@ -29,7 +45,7 @@ TODO
 |---|---|---|---|---|
 |I  |90%   |N/A   |   |  |
 |II |80%   |N/A   |   |  |
-|III|70%   |100%  |   |  |
+|III|70%   |100%  | 52.8% |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
 |VI |40%   |70%   |   |  |
