@@ -51,7 +51,7 @@ One of the main responsibilities any Member of the Polkadot Technical Fellowship
 By choosing this task as part of my duties in the Fellowship, I achieved three main goals, all of them in line with the description of a Proficient Member (Manifesto §6.3):
 
 - Demonstrate capacity to execute maintenance tasks: _"they should be demonstrating a readiness to be a network maintainer through increased levels of availability"_
-- Evolving my contributions from an individual perspective, towards working alongside other members of the colective: _"communication/sharing is also very important"_, and
+- Evolving my contributions from an individual perspective, towards working alongside other members of the collective: _"communication/sharing is also very important"_, and
 - Expanding my current understanding of the protocol as a whole, as well as the challenges involved on it: _"clear demonstration of knowledge of the protocol is crucial"_.
 
 In consequence, during the last year, I have mainly contributed to the bumps of the Polkadot SDK in the runtimes for **[`stable2409-2`](https://github.com/polkadot-fellows/runtimes/pull/490)**, **[`stable2409-4`](https://github.com/polkadot-fellows/runtimes/pull/568)**, and **[`stable2412-4`](https://github.com/polkadot-fellows/runtimes/pull/606)**.
@@ -64,7 +64,7 @@ I also implemented a WFC that requested moving control of the Kusama Treasury �
 
 I wrote **[“How to upgrade your runtime to the latest Polkadot-SDK (and not die trying)”](https://forum.polkadot.network/t/guide-how-to-upgrade-your-runtime-to-the-latest-version-of-polkadot-sdk-and-not-die-trying/13016)**. The guide walks parachain devs through common upgrade traps and fixes. I also review pull requests and discuss RFCs in Matrix frequently.
 
-This guide solves one of the gratest painpoints for any team in the ecosystem, following the stabilization of the Polkadot SDK: what to have in mind when upgrading the SDK in a runtime they maintain. Since then, the article has had some positive feedback from members of the ecosystem.
+This guide solves one of the greatest painpoints for any team in the ecosystem, following the stabilization of the Polkadot SDK: what to have in mind when upgrading the SDK in a runtime they maintain. Since then, the article has had some positive feedback from members of the ecosystem.
 
 Also, by including the section of `runtimes` maintenance, current and future members of the fellowship can take a prior look on how to perform these upgrades, as part of the aforementioned maintenance duties every Member should perform. This experience also contributes to the [ongoing discussion](https://github.com/polkadot-fellows/runtimes/issues/101#issuecomment-2911039576) regarding how to update the SDK on the runtime.
 
