@@ -1,8 +1,8 @@
-# Argument-0005: Promotion to Rank II
+# Argument-0005: Promotion to Rank 2
 
 |                  |                            |
 | ---------------- | -------------------------- |
-| **Report Date**  | 2025/05/21                 |
+| **Report Date**  | 2025/06/02                 |
 | **Submitted by** | Pablo Andrés Dorado Suárez |
 
 ## Member Details
