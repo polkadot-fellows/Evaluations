@@ -23,8 +23,9 @@ Stress and integration testing
 ## Argument
 
 This period's primary focus was Polkadot advocacy outside the ecosystem and ecosystem knowledge
-sharing. Code contributions targeted stability and resilience improvements. Additionally,
-substantial time was dedicated to design, code reviews, and team management at Parity.
+sharing about Elastic Scaling. Code contributions targeted stability and resilience improvements.
+Additionally, substantial time was dedicated to design and code reviews and team management at
+Parity.
 
 ### Published articles
 
@@ -32,7 +33,7 @@ I've authored two long form, semi-technical articles promoting Polkadot's scalab
 its strategic trade-offs outside of the ecosystem:
 
 - [Scalability² - The Stepping Stone to a Web3 Cloud](https://www.parity.io/blog/polkadot-web3-cloud)
-positions Polkadot as the first Web3 cloud discussing similarities between Web2 and Web3 clouds
+positions Polkadot as the first Web3 cloud discussing similarities between Web2 and Web3 clouds.
 - [Scaling Polkadot: Does it come at a price?](https://www.parity.io/blog/scalability-tradeoffs-polkadot-web3)
 analyzes the trade-offs Polkadot makes and compares them to a few competitors
 
