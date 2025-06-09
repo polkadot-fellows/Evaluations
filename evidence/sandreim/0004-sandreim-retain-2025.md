@@ -40,6 +40,11 @@ A third article, currently in progress, will delve deeper into the technical asp
 roadmap, specifically focusing on enhancements in performance, resilience, and latency. Unfortunately,
 this article was not completed within this reporting cycle.
 
+### Knowledge sharing
+
+I have been active in communicating about the status of Elastic Scaling by participating in OpenDev
+calls and forum posts.
+
 ### Web3 gaming
 
 I have been working closely with one of the largest ecosystem projects (Mythical Games) to optimize
@@ -69,6 +74,10 @@ in these two postmortems: [Kusama finality stall](https://forum.polkadot.network
 I've done design and code reviews of the revamp of the collator protocol as well
 as the low latency parachain design drafted by Robert K. I will continue to support both of
 these projects in the next reporting period.
+
+### Other activity
+
+
 
 ## Voting record
 
