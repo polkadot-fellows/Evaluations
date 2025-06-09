@@ -44,7 +44,7 @@ this article was not completed within this reporting cycle.
 ### Knowledge sharing
 
 I have been active in communicating about the status of Elastic Scaling by participating in OpenDev
-calls and forum posts.
+calls, forum posts and in two calls I had with Distractive.
 
 ### Web3 gaming
 
