@@ -59,7 +59,7 @@ support running hundreds of games on Polkadot. While we are still in the early d
 will clearly be built on top of a multi-chain architecture (one game one chain) leveraging elastic,
 scaling, bulk and on-demand core time.
 
-### Improving resilience of Polkadot
+### Improving the resilience of Polkadot
 
 I've made a few [contributions](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3Asandreim+is%3Aclosed+merged%3A2024-12-12..2025-06-09+) which are mostly fixes and stability improvements.
 The most significant is [enhancing collator observability](https://github.com/paritytech/polkadot-sdk/pull/8230)
