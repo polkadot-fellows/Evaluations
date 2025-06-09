@@ -56,7 +56,7 @@ focusing vertical and horizontal scalability, and how Polkadot secures parachain
 
 Currently, I am directly involved in fleshing out their long term architecture and vision that will
 support running hundreds of games on Polkadot. While we are still in the early days, the solution
-will clearly be built on top of a multi-chain architecture (one game one chain) leveraging elastic,
+will clearly be built on top of a multi-chain architecture (one game one chain) leveraging elastic
 scaling, bulk and on-demand core time.
 
 ### Improving the resilience of Polkadot
