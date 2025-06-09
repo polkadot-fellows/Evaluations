@@ -29,13 +29,13 @@ Parity.
 
 ### Published articles
 
-I've authored two long form, semi-technical articles promoting Polkadot's scalability and detailing
-its strategic trade-offs outside of the ecosystem:
+I've authored two long form, semi-technical articles promoting Polkadot's scalability outside of
+the ecosystem:
 
 - [Scalability² - The Stepping Stone to a Web3 Cloud](https://www.parity.io/blog/polkadot-web3-cloud)
 positions Polkadot as the first Web3 cloud discussing similarities between Web2 and Web3 clouds.
 - [Scaling Polkadot: Does it come at a price?](https://www.parity.io/blog/scalability-tradeoffs-polkadot-web3)
-analyzes the trade-offs Polkadot makes and compares them to a few competitors
+analyzes the strategic trade-offs Polkadot makes in comparison to a few competitors
 
 A third article, currently in progress, will delve deeper into the technical aspects of the 2025/2026
 roadmap, specifically focusing on enhancements in performance, resilience, and latency. Unfortunately,
