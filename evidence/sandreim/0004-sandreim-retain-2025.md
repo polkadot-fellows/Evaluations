@@ -66,7 +66,7 @@ The most significant is [enhancing collator observability](https://github.com/pa
 which is part of a [larger effort](https://github.com/paritytech/polkadot-sdk/issues/7575) to improve
 stabilize and lower parachain block times in H2 2025.
 
-During this reporting period I have been involved in two major Polkadot and Kusama outages.
+During this reporting period I have been involved in the handling of two major Polkadot and Kusama outages.
 I've shared the knowledge and learnings from these incidents with the ecosystem via the forum
 in these two postmortems: [Kusama finality stall](https://forum.polkadot.network/t/2025-05-09-kusama-dispute-storm-postmortem/12947) and
 [Polkadot high block times](https://forum.polkadot.network/t/2025-05-03-polkadot-parachain-block-time-degradation/12963).
