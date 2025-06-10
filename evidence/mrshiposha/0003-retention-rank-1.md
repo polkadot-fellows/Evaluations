@@ -19,7 +19,7 @@
 ## Reporting period
 
 - Start date: 2025/04/27
-- End date: 2025/07/27
+- End date: 2025/07/11
 
 ## Argument
 
