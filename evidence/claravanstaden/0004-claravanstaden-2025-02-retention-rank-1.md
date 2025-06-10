@@ -47,7 +47,7 @@ and enable ERC-20 bridging to Kusama to increase liquidity across the ecosystem.
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities                      | Comments |
 |---|---|---|-------------------------------------------------|---------|
-|III|70%   |100%  | There weren't any which I was eligible to vote. |         |
+|III|70%   |100%  | There were no referenda I was eligible to vote on. |         |
 |I  |90%   |N/A   |                                                 |         |
 |II |80%   |N/A   |                                                 |         |
 |III|70%   |100%  |                                                 |         |
