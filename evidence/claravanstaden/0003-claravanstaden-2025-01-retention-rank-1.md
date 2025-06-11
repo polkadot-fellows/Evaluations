@@ -21,7 +21,6 @@
 - Start date: 2024/12/12
 - End date: 2025/03/31
 
-
 ## Argument
 During this reporting period, my contributions were primarily focused on development, with some involvement in content creation as well.
 
