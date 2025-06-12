@@ -36,6 +36,13 @@ Also, I updated and refactored the related XCM NFT PR containing the XCM adapter
 It is in the review process. It also contains a new `pallet-derivatives` Pallet to simplify different support scenarios of derivative assets (see the PR description, crate docs, and test docs for details).
 
 ## Voting record
+*Provide your voting record in relation to required thresholds for your rank.*
 
-None, since I am a Rank I member.
-
+|  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
+|---|---|---|---|---|
+|I  |90%   |N/A   |   | There were no referenda I was eligible to vote on. |
+|II |80%   |N/A   |   |  |
+|III|70%   |100%  |   |  |
+|IV |60%   |90%   |   |  |
+|V  |50%   |80%   |   |  |
+|VI |40%   |70%   |   |  |
