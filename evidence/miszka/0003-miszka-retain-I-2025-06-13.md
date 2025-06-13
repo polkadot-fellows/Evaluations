@@ -25,7 +25,7 @@
 
 The fork-aware transaction pool was rolled out to the parity nodes on Westend, Kusama relaychain and system parachains, and Polkadot system parachains. I supported deployment, debugging, and verification.
 
-During the report period, I focused on performance bottlenecks and reliability issues in the new pool, especially when it comes to propertly handling transaction pool limits in the conditions of heavy load. I also improved performance and realiability for handling elastic scaling (7k txs per 2s block).
+During the report period, I focused on performance bottlenecks and reliability issues in the new pool, especially when it comes to properly handling transaction pool limits in the conditions of heavy load. I also improved performance and realiability for handling elastic scaling (7k txs per 2s block).
 
 During the heavy load testing of txpool I also identified some performance problems with current transaction protocol definition and implementation ([internal parity report](https://github.com/paritytech-secops/eng_findings/issues/12)). I wrote the [draft proposal for transactions/v2](https://github.com/paritytech/polkadot-sdk/pull/8128/), a new protocol to reduce bandwidth usage by separating transaction advertisement and full data transmission. I addressed and discussed feedback from the community. The draft forms a ground work for implementation and RFC. The proposed protocol is open for future extensions with some interesting features like set-reconciliation.
 
