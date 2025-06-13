@@ -10,7 +10,7 @@
 
 - Matrix username: `@michal:parity.io`
 - Polkadot address: [14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo](https://collectives.statescan.io/#/accounts/14T9NGF7LdCY7SK2j6oNXmB9NqfKYyrxBChUvYRjtFdvZBMo)
-- Current rank: 0
+- Current rank: 1
 - Date of initial induction: `2024/06/02`
 - Date of last report: `2025/03/05`
 - Area(s) of Expertise/Interest: `Substrate node` ,`Transaction Pool`, `ChainSpec/GenesisConfig`
