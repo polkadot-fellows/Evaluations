@@ -23,7 +23,7 @@
 
 ## Argument
 
-I believe I have demonstrated both the technical depth and the collaborative maturity expected of a Rank II Fellow. My work consistently aligns with the Polkadot Fellowship’s core mission: ensuring the protocol's long-term safety and resilience while enabling its evolution. Below is a summary of my contributions across the most relevant domains, based on my previous retention arguments and ongoing work.
+I believe I have demonstrated both the technical depth and the collaborative maturity expected of a Proficient member. My work consistently aligns with the Polkadot Fellowship’s core mission: ensuring the protocol's long-term safety and resilience while enabling its evolution. Below is a summary of my contributions across the most relevant domains, based on my previous retention arguments and ongoing work.
 
 ### Bridges
 
