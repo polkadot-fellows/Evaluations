@@ -73,7 +73,7 @@ Beyond individual patches, I continue working on improving CI stability and cont
 ### Reflections and Motivation
 
 I proactively identify, create, and resolve issues across both the SDK and Fellows ecosystems. This includes contributing solutions to problems reported by external teams (e.g., Integritee, Encointer), and creating multiple mentoring tasks and "good first issues" to help onboard new contributors. My role at Parity has naturally evolved into one of **mentorship and delegation** - guiding contributors both inside and outside the organization, reviewing PRs across domains, and supporting upstream efforts in bridges, governance, and XCM.
-I am ready to take on the **greater responsibility** associated with Rank II: participating in technical decision-making, voting on promotions, and helping uphold the safety and direction of the Polkadot protocol.
+I am ready to take on the **greater responsibility** associated with Rank II: participating in technical decision-making and helping uphold the safety and direction of the Polkadot protocol.
 
 ###  References
 
