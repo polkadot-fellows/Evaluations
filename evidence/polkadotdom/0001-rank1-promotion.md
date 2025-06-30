@@ -11,7 +11,7 @@
 - Matrix username: @polkadotdom:matrix.org
 - Polkadot address: 1L66uQMKFnXKSZx9pCD5o56GvvP1i2Qns7CaS2AaKp9mnwc
 - Current rank: Candidate
-- Date of initial induction: 2025/05/06 (https://collectives.statescan.io/#/extrinsics/6306997-2)
+- Date of initial induction: [2025/05/06](https://collectives.statescan.io/#/extrinsics/6306997-2)
 - Date of last report: N/A
 - Area(s) of Expertise/Interest: FRAME, System Parachains
 
