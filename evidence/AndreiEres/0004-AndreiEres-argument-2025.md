@@ -28,7 +28,7 @@ During this reporting period, my primary focus was on the performance and stabil
 
 **Dispute Resilience:**
 - In May 2025, both Polkadot and Kusama experienced dispute storms. This highlighted the need for better spam prevention, monitoring, and alerting.
-- The investigation revealed that the disputes on Polkadot originated from a single validator suffering from disk corruption. To mitigate this, I implemented integrity checks for PVF artifacts before execution. See [PR \#8833](https://github.com/paritytech/polkadot-sdk/pull/8833) and follow-up  [PR #8908](https://github.com/paritytech/polkadot-sdk/pull/P8908).
+- The investigation revealed that the disputes on Polkadot originated from a single validator suffering from disk corruption. To mitigate this, I implemented integrity checks for PVF artifacts before execution. See [PR #8833](https://github.com/paritytech/polkadot-sdk/pull/8833) and follow-up  [PR #8908](https://github.com/paritytech/polkadot-sdk/pull/8908).
 - We observed high CPU usage in the dispute subsystems during finality lag. To tackle this, I created a subsystem benchmark for dispute participation, and I’m expanding it to include more scenarios. See [PR #8828](https://github.com/paritytech/polkadot-sdk/pull/8828).
 - We maintain a tool called polkadot-introspector to collect on-chain metrics about Polkadot performance. For this issue, I added tracking for dispute initiators and set up dispute alerts for our on-call rotation. For example, see [PR #887](https://github.com/paritytech/polkadot-introspector/pull/887).
 
