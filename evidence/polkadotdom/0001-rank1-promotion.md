@@ -49,7 +49,8 @@ The FRAME codebase is littered with derives and attributes intended to mark data
 I think this will be a real joy and I hope it makes the Substrate development journey more amenable to beginners.
 
 ### Honorable Mentions
-[Adjustable Inflation](https://github.com/polkadot-fellows/runtimes/pull/732)  
+[Adjustable Inflation](https://github.com/polkadot-fellows/runtimes/pull/732)
+[RFC 151](https://github.com/polkadot-fellows/RFCs/pull/151)
 and the dozen or so other PRs found across the...  
 [polkadot-sdk](https://github.com/paritytech/polkadot-sdk/issues?q=author%3Apolkadotdom)  
 [parity-scale-codec](https://github.com/paritytech/parity-scale-codec/pulls?q=author%3Apolkadotdom+)  
