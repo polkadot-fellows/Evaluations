@@ -26,11 +26,18 @@
 
 Over the past few months, I’ve been fully focused on designing and implementing the new collator protocol—the interface that enables communication between backing validators and collators.
 
-This is a critical protocol upgrade aimed at improving the reliability and resilience of the parachain backing process. It ensures that parachain liveness is maintained at all times, a key requirement as we prepare for the migration to Asset Hub.
+I am leading this critical protocol upgrade aimed at improving the reliability and resilience of the parachain backing process. It ensures that parachain liveness is maintained at all times, a key requirement as we prepare for the migration to Asset Hub (which makes parachain liveness even more important).
+The main feature of the protocol is that it adds a persistent reputation-based system for collators, which are used for prioritising connections and collation fetches.
 
-With major foundational pieces already merged—such as [the UMP primitives](https://github.com/paritytech/polkadot-sdk/pull/7955) and the [reputation-based peer manager](https://github.com/paritytech/polkadot-sdk/pull/8191)—I’ve shifted my focus to implementing the final core components needed to kick off the testing phase.
+With major foundational pieces (mostly authored in the last reporting period) already merged—such as [the UMP primitives](https://github.com/paritytech/polkadot-sdk/pull/7955) and the [reputation-based peer manager](https://github.com/paritytech/polkadot-sdk/pull/8191)—I’ve shifted my focus to implementing the final core components needed to kick off the testing phase.
 
-The ongoing work is centered on [this PR](https://github.com/paritytech/polkadot-sdk/pull/8541), which introduces the CollationManager and implements the main subsystem logic. The finish line is in sight, and the implementation will ship with comprehensive unit tests to ensure robustness.
+The ongoing work is centered on [this PR](https://github.com/paritytech/polkadot-sdk/pull/8541), which introduces the `CollationManager` (the component that keeps track of advertisements & collations, tracks their statuses and launches work - fetching or seconding) and implements the main subsystem logic (the code that glues together all components).
+The PR is pending review, some small enhancements, final touch-ups and some more testing. The finish line is in sight, and the implementation will ship with comprehensive unit tests to ensure robustness, aiming to be tested in a live testnet by the end of Q3.
+
+I have also authored a [temporary in-memory implementation of the reputation database](https://github.com/paritytech/polkadot-sdk/pull/8242), to unblock testing until the persistent, production-ready
+DB implementation is done.
+
+Besides my engineering work, I have been delegating and providing support to other engineers contributing to the collator protocol.
 
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
