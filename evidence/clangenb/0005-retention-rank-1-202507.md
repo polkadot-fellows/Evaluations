@@ -32,7 +32,7 @@ The genesis-preset provides sensible defaults for genesis configurations, but un
 We've already adopted genesis-presets in polkadot-parachain-bin, but some newer runtimes were still using the old approach—defining the full JSON on the node side. I’ve [migrated](https://github.com/paritytech/polkadot-sdk/pull/8426) penpal, rococo-parachain-runtime, and yet-another-parachain-runtime to the new paradigm.
 
 ### Add Remote XCM V5 transfer
-For Encointer, I [implemented](https://github.com/paritytech/polkadot-sdk/pull/9173) a concept that allows a pallet managing multiple accounts on one chain to perform asset transfers on another chain—on behalf of those accounts—using the  DescendOrigin XCM instruction. Since this pattern is useful for any pallet that needs flexible cross-chain fund management, I [proposed upstreaming it](https://github.com/paritytech/polkadot-sdk/issues/9170) and have already started [working on it](https://github.com/paritytech/polkadot-sdk/pull/9173).
+For Encointer, I [implemented](https://github.com/paritytech/polkadot-sdk/pull/9173) a concept that allows a pallet managing multiple accounts on one chain to perform asset transfers on another chain—on behalf of those accounts—using the DescendOrigin XCM instruction. Since this pattern is useful for any pallet that needs flexible cross-chain fund management, I [proposed upstreaming it](https://github.com/paritytech/polkadot-sdk/issues/9170) and have already started [working on it](https://github.com/paritytech/polkadot-sdk/pull/9173).
 
 #### Related Work
 The existing PayOverXCM type implements the Pay trait, but it has two limitations:
