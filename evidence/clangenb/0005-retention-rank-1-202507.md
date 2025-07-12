@@ -1,4 +1,4 @@
-# Argument-0004: Retention at Rank 1
+# Argument-0005: Retention at Rank 1
 
 |                 |                                 |
 | --------------- |---------------------------------|
@@ -26,10 +26,10 @@
 My argument mostly revolves around PRs and issues that I filed in the Polkadot-SDK repository, which will be elaborated below.
 
 ### Allow genesis-presets to be patched.
-* https://github.com/paritytech/polkadot-sdk/pull/8323
+The genesis-preset provides sensible defaults for genesis configurations, but until now, it couldn't be modified—making — small adjustments impossible. I’ve implemented support for [patching genesis-presets](https://github.com/paritytech/polkadot-sdk/pull/8323), and in the same PR, removed native runtime calls from staging-node-cli. As a reminder, we're aiming to eliminate native runtime dependencies on the node side as we move towards an omni-node architecture that relies solely on the WASM blob.
 
 ### Add genesis-presets for the remaining runtimes in the polkadot-parachain-bin
-* https://github.com/paritytech/polkadot-sdk/pull/8426
+We've already adopted genesis-presets in polkadot-parachain-bin, but some newer runtimes were still using the old approach—defining the full JSON on the node side. I’ve [migrated](https://github.com/paritytech/polkadot-sdk/pull/8426) penpal, rococo-parachain-runtime, and yet-another-parachain-runtime to the new paradigm.
 
 ### Add Remote XCM V5 transfer
 * https://github.com/paritytech/polkadot-sdk/pull/9173
