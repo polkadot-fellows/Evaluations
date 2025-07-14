@@ -37,7 +37,7 @@ I reviewed some other work such as the assets vesting pallet [PR](https://github
 ## Voting record
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|I  |90%   |N/A   | 0 |  |
+|I  |90%   |N/A   | I have voted on 0 out of 0 referenda in which I was eligible to vote. |  |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
