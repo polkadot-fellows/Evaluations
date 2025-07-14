@@ -10,7 +10,7 @@
 
 - Matrix username: `@alin:parity.io`
 - Polkadot address: `148f8D1P4CP2tV8JuaVHzEXQQgj3jBxEg3k9qZydPzkJjbQG`
-- Current rank: I
+- Current rank: II
 - Date of initial induction: 2024-04-26
 - Date of last report:  2025/04/16
 - Area(s) of Expertise/Interest: Parachains consensus, Elastic Scaling, Availability, Collator Protocol
