@@ -18,45 +18,42 @@
 
 ## Reporting period
 
-- Start date: 2024/05/10
+- Start date: 2024/04/11
 - End date: 2025/06/30
 
 
 ## Argument
 
+Hello, all! My name is Dom. I've been actively contributing to the Polkadot ecosystem since [April 11th, 2024](https://github.com/paritytech/polkadot-sdk/pull/4091) and I believe it's now time for me to take the next step.
+
 As a candidate seeking promotion to rank 1, I am charged with providing three clear examples of 'modest but substantial' contributions to the protocol. I will delineate these in order of perceived impact.
 
 ### RFC 150 - Voting While Delegating
-It has long been requested that a user be able to vote simultaneous to their delegating. I first proposed [RFC-150](https://github.com/PolkadotDom/RFCs/blob/dom/voting-while-delegating/text/0150-voting-while-delegating.md), then followed up shortly with the implementation [here](https://github.com/paritytech/polkadot-sdk/pull/9026).
+It has long been [requested](https://github.com/polkadot-fellows/RFCs/pull/35) that a user be able to vote simultaneous to their delegating. I first proposed [RFC-150](https://github.com/PolkadotDom/RFCs/blob/dom/voting-while-delegating/text/0150-voting-while-delegating.md), then followed up shortly with the implementation [here](https://github.com/paritytech/polkadot-sdk/pull/9026).
 
-It is my sincere hope that this allows our governance system to more accurately approximate the ground truth voter preferences function.
+I chose to work on this because I believe it will allow our governance system to more accurately approximate the ground truth voter preferences function. By increasing delegations and therefore voter turnout, it will ensure everyone is more accurately represented when decisions are made - the foundation of any democracy. I am hopeful it will meaningfully increase delegation rate within OpenGov.
 
 ### AHM Testing Help
 
-As we approached the AHM for Westend, we needed state tests for each of the pallets that we would be migrating. These functioned as a secondary assurance that all data was moving smoothly. I constructed the tests for several of the pallets, a few of which were complicated by state dependencies across pallets. Below are those contributions -
+As the ecosystem approached the AHM for Westend, the Parity team [needed state tests](https://github.com/polkadot-fellows/runtimes/issues/644) for each of the pallets that would be migrating from relay to AH. These were to function as a secondary assurance that all data was moving smoothly through XCM. I constructed the tests for the [pallet-bounties](https://github.com/polkadot-fellows/runtimes/pull/669), [pallet-referenda](https://github.com/polkadot-fellows/runtimes/pull/672), [pallet-scheduler](https://github.com/polkadot-fellows/runtimes/pull/680), and [pallet-staking/staking-async](https://github.com/polkadot-fellows/runtimes/pull/727) pallets, a few of which were complicated by cross pallet state dependencies.
 
-[pallet-bounties](https://github.com/polkadot-fellows/runtimes/pull/669)  
-[pallet-referenda](https://github.com/polkadot-fellows/runtimes/pull/672)  
-[pallet-scheduler](https://github.com/polkadot-fellows/runtimes/pull/680)  
-[pallet-staking/staking-async](https://github.com/polkadot-fellows/runtimes/pull/727)
-
-I'm happy to report that to my knowledge the state piping of these pallets went smoothly. Though there were some overall XCM issues.
+I felt this was an important use of time due to the immutability and difficult to amend nature of a finalized blockchain. It struck me very much as a 'measure twice, cut once' situation.. I am happy to report that the state piping of these pallets went smoothly.
 
 ### The `Stored` Procedural Macro
 
-The FRAME codebase is littered with derives and attributes intended to mark data items as suitable for runtime storage ([see example](https://github.com/paritytech/polkadot-sdk/blob/master/substrate/frame/conviction-voting/src/vote.rs#L239-L255)). This new attribute allows for consolidating all of those tags into a simpler and more intuitive format. In addition, it significantly lowers boilerplate throughout the codebase. The PR can be found [here](https://github.com/paritytech/polkadot-sdk/pull/8032).
+The FRAME codebase is littered with derives and attributes intended to [mark data items as suitable for runtime storage](https://github.com/paritytech/polkadot-sdk/blob/master/substrate/frame/conviction-voting/src/vote.rs#L239-L255). I personally recall being confused by these as a beginner and was subsequently stalled when my own storage items didn't work as expected.
 
-I think this will be a real joy and I hope it makes the Substrate development journey more amenable to beginners.
+The [new stored macro](https://github.com/paritytech/polkadot-sdk/pull/8032) allows for consolidating those tags into a simpler and more intuitive format. This will make FRAME much more amenable to beginners, and the immense reduction to boilerplate will serve us nicely.
 
 ### Honorable Mentions
-[Adjustable Inflation](https://github.com/polkadot-fellows/runtimes/pull/732)  
-[RFC 151](https://github.com/polkadot-fellows/RFCs/pull/151)  
-and the dozen or so other PRs found across the...  
-[polkadot-sdk](https://github.com/paritytech/polkadot-sdk/issues?q=author%3Apolkadotdom)  
-[parity-scale-codec](https://github.com/paritytech/parity-scale-codec/pulls?q=author%3Apolkadotdom+)  
-[try-runtime-cli](https://github.com/paritytech/try-runtime-cli/pulls?q=author%3Apolkadotdom+)  
-[parity-common](https://github.com/paritytech/parity-common/pulls?q=author%3Apolkadotdom+)  
-repos.
+
+I will speak on the following lightly, though each substantial in their own right.
+
+I set up the parameterization of yearly DOT emission in [Adjustable Inflation](https://github.com/polkadot-fellows/runtimes/pull/732) and engaged in [promulgating security measures](https://github.com/paritytech/polkadot-sdk/issues/8557). It is my belief that giving the people a voice in economic parameters is an important endeavor.
+
+I identified a signaling issue with our referenda system in [RFC 151, Crowdsourcing Decision Deposits](https://github.com/polkadot-fellows/RFCs/pull/151). I hope that this will lower the barrier to entry for ecosystem agents looking to enact change.
+
+I [added serialization to the BoundedBTreeMap](https://github.com/paritytech/parity-common/pull/870) data structure to enable its use in genesis storage. I hope that this will save time for those seeking the same functionality.
 
 ### On a more personal note
 
