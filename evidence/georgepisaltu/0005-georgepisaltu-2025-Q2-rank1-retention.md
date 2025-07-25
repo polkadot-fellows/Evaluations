@@ -37,8 +37,8 @@ currently being successfully deployed on private testnets where they undergo tes
 the process of preparing the release.
 
 On top of this, I am heavily involved in the design and implementation of the native decentralized
-stablecoin announced at the Web3 Summit earlier this month. The mechanism behind it will make use of the proof of personhood functionality delivered in the overall package the team has been
-working on.
+stablecoin announced at the Web3 Summit earlier this month. The mechanism behind it will make use of
+the proof of personhood functionality delivered in the overall package the team has been working on.
 
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
