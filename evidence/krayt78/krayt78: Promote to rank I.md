@@ -2,8 +2,8 @@
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| **Report Date** | Date of submission (YYYY/MM/DD)                                                             |
-| **Submitted by**| Ludo                                                                       |
+| **Report Date** | 2025/07/27                                                                                  |
+| **Submitted by**| Ludovic Domingues                                                                           |
 
 
 ## Member details
@@ -11,10 +11,11 @@
 - Matrix username: @krayt78:matrix.org
 - Polkadot address: 14AgwoPjcRiEEJgjfHmvAqkjdERCG26WEvQUoGLuBzcXKMS2
 - Current rank: Candidate
-- Date of initial induction:
-- Date of last report: 
+- Date of initial induction: 2024-06-18
+- Date of last report: N/A
 - Area(s) of Expertise/Interest: 
     - FRAME
+    - Runtime
 
 
 ## Reporting period
@@ -51,6 +52,8 @@ Below are my most relevant and impactful contributions:
 
 ➤ [#6925](https://github.com/paritytech/polkadot-sdk/pull/6925), [#6930](https://github.com/paritytech/polkadot-sdk/pull/6930),  
   [#6931](https://github.com/paritytech/polkadot-sdk/pull/6931), [#7069](https://github.com/paritytech/polkadot-sdk/pull/7069), [#8285](https://github.com/paritytech/polkadot-sdk/pull/8285)
+
+Other minor PRs can all be found [here](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3AKrayt78+)
 
 ## Voting record
 
