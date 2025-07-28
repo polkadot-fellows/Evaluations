@@ -29,31 +29,25 @@ Hi Everyone ! I am Ludo, ex game dev, web3 dev for 4 years in the EVM ecosystem,
 Since then, I have been contributing to the Polkadot SDK. I am now working at PBA as the technical program specialist. 
 Below are my most relevant and impactful contributions:
 
-**Added the option to ask for a deposit to be paid when setting session keys; previously, only the Existential Deposit was needed.**
+### 1. Improving Security & Economic Soundness: Session Key Deposit
 
-➤ [#7953](https://github.com/paritytech/polkadot-sdk/pull/7953)
+In [PR #7953](https://github.com/paritytech/polkadot-sdk/pull/7953), I implemented an optional deposit mechanism for setting session keys. This tackled a long-standing concern (raised as early as 2021) around the lack of economic cost for key spamming, which only required the Existential Deposit. My solution enables chains using `pallet-session` to configure a deposit via `Hold`, improving spam prevention and aligning with the ecosystem’s values of economic rationality and protection against misuse. This contribution responds directly to an issue open in the [☂️ AHM-Kusama] Tracking Issue for Staking ([#8764](https://github.com/paritytech/polkadot-sdk/issues/8764)) and is now available for parachains and system chains to adopt.
 
-**Fixed an oversight where Nominating on a non-existent validator would silently succeed.**
+### 2. Ensuring Runtime Correctness: Validator Nomination Sanity
 
-➤ [#8436](https://github.com/paritytech/polkadot-sdk/pull/8436)
+While collaborating on the async-staking pallet, I discovered that users could nominate non-existent validators without error. This silent failure could lead to user confusion and misconfigured nominations. I corrected this behavior in [PR #8436](https://github.com/paritytech/polkadot-sdk/pull/8436), ensuring the runtime returns an error when a validator does not exist. In doing so, I also had to update multiple unit tests that unintentionally relied on broken logic, with guidance from Kian and Paolo. This change strengthens the integrity of the staking system and improves the developer and user experience across the ecosystem.
 
-**Migrated multiple pallets to the new Benchmarking V2 syntax:**
+### 3. Ecosystem-Wide Benchmarking Refactors: FRAME Benchmarking V2
 
-➤ [#6564](https://github.com/paritytech/polkadot-sdk/pull/6564), [#6606](https://github.com/paritytech/polkadot-sdk/pull/6606), [#6607](https://github.com/paritytech/polkadot-sdk/pull/6607),  
-  [#6612](https://github.com/paritytech/polkadot-sdk/pull/6612), [#6613](https://github.com/paritytech/polkadot-sdk/pull/6613), [#6614](https://github.com/paritytech/polkadot-sdk/pull/6614),  
-  [#6615](https://github.com/paritytech/polkadot-sdk/pull/6615), [#6616](https://github.com/paritytech/polkadot-sdk/pull/6616), [#6617](https://github.com/paritytech/polkadot-sdk/pull/6617), [#6618](https://github.com/paritytech/polkadot-sdk/pull/6618)
+To help drive adoption of FRAME Benchmarking V2 (an initiative led by Oliver to modernize benchmarking syntax) I contributed refactors to 10+ pallets (e.g., [#6564](https://github.com/paritytech/polkadot-sdk/pull/6564), [#6612](https://github.com/paritytech/polkadot-sdk/pull/6612)). These contributions brought legacy code up to date with the new syntax, improving readability, consistency, and maintainability across the runtime.
 
-**Refactored and modularized oversized pallets to improve readability, maintainability, and long-term code health:**
+### 4. Refactoring Bloated Pallets: Long-Term Maintainability
 
-➤ [#6746](https://github.com/paritytech/polkadot-sdk/pull/6746), [#6779](https://github.com/paritytech/polkadot-sdk/pull/6779),  
-  [#6780](https://github.com/paritytech/polkadot-sdk/pull/6780), [#6783](https://github.com/paritytech/polkadot-sdk/pull/6783)
+At Shawn’s suggestion and following an observation by Xiliang, I took on the task of modularizing large pallets that had grown unwieldy (e.g., over 1000 LOC). I broke down key modules such as `staking` and `session` into logical subcomponents ([#6746](https://github.com/paritytech/polkadot-sdk/pull/6746), [#6780](https://github.com/paritytech/polkadot-sdk/pull/6780)), improving overall code clarity and easing onboarding for future contributors. This work aligns with the Fellowship’s expectations around insightful refactoring and technical stewardship.
 
-**Migrated several pallets to the umbrella crate structure:**
+### 5. DX-Focused Architecture Work: Umbrella Crate Migration
 
-➤ [#6925](https://github.com/paritytech/polkadot-sdk/pull/6925), [#6930](https://github.com/paritytech/polkadot-sdk/pull/6930),  
-  [#6931](https://github.com/paritytech/polkadot-sdk/pull/6931), [#7069](https://github.com/paritytech/polkadot-sdk/pull/7069), [#8285](https://github.com/paritytech/polkadot-sdk/pull/8285)
-
-Other minor PRs can all be found [here](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3AKrayt78+)
+In support of developer ergonomics, I helped migrate several pallets to the new `polkadot-sdk-frame` umbrella crate, ensuring unified prelude/type exports and simplifying imports for downstream users ([#6925](https://github.com/paritytech/polkadot-sdk/pull/6925), [#8285](https://github.com/paritytech/polkadot-sdk/pull/8285)). This effort was crucial in making FRAME more accessible to newcomers and reducing friction in SDK usage.
 
 ## Voting record
 
