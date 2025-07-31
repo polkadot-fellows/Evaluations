@@ -62,8 +62,7 @@ I stand ready to uphold Rank II's mandate: merging protocol expertise with ecosy
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|III|70%   |100%  |I have voted on x out of xx referenda in which I was eligible to vote (i.e xx % voting activity). Out of xx referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus x times (i.e xx % voting agreement).  |*This is an example.* |
-|I  |90%   |N/A   |   |  |
+|I  |90%   |N/A   | N/A  | No Rank-I votes this year; counts as 100 % activity. |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
