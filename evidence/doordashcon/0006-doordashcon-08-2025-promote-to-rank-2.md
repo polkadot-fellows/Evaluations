@@ -28,9 +28,22 @@ Since joining the Fellowship, I’ve focused on the collective parachain, empowe
 
 ### Collectives Parachain Contributions
 
-Built the Secretary Collective([`Polkadot`](https://github.com/polkadot-fellows/runtimes/pull/347) & [`Westend`](https://github.com/paritytech/polkadot-sdk/pull/9024)) with [`NoOpPoll`](https://github.com/paritytech/polkadot-sdk/pull/5311)—a trait that lets collectives opt out of voting mechanics.
+Implemented the Secretary Collective for [`Polkadot`](https://github.com/polkadot-fellows/runtimes/pull/347) and [`Westend`](https://github.com/paritytech/polkadot-sdk/pull/9024).
 
-My work on the collectives parachain extended to hardening core functionality - from fixing edge cases in [`MaxRank`](https://github.com/paritytech/polkadot-sdk/pull/3393) logic to implementing [`benchmark clamping`](https://github.com/paritytech/polkadot-sdk/pull/7720) that also revealed the need for a generic [`type converter`](https://github.com/paritytech/parity-common/pull/909) for the Get trait. Enabling type-safe transformations that extends its initial use case.
+Enabling other collectives(starting with the Polkadot Technical Fellowship) delegate operational and administrative tasks to a dedicated team/member in the collective. This separation of duties improves workflow efficiency by offloading non-decision-making responsibilities. Candidates are proposed and promoted by OpenGov or Rank 3+ Fellows and can later be extended to other collectives.
+
+Future implementations aim to empower secretaries to submit proposals on behalf of their respective collectives, provided the UI can support this further expansion of operational utility.
+
+
+Subsequently the [`NoOpPoll`](https://github.com/paritytech/polkadot-sdk/pull/5311) trait was introduced to eliminate unnecessary governance overhead for collectives that do not require internal referendum-based decision-making. While some pallets mandate the presence of a Polling trait, they do not always make use of its functionality.
+
+A practical application of `NoOpPoll` is in the Secretary Collective, which delegates decision-making(currently just onboarding) to external governance systems (e.g., OpenGov or the Fellowship) and therefore has no need for internal voting mechanics.
+
+My work on the collectives parachain extended to hardening core funtionlity from - Introducing the [`MaxRank`](https://github.com/paritytech/polkadot-sdk/pull/3393) configuration trait to `pallet-core-fellowship`, replacing hardcoded rank limits with dynamic constraints that enable flexible collective structures while maintaining backward compatibility through storage migrations.
+
+Implementing [rank clamping](https://github.com/paritytech/polkadot-sdk/pull/7720) in fellowship benchmarks to respect runtime-configured `MaxRank` boundaries, eliminating out-of-bounds rank generation and ensuring reliable weight calculations for constrained configurations.
+
+And Creating the generic [`GetInto`](https://github.com/paritytech/parity-common/pull/909) type converter implementing the Get trait, enabling type-safe transformations through Rust's Into trait and eliminating boilerplate conversion code across runtime configurations.
 
 
 ### Developer Relations & UX Improvements
