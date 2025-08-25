@@ -25,7 +25,7 @@
 
 During the reporting period:
 1. I identified an AHM-related issue with pallet-xcm's transfer_assets extrinsic: https://github.com/paritytech/polkadot-sdk/issues/9054.
-The issue breaks XCM transfers from Parachain A to Parachain B (when both of them aren't Asset Hub) after AHM.
+The issue breaks XCM transfers of DOT in some cases after AHM.
 NOTE: formally, this falls into the previous report period, though the previous retention argument was submitted before this issue was identified.
 2. The XCM NFT PR with the new XCM adapters that use granular NFT traits was merged: https://github.com/paritytech/polkadot-sdk/pull/4300.
 The new adapters are used in Westend Asset Hub in place of the old ones for pallet-uniques tokens.
