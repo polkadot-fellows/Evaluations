@@ -26,16 +26,19 @@ Over the past year in the Polkadot Fellowship, I have consistently contributed t
 therefore like to apply for promotion to Rank II. Weighing the requirements of Rank II responsibility against my 
 contributions this last year, I believe have completed all the requirements.
 
-I have been working on Polkadot full-time since 2021, authored an article on the Ethereum client of Snowbridge, and 
-contributed extensively to Snowbridge V2, where I am the primary author of the new Inbound Queue V2 pallet.
+I have been working on Polkadot full-time since 2021, authored an [article](https://medium.com/snowbridge/the-evolution-of-snowbridges-ethereum-light-client-an-engineering-journey-65e08db0825d) 
+on the Ethereum client of Snowbridge, and contributed extensively to Snowbridge V2, where I am the primary author of the new [Inbound Queue V2 pallet](https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge/pallets/inbound-queue-v2).
 
 ### Snowbridge V2
 
-My primary contribution this year has been Snowbridge V2, now part of the Polkadot SDK. I authored the Inbound Queue V2, 
-enabling users on Ethereum to send arbitrary XCM messages for execution on Polkadot. I also implemented a 
+My primary contribution this year has been Snowbridge V2, which is part of the Polkadot SDK. I authored the [Inbound Queue V2](https://github.com/paritytech/polkadot-sdk/pull/7402), 
+enabling users on Ethereum to send arbitrary XCM messages for execution on Polkadot. I also completed the off-chain
+components required for Snowbridge V2 in the Ethereum -> Polkadot direction, including the [relayers](https://github.com/Snowfork/snowbridge/pull/1341) and [SDK](https://github.com/Snowfork/snowbridge/pull/1540).
+
+I also implemented a 
 [mechanism](https://github.com/paritytech/polkadot-sdk/pull/8271) allowing unprofitable messages to be topped up with a 
-tip, ensuring they can still be relayed. Together, these features 
-make Snowbridge V2 more flexible, cost-efficient, and open to a broader set of use cases.
+tip, ensuring they can still be relayed. Together, these features make Snowbridge V2 more flexible, cost-efficient, and 
+open to a broader set of use cases.
 
 ### Ethereum Electra Upgrade
 
