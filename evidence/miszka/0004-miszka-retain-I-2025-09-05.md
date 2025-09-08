@@ -1,4 +1,4 @@
-# Evidence-0004: Retention at Rank I
+# Argument-0004: Retention at Rank I
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -21,7 +21,7 @@
 - Start date: 2025/06/13
 - End date: 2025/09/05
 
-## Evidence
+## Argument
 
 The fork-aware transaction pool became the default starting with the `2506-01` release. The new transaction pool is now in maintenance mode, and no active development is planned for it.  
 
