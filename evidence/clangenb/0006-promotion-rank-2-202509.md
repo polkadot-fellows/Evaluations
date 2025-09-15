@@ -1,4 +1,4 @@
-# Argument-0005: Promotion to Rank 2
+# Argument-0006: Promotion to Rank 2
 
 |                  |                                 |
 |------------------|---------------------------------|
