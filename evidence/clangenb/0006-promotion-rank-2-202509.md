@@ -41,7 +41,7 @@ target chain. My implementation generalizes this pattern, allowing the current t
 generic version and no redundant code has been produced.
 
 #### XCM Docs
-Through my ecosystem projects, I have gained significant hands-on experience with XCM. For reference, see [1](https://github.com/integritee-network/parachain/pull/325), [2](https://github.com/integritee-network/parachain/pull/341), [3](https://github.com/integritee-network/parachain/pull/344), and [4](https://github.com/integritee-network/parachain/pull/354), [5](https://github.com/polkadot-fellows/runtimes/pull/679).These contributions are not Fellowship-related, but they required me to work across nearly the entire XCM stack—a new domain for me in which I have learned a great deal. However...
+Through my ecosystem projects, I have gained significant hands-on experience with XCM. For reference (no need to if not interested), see [1](https://github.com/integritee-network/parachain/pull/325), [2](https://github.com/integritee-network/parachain/pull/341), [3](https://github.com/integritee-network/parachain/pull/344), and [4](https://github.com/integritee-network/parachain/pull/354), [5](https://github.com/polkadot-fellows/runtimes/pull/679).These contributions are not Fellowship-related, but they required me to work across nearly the entire XCM stack—a new domain for me in which I have learned a great deal. However...
 
 Looking at the open tracking issues for XCM documentation - [1](https://github.com/paritytech/polkadot-sdk/issues/9431), [2](https://github.com/paritytech/polkadot-sdk/issues/5207) - it is clear that much work remains. XCM remains both highly abstract and complex, and it took me considerable time, along with extensive debugging, to fully grasp the details. To help reduce the learning curve for others, I authored a comprehensive [XCM example](https://github.com/paritytech/polkadot-sdk/pull/9609) that demonstrates how to:
 
@@ -52,13 +52,26 @@ Looking at the open tracking issues for XCM documentation - [1](https://github.c
 
 This contribution should make it easier for developers to understand and apply XCM, especially those interested in how Asset Hub handles foreign assets and fee payment in foreign tokens, as well as how parachain teams can integrate their own assets into Asset Hub.
 
+### Add Genesis Presets for All Runtimes and update the genesis-presets mechanism
+This work began with the seemingly simple task of implementing a CI job to [run the frame-omni-bencher-overhead command for all runtimes](https://github.com/paritytech/polkadot-sdk/pull/7459). This job is important to ensure that overhead benchmarking with the omni-bencher continues to function properly. However, while preparing the PR, I discovered that most runtimes did not yet implement genesis-dev-presets, which were required for the job to succeed.
+
+For those unfamiliar: genesis presets define sensible defaults for development setups (e.g., assigning Alice as sudo). Rather than redundantly defining these defaults in the chain spec—as had been done previously—the new approach is to have the runtime itself provide these presets. This makes dev setups easier to manage, more consistent, and less error-prone.
+
+Most integrations were straightforward, and I implemented them through a sequence of PRs: [coretimes](https://github.com/paritytech/polkadot-sdk/pull/7476), [rorocos](https://github.com/paritytech/polkadot-sdk/pull/7477), [glutton](https://github.com/paritytech/polkadot-sdk/pull/7481), [kitchensink-runtime](https://github.com/paritytech/polkadot-sdk/pull/7741), and [penpal and yap](https://github.com/paritytech/polkadot-sdk/pull/8426).
+
+In some cases, however, deeper issues surfaced. The most significant was that genesis presets were static and could not be patched. As a result, the staging-node-cli still needed to call into the native runtime to configure a more sophisticated genesis setup. To address this, I implemented support for [patching genesis-presets](https://github.com/paritytech/polkadot-sdk/pull/8323). In the same PR, I also removed native runtime calls from the staging-node-cli.
+
+This aligns with our broader architectural goal: eliminating native runtime dependencies on the node side in favor of an omni-node architecture that relies solely on the WASM blob. My work brought us one step closer to that vision.
+
+I believe this contribution demonstrates my ability to take initiative, independently identify and solve problems, and proactively improve the architecture in ways that advance the long-term roadmap.
+
 ### Requirements for promotion
 
 1. Formalizing, implementing, or analytically improving a major component of the protocol
-    * I consider the generic XCM abstraction described above to fall into this category.
+    * I consider both, the generic XCM abstraction described above and the genesis presets journey to fall into this category.
 2. Publishing a long-form semi-technical article
     * I [presented](https://www.youtube.com/watch?v=Thf23T_tvGc&t=3s) Encointer at _Decoded Buenos Aires_.
-    * I [presented](https://www.youtube.com/watch?v=MKJ0_eQQDX0) Integritee at the _sub0 Asia in Bangkok_.
+    * I [presented](https://www.youtube.com/watch?v=MKJ0_eQQDX0) Integritee's verifiable randomness oracle at the _sub0 Asia in Bangkok_.
     * I plan to present again at _sub0 Buenos Aires_ in November.
     * Additionally, the XCM documentation example I authored serves as a long-form semi-technical contribution.
 
