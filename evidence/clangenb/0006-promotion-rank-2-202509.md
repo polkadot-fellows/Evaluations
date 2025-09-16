@@ -16,7 +16,7 @@
 
 ## Reporting period
 
-- Start date: 2025/07/11
+- Start date: 2024/07/02
 - End date: 2025/09/15
 
 ## Argument
@@ -41,23 +41,16 @@ target chain. My implementation generalizes this pattern, allowing the current t
 generic version and no redundant code has been produced.
 
 #### XCM Docs
+Through my ecosystem projects, I have gained significant hands-on experience with XCM. For reference, see [1](https://github.com/integritee-network/parachain/pull/325), [2](https://github.com/integritee-network/parachain/pull/341), [3](https://github.com/integritee-network/parachain/pull/344), and [4](https://github.com/integritee-network/parachain/pull/354), [5](https://github.com/polkadot-fellows/runtimes/pull/679).These contributions are not Fellowship-related, but they required me to work across nearly the entire XCM stack—a new domain for me in which I have learned a great deal. However...
 
-Through my ecosystem projects, I have built significant experience with XCM, including:
-
-* [Bridging TEER from Kusama to Polkadot](https://github.com/integritee-network/parachain/pull/325)
-* [Autoswap relay tokens for TEER in XCM execution](https://github.com/integritee-network/parachain/issues/329)
-* [Enabling Encointer to remotely spend treasury funds on Asset Hub](https://github.com/polkadot-fellows/runtimes/pull/679)
-* The Remote XCM V5 Transfer implementation mentioned above
-
-To share this knowledge with the community,
-I [contributed a comprehensive XCM example](https://github.com/paritytech/polkadot-sdk/pull/9609).This documentation
-demonstrates how to configure a runtime to:
+Looking at the open tracking issues for XCM documentation - [1](https://github.com/paritytech/polkadot-sdk/issues/9431), [2](https://github.com/paritytech/polkadot-sdk/issues/5207) - it is clear that much work remains. XCM remains both highly abstract and complex, and it took me considerable time, along with extensive debugging, to fully grasp the details. To help reduce the learning curve for others, I authored a comprehensive [XCM example](https://github.com/paritytech/polkadot-sdk/pull/9609) that demonstrates how to:
 
 * Allow other chains to register their native token as a foreign asset.
 * Set up asset conversion pools between foreign tokens and the chain’s native token.
 * Configure XCM to autoswap foreign assets into native assets for execution fees.
-* Walk through the complete on-chain flow in a clear, test-driven example showing the required dispatchables, call
-  order, and expected events.
+* Walk through the complete on-chain flow in a clear, test-driven example that shows the required dispatchables, call order, and expected events.
+
+This contribution should make it easier for developers to understand and apply XCM, especially those interested in how Asset Hub handles foreign assets and fee payment in foreign tokens, as well as how parachain teams can integrate their own assets into Asset Hub.
 
 ### Requirements for promotion
 
