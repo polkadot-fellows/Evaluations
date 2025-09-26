@@ -31,7 +31,7 @@ With the passing of [Ref 1710 - Hard Pressure Capped & Stepped Supply Schedule](
 
 ### RFC 150 - Voting While Delegating
 
-I have continued to refine [RFC-150](https://github.com/PolkadotDom/RFCs/blob/dom/voting-while-delegating/text/0150-voting-while-delegating.md) at the request of fellow members. I believe it led to a refinement in my thinking around what makes a good RFC and I hope to carry that into the future.
+I have continued to refine [RFC-150](https://github.com/PolkadotDom/RFCs/blob/dom/voting-while-delegating/text/0150-voting-while-delegating.md) at the request of fellow members, moving it closer to vote. I believe it led to a refinement in my thinking around what makes a good RFC and I hope to carry that into the future.
 
 ### Community & Indirect work
 
