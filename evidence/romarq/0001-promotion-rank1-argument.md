@@ -33,11 +33,11 @@ Joining the Fellowship allows me to more actively engaged with the Polkadot ecos
 #### [polkadot-sdk#8108](https://github.com/paritytech/polkadot-sdk/pull/9451)
 Fixed a bug in `pallet-balances` where the `reserve` and `can_reserve` methods from Currency trait were incorrectly preventing new reserves when an account's free balance was lower than its frozen balance, even if the usable balance was sufficient after accounting for the reserved balance.
 
-#### [polkadot-sdk#9638](https://github.com/paritytech/polkadot-sdk/pull/9638) and [polkadot-sdk#9451](https://github.com/paritytech/polkadot-sdk/pull/9451) and [polkadot-fellows#844](https://github.com/polkadot-fellows/runtimes/pull/844)
+#### [polkadot-sdk#9638](https://github.com/paritytech/polkadot-sdk/pull/9638) ; [polkadot-sdk#9451](https://github.com/paritytech/polkadot-sdk/pull/9451) ; [polkadot-fellows#844](https://github.com/polkadot-fellows/runtimes/pull/844)
 
 Officially deprecated `OnRuntimeUpgrade` parameter in `frame_executive::Executive` and updated all runtimes to use `SingleBlockMigrations` from `frame_system::Config`.
 
-#### [polkadot-sdk#9869](https://github.com/paritytech/polkadot-sdk/pull/9869) and [polkadot-sdk#9662](https://github.com/paritytech/polkadot-sdk/pull/9662)
+#### [polkadot-sdk#9869](https://github.com/paritytech/polkadot-sdk/pull/9869) ; [polkadot-sdk#9662](https://github.com/paritytech/polkadot-sdk/pull/9662)
 
 These pull requests removed deprecated and unused consensus-related code from the codebase, which reduced technical debt and simplifed the codebase for future maintenance.
 
