@@ -1,4 +1,4 @@
-# Argument-0003: Promotion to Rank 3
+# Argument-0006: Promotion to Rank 3
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -28,18 +28,54 @@ I have been part of the fellowship since August 2024 and I have been working on 
 since July 2023. During this time, I have continuously expanded my knowledge on everything substrate
 and FRAME and contributed to multiple layers of the stack. I have also designed and implemented new
 functionality to existing pallets, creating the Polkadot experience of tomorrow for our users
-through my contribution in leading the Proof of Personhood development. While I have been
-contributing to Polkadot core protocols or components since almost two years now, I was late to
-officially join the Fellowship, therefore showing a shorter tenure on-chain. I am applying here for
-a fast promote to rank 3 and hope existing Fellows agree with me that my existing contributions are
+through my contribution in leading the Proof of Personhood development. I am applying here for a
+fast promote to rank 3 and hope existing Fellows agree with me that my existing contributions are
 sufficient in breadth, depth and complexity to justify rank 3 in the Fellowship.
 
 ### Proof of Personhood
 
-I have been working on Proof of Personhood for almost 2 years now and we have already made public
-the first piece of the puzzle: [The People
+The rank 3 requirements in the manifesto state:
+
+> Either played a supporting role in the ideation and a primary role in the formalisation of a major
+protocol component; or played a supporting role in the code-design and a primary role in the
+implementation of a major protocol component.
+
+I have been working on Proof of Personhood for 2 years now and we have already made public the first
+piece of the puzzle: [The People
 Registry](https://forum.polkadot.network/t/the-people-registry/12749), as defined in
-`pallet-people`, and its adjacent structures.
+`pallet-people`, and its adjacent structures. I am the technical owner of the project and I am
+responsible for the technical design and implementation of all of its elements: the people registry,
+DIM1, DIM2, people incentive schemes, free transactions and the delivery of all of this to the
+Polkadot People chain, with more components planned and in the specification drafting phase to be
+delivered in the future.
+
+From the rank 3 expectations in the manifesto:
+
+> becoming a Fellow indicates the individual has enough knowledge and skill to build substantial
+protocol components (i.e. all but the major protocol components, e.g. a pallet or 2-10,000 line
+crate) alone and with high expectations that they will be completed correctly and to a high standard
+
+I am the core contributor of the people registry, DIM1, people incentive scheme. I am also the main
+contributor and advocate for the free transaction model through my work in Extrinsic Horizon. I led
+the effort to develop both DIM1 and was heavily involved in the design of DIM2, imminently available
+for general use with the launch of the Polkadot app. The DIMs' specifications will be made public
+with their introduction in a People chain runtime upgrade and, as such, I cannot go into the
+technical implementation and details in this letter.
+
+A rank 3 member is expected to show:
+
+> Demonstrable presence of knowledge sharing within the ecosystem.
+
+I have been holding internal knowledge sharing sessions with people working on current and future
+Polkadot core protocol elements as well as people building future applications on the core PoP
+technology. These discussions have not been public due to the reason mentioned above, but I have had
+multiple talks on:
+- the People registry and how it leverages ring VRF;
+- People authentication and the free transaction model it enables;
+- DIM1 and DIM2, from specification to implementation both on-chain and in integrating clients;
+- privacy-first reward schemes for people.
+
+#### The People Registry
 
 The People registry is kept in pallet-people, which stores and manages identifiers of individuals
 who have proven their personhood. It tracks their personal IDs, organizes their cryptographic keys
@@ -48,10 +84,14 @@ system also grooms the rings through defragmenting and ensures people are onboar
 preserve privacy.
 
 The People pallet implements an interface allowing any DIMs to recognize and suspend personhood. I
-led the effort to develop both DIM1 and was heavily involved in the design of DIM2, imminently
-available for general use with the launch of the Polkadot app. I created a dummy DIM to act as a
-control panel wherever the People registry is deployed in test environments, and will be extended to
-become a production ready tool for governance to easily interact with the people set.
+created a dummy DIM to act as a control panel wherever the People registry is deployed in test
+environments, and will be extended to become a production ready tool for governance to easily
+interact with the people set.
+
+The expectations of a rank 3 member are:
+
+> Occasionally innovative in API & code design, adapting/importing/inventing ideas that lead to effective
+solutions
 
 People are identified through a new cryptographic primitive, as defined in the
 [`verifiable`](https://github.com/paritytech/verifiable) crate. People get the privilege of running
@@ -66,21 +106,48 @@ other pallets to check if actions come from unique persons while preserving priv
 ring-based structure. I played a critical role in the design and reference implementations of the
 extension model we use to provide free transactions for recognized people.
 
+#### Incentives for bootstrapping the initial people set
+
 I designed and implemented an incentive mechanism for people who participate honestly and
 consistently in the activities available in the first Proof of Personhood release, from taking part
 in the recognition process themselves (going though the DIMs) to facilitating other people's
 application process (i.e. people fulfilling the role of oracle for candidates' evidence in DIM1).
 All of the rewards will be handed out periodically on-chain through payment rounds and distributed
-to participants proportional to their contribution to the system. The incentive provided to people
-is to always contribute, but especially so when there is low activity, since the reward share of a
-single participant will be greater.
+to participants proportional to their contribution to the system.
+
+As the rank 3 expectations in the manifesto state:
+
+> The individual should by now be thinking in a very much in a security-conscious, game-theoretic
+way, understanding that the systems whose design they are increasingly a part of must function
+adequately even with a modest minority of malicious users.
+
+The incentive provided to people is to always contribute, but especially so when there is low
+activity, since the reward share of a single participant will be greater. The pallet allows a
+privileged origin to set a certain amount as a reward for the ongoing payout round, so participants
+do not know ahead of time how much one vote is worth. This system avoids two distinct scenarios
+which lead to fewer votes (and less confidence in the outcome):
+
+- when the reward is fixed per vote, it can be exhausted early;
+- when the reward is known ahead of time and shared among all participants, after a certain number
+  of people vote, the reward may be too small for a participant to bother voting in that round,
+  making cases closer to the end of the payout round have a small turnout.
 
 The rewards will be made available to participants only through a privacy voucher mechanism. This
 will leverage the existing ring architecture to ensure that whoever is withdrawing a reward
 preserves their privacy, so long as they do not withdraw the funds to an account which is traceable
-to their identity. At this point, the voucher mechanism is not open to anyone to deposit money into
+to their identity.
+
+Again, referring to the manifesto expectation from before, the system will not allow people to
+withdraw their reward until the ring is full. This ensures that no single person can accidentally
+reveal their voucher's origin by submitting it and withdrawing immediately. At the same time, this
+forbids malicious users from doing the same thing in order to weaken the privacy guarantee of
+regular users by diluting the ring with exposed vouchers.
+
+At this point, the voucher mechanism is not open to anyone to deposit money into
 it; only the authorized pallets (i.e. the system) can submit funds as vouchers, but it is designed
 in order to be extensible to eventually allow anyone to use it permissionlessly.
+
+#### Free transactions with spam protection
 
 The origin system was designed to allow authorized entities to run free transactions in certain
 contexts. In addition to allowing all on-chain activities to be performed for free by proven people
@@ -131,6 +198,26 @@ substrate and FRAME and I wish to continue to do so. Aside from reviews, my othe
 contributions are in the identity pallet, where I pushed a refactor to decouple usernames from
 identities, along with a migration for existing instances of the pallet, and support for personal
 usernames, which are system allocated usernames for recognized people.
+
+### Considerations regarding my argument
+
+While I have been contributing to Polkadot core protocols or components for more than two years now,
+I was late to officially join the Fellowship, therefore showing a shorter tenure on-chain and
+applying for the fast promotion. I have previously made public a letter where I advocated for a rank
+2 promotion which was never put to a vote, so naturally some of the arguments there are present in
+this letter as well.
+
+Some of the project's main components will be made public at a later date, so I accept that the
+arguments which could be made in this letter may be incomplete, but I will support my case to
+fellows before this argument is put to a vote and answer any and all questions regarding my
+contributions.
+
+The launch of the project live on the Polkadot people chain is imminent. When that happens, I
+believe that the Fellowship will need a member of rank3+ as an owner and main contributor of these
+features, as I believe is the case concerning all other core protocol features. I have been in the
+position to lead the development of this project and wish to continue to do so and extend my role
+and my responsibilities in the Fellowship as a rank 3 member. This can only happen on the fast
+promotion path and I hope that the evidence I present in this letter justifies this.
 
 ### Publications
 
