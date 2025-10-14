@@ -28,20 +28,21 @@ Over the past few months, I have made various contributions to the Polkadot ecos
 
 Joining the Fellowship allows me to more actively engaged with the Polkadot ecosystem and help shape technical directions collaboratively. I believe my contributions reflect the expectations outlined for Rank 1 in the [Manifesto](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf).
 
-### Key Contribution Links
+## Key Contributions
 
-#### [polkadot-sdk#8108](https://github.com/paritytech/polkadot-sdk/pull/9451)
+### Fix `reserve` logic in `Currency` trait
+
 Fixed a bug in `pallet-balances` where the `reserve` and `can_reserve` methods from Currency trait were incorrectly preventing new reserves when an account's free balance was lower than its frozen balance, even if the usable balance was sufficient after accounting for the reserved balance.
 
-#### [polkadot-sdk#9638](https://github.com/paritytech/polkadot-sdk/pull/9638) ; [polkadot-sdk#9451](https://github.com/paritytech/polkadot-sdk/pull/9451) ; [polkadot-fellows#844](https://github.com/polkadot-fellows/runtimes/pull/844)
+### `OnRuntimeUpgrade` deprecation from frame_executive
 
 Officially deprecated `OnRuntimeUpgrade` parameter in `frame_executive::Executive` and updated all runtimes to use `SingleBlockMigrations` from `frame_system::Config`.
 
-#### [polkadot-sdk#9869](https://github.com/paritytech/polkadot-sdk/pull/9869) ; [polkadot-sdk#9662](https://github.com/paritytech/polkadot-sdk/pull/9662)
+### Removal of deprecated and unused consensus-related code
 
-These pull requests removed deprecated and unused consensus-related code from the codebase, which reduced technical debt and simplifed the codebase for future maintenance.
+Removed deprecated and unused consensus-related code from the codebase, which reduced technical debt and simplifed the codebase for future maintenance.
 
-[**Other merged PRs to polkadot-sdk**](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3ARomarQ+is%3Aclosed)  
+[**Merged PRs to polkadot-sdk**](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3ARomarQ+is%3Aclosed)  
 
 These pull requests include bug fixes, code refactoring, and minor feature enhancements, all of which have helped improve code quality and maintainability for other developers in the ecosystem.
 
