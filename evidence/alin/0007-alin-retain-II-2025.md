@@ -24,18 +24,18 @@
 
 ## Argument
 
-My primary focus earlier this year was the design and implementation of the new collator protocol — the interface that facilitates communication between backing validators and collators. This protocol is a key upgrade to improve the reliability and resilience of the parachain backing process and ensure liveness, particularly in support of the Asset Hub migration.
+During this reporting period, I continued work started this year on collator protocol resilience and began leading a new project critical to the successful launch of smart contracts on Polkadot Hub - `anvil-polkadot`.
 
-During previous periods, I designed and implemented the majority of the components underpinning this protocol. In this current reporting period, I continued this effort by continuing the [main subsystem logic](https://github.com/paritytech/polkadot-sdk/pull/8541).
-This is the final substantial component required to make the system functional and enable testing on live networks. Subsequently, we reprioritised in favour of a short-term solution to unblock the Asset Hub migration, implemented by @tdimitrov, for which I provided reviews and early guidance. I plan on offering additional support for the engineers that will continue my work on the collator protocol, which aims to be completed by the end of the year.
+On the new collator protocol, I further developed the [main subsystem logic](https://github.com/paritytech/polkadot-sdk/pull/8541), which is the final substantial component required to make the system functional and enable testing on live networks.
+Subsequently, we reprioritised the project in favour of a temporary solution to unblock the Asset Hub migration, implemented by @tdimitrov, for which I provided reviews and early guidance. I plan on offering additional support for the engineers that will continue my work on the collator protocol, which aims to be completed by the end of the year.
 
-However, my focus at the moment and for most of the reporting period was a new strategic project for the launch of EVM-compatible smart contracts on asset hub.
+My main focus during this period for the upcoming months is a new strategic project for the launch of EVM-compatible smart contracts on asset hub.
 
 I am leading a team of four engineers at Parity to implement an EVM-compatible test node built on Substrate — [`anvil-polkadot`](https://github.com/paritytech/foundry-polkadot/tree/master/crates/anvil-polkadot).
 This project is modeled after the widespread Ethereum `anvil` test node, but using a Substrate node with EVM contract support via `pallet-revive`.
 
-This effort is crucial to the developer experience for the upcoming Polkadot Hub, making it easy for smart contract teams to validate their code using familiar tooling.
-I authored the project’s [design and development plan](https://github.com/paritytech/foundry-polkadot/issues/209), wrote the [initial prototype](https://github.com/paritytech/foundry-polkadot/pull/220) and implemented foundational features such as seamless arbitrary state injection into running chains (PR https://github.com/paritytech/foundry-polkadot/pull/296). I also provide ongoing technical support and reviews for the team.
+This effort is crucial to the developer experience for the upcoming Polkadot Hub, making it easy for smart contract teams to validate their code using familiar tooling and with minimal modifications to their existing test suites.
+I authored the project’s [design and development plan](https://github.com/paritytech/foundry-polkadot/issues/209), wrote the [initial prototype](https://github.com/paritytech/foundry-polkadot/pull/220) and implemented foundational features such as seamless arbitrary state injection into running chains (PR https://github.com/paritytech/foundry-polkadot/pull/296). I also provide ongoing technical support and reviews for the team, clearing up technical roadblocks and disambiguating the problem space on all major work streams.
 
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
