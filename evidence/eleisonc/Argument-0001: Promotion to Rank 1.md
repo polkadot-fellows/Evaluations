@@ -13,7 +13,7 @@
 - Current rank: 0
 - Date of initial induction: 2025/10/20
 - Date of last report:  N/A
-- Area(s) of Expertise/Interest: Node SDK, Frame, Smart Contracts(Ink!v6).
+- Area(s) of Expertise/Interest: Node SDK, Frame, Smart Contracts(Ink!v6), Bridges, Benchmarking, Governance.
 
 
 ## Reporting period
@@ -29,7 +29,7 @@ and  [PBA-X Wave #4](https://app.kajabi.com/certificates/d22ebcca). Currently se
 Africa (Uganda), I've been contributing to the Polkadot SDK since November 2024, focusing on runtime infrastructure, XCM
 benchmarking infrastructure, and technical debt reduction.
 
-My Fellowship application is driven by the thirst for deeper protocol-level and blockchain involvement and nothing beats 
+My Fellowship application is driven by a thirst for deeper protocol-level and blockchain involvement and nothing beats 
 contributing to the solution itself. This is about building confidence through genuine implementation experience, not 
 just reading documentation. That hands-on knowledge naturally strengthens my ability to mentor when opportunities arise. 
 My contributions since November have been recognized by the Polkadot SDK developers community with tips and encouragement, 
