@@ -25,7 +25,7 @@
 
 
 ## Argument
-This period continued working on proof of personhood, this include writing the [pallet for lite people management](https://github.com/paritytech/individuality-public/tree/16fd57601bb7b3737514d2b15a2d49498acb9a07/pallets/people-lite), also wrote the [upgrade for the paseo runtime](https://github.com/paseo-network/runtimes/pull/301), it includes fee payment in HOLLAR and DOT and free transaction allowance for lite people.
+This period I continued working on proof of personhood, this include writing the [pallet for lite people management](https://github.com/paritytech/individuality-public/tree/16fd57601bb7b3737514d2b15a2d49498acb9a07/pallets/people-lite), also wrote the [upgrade for the paseo runtime](https://github.com/paseo-network/runtimes/pull/301), it includes fee payment in HOLLAR and DOT and free transaction allowance for lite people.
 I raised issues about the statement-store, the main one being that statements are never removed, I added the feature to remove statements from a specific account id to temporarily solve it, until we have a proper implementation with expiring statements.
 I reviewed some work in polkadot-sdk the major one was the pallet-multi-assets-bounties that is now merged.
 
