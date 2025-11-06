@@ -1,4 +1,4 @@
-# Evidence-0003: Retention at Rank III
+# Argument-0003: Retention at Rank III
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
@@ -22,8 +22,8 @@
 ## Argument
 
 In this reporting period, I continue being focused on getting `pallet_revive` and its supporting software ready
-to be deployed on Polkadot. In addition to the gas mapping and pre-compile SDK this mainly consisted of removing
-remaining incompatablities to Ethereum. I also spent a substantial amount of time coaching and onboarding new hires
+to be deployed on Polkadot. In addition to the gas mapping and pre-compile SDK, this mainly consisted of removing
+remaining incompatibilities to Ethereum. I also spent a substantial amount of time coaching and onboarding new hires
 through in-depth code reviews and github issues.
 
 ### API & Code Design
@@ -91,9 +91,9 @@ I bumped the fellowship runtimes to the latest SDK, added `pallet_revive` and cr
 ### Social Interaction
 
 This period my interactions mostly consisted of coaching or on on-boarding co-workers. At lot more people
-got involved with contracts this reporting period. This took a fair shair of my attention. Time well spent.
+got involved with contracts this reporting period. This took a fair share of my attention. Time well spent.
 
-After this crunch I intent to focus more on external contributions to support users and spread knowldge
+After this crunch I intent to focus more on external contributions to support users and spread knowledge
 beyond Parity.
 
 ## Voting Record
