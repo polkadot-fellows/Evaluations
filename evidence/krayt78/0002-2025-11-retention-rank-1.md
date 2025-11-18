@@ -40,8 +40,8 @@ Alongside direct SDK contributions, I have also been helping educate new develop
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|I  |90%   |N/A   |   |  |
-|II |80%   |N/A   | I have voted on 0 out of 0 referendum in which I was eligible to vote (i.e NaN% voting activity). Out of 0 referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus 0 times (i.e NaN% voting agreement).  |  |
+|I  |90%   |N/A   | I have voted on 0 out of 0 referendum in which I was eligible to vote (i.e NaN% voting activity). Out of 0 referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus 0 times (i.e NaN% voting agreement).  |  |
+|II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
