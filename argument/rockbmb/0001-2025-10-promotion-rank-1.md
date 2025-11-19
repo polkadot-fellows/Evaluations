@@ -64,17 +64,15 @@ Kusama/Polkadot networks.
 An extensive (but not exhaustive) list of pallets/components tested can be found [here](https://github.com/paritytech/ahm-dryrun?tab=readme-ov-file#e2e-tests).
 
 From this came some contributions to the Polkadot SDK:
-1. Added event emission to some pallets' extrinsics (identity, vesting, proxy, conviction voting, nomination pools)
-2. Improved unit tests in some pallets (e.g. vesting, staking)
-3. As a follow-up to the liquidity restriction issue (issue opened by Fellowship member [RomarQ](https://collectives.subsquare.io/user/12fiMKJP9t3gTFpHEXGYtdbZzwQciCpUcVFRnVXU4JYQLWvA/fellowship)), I created a multi-network regression [suite](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/377) engineered to fail on (combinations of) this problem, giving visibility into which networks are still affected. It can be applied to any runtime in which this error occurs (i.e. ones combining pallets using `Currency` traits and others using `Fungible`), and once the runtime consumes the upstream fix, the suite can be switched to ensure compliance.
+1. Added event emission to some pallets' extrinsics ([identity](https://github.com/paritytech/polkadot-sdk/pull/6261), [vesting](https://github.com/paritytech/polkadot-sdk/pull/8171), [proxy](https://github.com/paritytech/polkadot-sdk/pull/7995), [conviction voting](https://github.com/paritytech/polkadot-sdk/pull/6544), [nomination pools](https://github.com/paritytech/polkadot-sdk/pull/7377))
+2. Improved unit tests in some pallets (e.g. [vesting](https://github.com/paritytech/polkadot-sdk/pull/8171/files), [staking](https://github.com/paritytech/polkadot-sdk/pull/7553))
+3. As a follow-up to the liquidity restriction issue (issue opened by Fellowship member [RomarQ](https://collectives.subsquare.io/user/12fiMKJP9t3gTFpHEXGYtdbZzwQciCpUcVFRnVXU4JYQLWvA/fellowship)), I created a multi-network regression [suite](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/377) engineered to fail on (combinations of) this problem, giving visibility into which networks are still affected. It can be run against any runtime in which this error occurs (i.e. ones combining pallets using `Currency` traits and others using `Fungible`), and once the runtime consumes the upstream fix, the suite can be switched to ensure compliance.
 
 ### EIP-150 compliance in `pallet-revive` gas-metering
 
 Under the supervision of Fellowship Member [Alex](https://collectives.subsquare.io/user/15db5ksZgmhWE9U8MDq4wLKUdFivLVBybztWV8nmaJvv3NU1/fellowship), I worked on implementing [EIP-150](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-150.md) in `pallet-revive`'s gas metering.
 Ultimately, the [conclusion](https://github.com/paritytech/polkadot-sdk/pull/6890#issuecomment-2582594003) was that it was not possible at the time, as it removed the possibility of dry-running a
 contract call's execution -  this is essential to estimating the computational cost in Polkadot-native units (ref time/proof size).
-
-*Explain why your contributions in relation to Polkadot are worthy of retention/promotion. Refer to the terms in Section 6 of the [Manifesto](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf) and provide links to relevant content (e.g. code, articles, media, etc.) to show that you are meeting all the requirements.*
 
 ## Voting record
 
