@@ -71,8 +71,27 @@ From this came some contributions to the Polkadot SDK:
 ### EIP-150 compliance in `pallet-revive` gas-metering
 
 Under the supervision of Fellowship Member [Alex](https://collectives.subsquare.io/user/15db5ksZgmhWE9U8MDq4wLKUdFivLVBybztWV8nmaJvv3NU1/fellowship), I worked on implementing [EIP-150](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-150.md) in `pallet-revive`'s gas metering.
-Ultimately, the [conclusion](https://github.com/paritytech/polkadot-sdk/pull/6890#issuecomment-2582594003) was that it was not possible at the time, as it removed the possibility of dry-running a
-contract call's execution -  this is essential to estimating the computational cost in Polkadot-native units (ref time/proof size).
+
+### Short note about EIP-150
+
+EIP-150 enforces an artificial stack depth limit to contract calls by limiting the gas available to a child call to
+`63/64`ths of the parent's available gas at the time of the call.
+
+Otherwise, the call limit would be 1024. At 1023 calls, subsequent attempts to increase the call stack would silently
+fail, *but* continue contract execution, which opens a class of call depth attacks (e.g. maliciously call something 1023
+times before a certain call).
+
+With EIP-150, there'd be an (inversely) exponential decay in the amount of gas available: no gas -> contract call fails
+and changes would be reverted.
+
+---
+
+Ultimately, the [conclusion](https://github.com/paritytech/polkadot-sdk/pull/6890#issuecomment-2582594003) was that it
+was not possible at the time, as it removed the possibility of dry-running a contract call's execution -  this is
+essential to estimating the computational cost in Polkadot-native weight (ref time/proof size).
+
+Not being able to implement it in a straightforward way means that 1-to-1 parity with the EVM execution model will
+require an alternative gas metering solution than the one I attempted.
 
 ## Voting record
 
