@@ -80,7 +80,7 @@ The process for submitting Arguments is open to all existing Fellowship members 
 
 To submit an Argument, follow these steps:
   * Fork the `Evaluations` repository.
-  * Create a new folder in the `evidence` folder and rename it to match your Github username.
+  * Create a new folder in the `argument` folder and rename it to match your Github username.
   * Copy the `0000-argument-template.md` file into the new folder and rename it to match the title of your request.
   * Fill out the Argument template and open a PR.
   * Announce your Argument to the Fellowship and wait at least one week.
