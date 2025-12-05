@@ -45,7 +45,7 @@ that expertise through active SDK contributions and it will be a pleasure workin
 **Automated Omni Node testnet setup**
 I automated chain spec generation by using pre-built CI integration, streamlining development workflows and improving ZombieNet compatibility. This automation reduces setup friction for developers working on parachain node implementations and testing. By having an already generated Chain Spec File whose runtime version matches with  that of  Polkadot-sdk.
 
-PR: [Link](https://github.com/paritytech/polkadot-sdk/pull/6529#issuecomment-2555925387)
+PR: [Link](https://github.com/paritytech/polkadot-sdk/pull/6529)
 
 **Removal of ElasticScalingMVP feature gates**
 Collaborated with maintainers to remove outdated ElasticScalingMVP feature flag checks from backing and provisioner subsystems. Since elastic scaling became permanently enabled, these conditional checks were no longer necessary.
