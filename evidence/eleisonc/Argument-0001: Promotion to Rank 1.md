@@ -50,7 +50,7 @@ PR: [Link](https://github.com/paritytech/polkadot-sdk/pull/6529)
 **Removal of ElasticScalingMVP feature gates**
 Collaborated with maintainers to remove outdated ElasticScalingMVP feature flag checks from backing and provisioner subsystems. Since elastic scaling became permanently enabled, these conditional checks were no longer necessary.
 
-PR: [Link](https://github.com/paritytech/polkadot-sdk/issues/7211)
+PR: [Link](https://github.com/paritytech/polkadot-sdk/pull/7286)
 
 **Updated XCM benchmarking for system parachains**
 Reconfigured XCM benchmarking configurations across Rococo and Westend system parachains (Asset Hub, Bridge Hub, Collectives, Coretime, and People) to support sibling parachain delivery instead of relay chain delivery.This update aligns benchmarks with the current architecture, where asset transfers and other cross-chain operations occur between parachains rather than via the relay chain. It ensures more accurate performance measurements and realistic test conditions for parachain developers. 
