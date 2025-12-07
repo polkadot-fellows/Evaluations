@@ -30,7 +30,7 @@ Snowbridge V2, which brings major cost savings to bridge users, was released on-
 
 ### Ethereum Fusaka Upgrade
 
-I was responsible for Ethereum Fusaka support on Snowbridge. This covered [on-chain version support](https://github.com/paritytech/polkadot-sdk/pull/9938), [off-chain relayer support](https://github.com/Snowfork/snowbridge/pull/1592), coordinating a [runtime release](https://github.com/polkadot-fellows/runtimes/pull/1013) and the [Polkadot system chain runtime upgrade](https://polkadot.polkassembly.io/referenda/1797) referendums.
+I was responsible for Ethereum Fusaka support on Snowbridge. This covered [on-chain version support](https://github.com/paritytech/polkadot-sdk/pull/9938), [off-chain relayer support](https://github.com/Snowfork/snowbridge/pull/1592), coordinating a [runtime release](https://github.com/polkadot-fellows/runtimes/pull/1013) and the [Polkadot system chain runtime upgrade](https://polkadot.polkassembly.io/referenda/1797) referendums. The Snowbridge Ethereum client switched over seamless on 3 Dec 2025.
 
 ### Polkadot Social Account Recovery
 
