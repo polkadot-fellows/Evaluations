@@ -33,7 +33,8 @@ My Fellowship application is driven by a thirst for deeper protocol-level and bl
 contributing to the solution itself. This is about building confidence through genuine implementation experience, not 
 just reading documentation. That hands-on knowledge naturally strengthens my ability to mentor when opportunities arise. 
 My contributions since November have been recognized by the Polkadot SDK developers community with tips and encouragement, 
-demonstrating this commitment.
+demonstrating this commitment. I have also started working on a new Polkadot SDK [Link](https://github.com/paritytech/polkadot-sdk/issues/8869), 
+but life has been chaotic lately. I had to take a break. However, I plan to finish this before the end of December or Early January.
 
 PBA-X provided foundational knowledge in blockchain architecture, tokenomics, and game theory that goes beyond just 
 Rust for blockchain. I immediately applied this at the [Polkadot Africa (Uganda) workshop for Sub0](https://x.com/KamalaImmac/status/1974558670303473682), 
