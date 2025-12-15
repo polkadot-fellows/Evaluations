@@ -42,11 +42,13 @@ https://github.com/PolkadotOpenSourceGrants/apply/pull/46#issuecomment-352991190
 https://github.com/w3f/Grants-Program/pull/2603/files
 https://github.com/PolkadotOpenSourceGrants/delivery/pull/8
 
+5. I reviewed RFC 156 on BLS host functions:
+https://github.com/polkadot-fellows/RFCs/pull/156
 
-5. I gave a talk on the merits of decentralization: 
+6. I gave a talk on the merits of decentralization: 
 https://cfp.openfest.org/openfest-2025/talk/PNBMQV/
 
-6. I regularly attended the OpenDev calls. I guess this is verifiable on Youtube: https://www.youtube.com/playlist?list=PLtyd7v_I7PGlDJCCCLGLjJ0yv33JAEE_-
+7. I regularly attended the OpenDev calls. I guess this is verifiable on Youtube: https://www.youtube.com/playlist?list=PLtyd7v_I7PGlDJCCCLGLjJ0yv33JAEE_-
 
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.* 
