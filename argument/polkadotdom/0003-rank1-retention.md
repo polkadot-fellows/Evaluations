@@ -21,6 +21,8 @@
 - Start date: 2025/09/25
 - End date: 2025/12/19
 
+## Argument
+
 ### 'Hard Pressure' Issuance Model
 
 This period I continued my work alongside Kian, Oliver, and Paolo to complete the new Hard Pressure issuance model enacted in [Ref 1710 - Hard Pressure Capped & Stepped Supply Schedule](https://polkadot.subsquare.io/referenda/1710). This involved addressing several security considerations that served to bolster the implementation. I am happy to report that by the time it was audited, SRLabs found no issues with the logic. Now merged, the new code is on its way to a runtime release.
