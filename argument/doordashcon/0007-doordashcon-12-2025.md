@@ -23,24 +23,16 @@
 ## Argument
 During this reporting period I have made contributions to FRAME infrastructre, focusing on enhancing observability, improving treasury functionality and strengthening developer tooling.
 
-### 1. Enhancing Multi-Block Migration Observability and Tooling
-I Implemented an enhancement to the multi-block migration framework that improves chain observability and developer experience. This [contribution](https://github.com/paritytech/polkadot-sdk/pull/9461) introduces the ability for multi-block migrations to declare which storage prefixes will be modified, enabling external tooling and monitoring systems to identify potentially affected state during migration execution.
-
-Improvements include exposing migrating prefixes through the `migrating_prefixes()` method in the `SteppedMigrations` trait, which allows migrations to declare their storage impact. This work also introduced comprehensive status reporting via the view functions; `ongoing_status()`, `progress()`, `affected_prefixes()` and `status()` that provide real-time insights into migration state. 
-
-These changes Provide runtime developers with neccessary visibility into migration progress and affected storage prefixes, ensuring consistency across all migration types, including single migrations and tuple collections, with thorough testing for various migration configurations and failure scenerios.
-
+### 1. Multi-Block Migration Observability and Tooling
+Enhancing the [multi-block migration framework](https://github.com/paritytech/polkadot-sdk/pull/9461) with improved transparency and tooling support during runtime upgrades. This work enables external monitoring systems and developers to easily identify which parts of the chain’s storage are affected by a migration, reducing operational risk and improving the safety and observability of network upgrades. These improvements help teams coordinate upgrades more effectively and give the community greater confidence during migration processes.
 
 ### 2. Treasury Payout System Enhancement for Asset Categories
-I am working on enabling the [treasury pallet](https://github.com/paritytech/polkadot-sdk/pull/10381) `spend` from an asset category rather than just a specific `asset_kind`, This work extends `SpendAsset` to support a new `Category` variant, enabling tracks define spending in bytes(i.e. b"USD*") rather than specific asset IDs. 
-It extends `PaymentState` to handle multiple payment executions and retry partial executions during payout, intorducing `PaymentExecution` for single and multiple payments to a single benefitiary during payouts and also `AssetCategoryManager` trait that provides category membership and balance checking during payouts, mainitaining backward compatibility with existing single `asset_kind` spending.  
-
+I am working on extending the [treasury pallet](https://github.com/paritytech/polkadot-sdk/pull/10381) to support spending from asset categories. This allows governance tracks to define spending policies in broader terms (e.g., b"USD*" rather than a single asset ID), making treasury management more flexible, future-proof, and easier to administer in multi-asset environments. This upgrade maintains full backward compatibility while paving the way for more sophisticated treasury operations as the ecosystem grows.
 
 ### 3. Transaction Chain Batching Implementation
 [Transaction chain batching feature](https://github.com/paritytech/polkadot-sdk/pull/10234) addresses a longstanding request for transaction composition in FRAME. This feature enables the output of one transaction to serve as input for subsequesnt transactions within the same batch call.
 
-This implementaion introduces #[pallet::capture_for_chain_batch] *still workshoping the name*, that can be applied to event enums, along with field-level #[chain_batch(capture = "name")] attriibutes to specify which event fields should be captured for reuse.
-This system automatically captures specified event data into a dipatch context during event deposition, making these items available for subsequent transactions in the chain. Making modifications to the procedural macro system, extending the event parsing and expansion logic to handle the new capture sematics while maintaining full backward compatibility.
+By capturing specified event data into a dispatch context during event emission, these items become available for subsequent transactions in the chain. This extends the event parsing and expansion logic to handle the new capture semantics while maintaining full backward compatibility.
 
 ### Advocacy
 Championing the shift from passive ledgers to self-executing protocols. The Task API has the potential to move operations from passive ledger execution to condition based automations in permissionless systems without compromising security, privacy or performance.
