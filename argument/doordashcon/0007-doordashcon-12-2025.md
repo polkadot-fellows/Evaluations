@@ -21,7 +21,7 @@
 - End date: 2025/12/27
 
 ## Argument
-During this reporting period I have made contributions to FRAME infrastructre, focusing on enhancing observability, improving treasury functionality and strengthening developer tooling.
+During this reporting period I have made contributions to FRAME infrastructure, focusing on enhancing observability, improving treasury functionality and strengthening developer tooling.
 
 ### 1. Multi-Block Migration Observability and Tooling
 Enhancing the [multi-block migration framework](https://github.com/paritytech/polkadot-sdk/pull/9461) with improved transparency and tooling support during runtime upgrades. This work enables external monitoring systems and developers to easily identify which parts of the chain’s storage are affected by a migration, reducing operational risk and improving the safety and observability of network upgrades. These improvements help teams coordinate upgrades more effectively and give the community greater confidence during migration processes.
