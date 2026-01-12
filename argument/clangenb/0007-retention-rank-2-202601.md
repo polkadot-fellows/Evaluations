@@ -56,8 +56,8 @@ Lastly, drawing on my accumulated development experience and operational knowled
 
 | Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |------|----------------------|----------------------|----------------------------|----------|
-| I    | 90%                  | N/A                  | No eligible referenda      |          |
-| II   | 80%                  | N/A                  |                            |          |
+| I    | 90%                  | N/A                  |                            |          |
+| II   | 80%                  | N/A                  | No eligible referenda      |          |
 | III  | 70%                  | 100%                 |                            |          |
 | IV   | 60%                  | 90%                  |                            |          |
 | V    | 50%                  | 80%                  |                            |          |
