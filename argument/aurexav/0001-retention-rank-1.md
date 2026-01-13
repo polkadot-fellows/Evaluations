@@ -11,7 +11,7 @@
 - Matrix username: @aurexav:matrix.org
 - Polkadot address: 156HGo9setPcU2qhFMVWLkcmtCEGySLwNqa3DaEiYSWtte4Y
 - Current rank: I
-- Date of initial induction: Seeding (2022/11/21)
+- Date of initial induction: Seeding
 - Date of last report: N/A
 - Area(s) of Expertise/Interest: FRAME / pallets / governance / runtime tooling
 
@@ -84,8 +84,8 @@ This quarter I focused on protocol reliability and developer ergonomics in Polka
 
 ### Ecosystem / Grants (W3F)
 
-- **Polkagent (Application):** tooling that turns Substrate metadata into a small, stable macro-tool surface and planner for safer chain data access; supports developer and operator workflows.
-  https://github.com/w3f/Grants-Program/pull/2686
+- **Subalfred (Application):** Substrate developer toolbox focused on improving developer experience and speeding up development/debugging, with CLI helpers such as key utilities, state export, and RPC shortcuts.
+  https://github.com/w3f/Grants-Program/pull/1158
 - **Polkadot Runtime Releaser (Application):** an automated runtime release pipeline to reduce operational risk during upgrades.
   https://github.com/w3f/Grants-Program/pull/2373
 - **Polkadot Runtime Releaser (Amendment):** updated deliverables to align with real-world release workflows and simplify the toolchain.
@@ -117,4 +117,3 @@ This quarter I focused on protocol reliability and developer ergonomics in Polka
 - [ ] Concern(s):
 
 - [ ] Comment(s):
-
