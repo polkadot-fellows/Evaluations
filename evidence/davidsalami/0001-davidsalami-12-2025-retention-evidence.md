@@ -45,6 +45,11 @@ https://app.uniswap.org/explore/tokens/arbitrum/0x8d010bf9c26881788b4e6bf5fd1bdc
 * My team and I are currently working on a more native Hyperbridge integration for Polkadot Hub that will increase the efficiency and reduce latency of consensus updates to the Polkadot Hub  
 https://github.com/paritytech/polkadot-sdk/pull/10140 - A PR from the Hyperbridge Team which adds an Inherent that would handle Hyperbridge Consensus Updates to the Polkadot Hub
 
+
+### **Contributions to Polakdot-sdk**
+
+I implemented EIP-7702 for pallet-revive - https://github.com/paritytech/polkadot-sdk/pull/10851
+
 ---
 
 ## Voting record
