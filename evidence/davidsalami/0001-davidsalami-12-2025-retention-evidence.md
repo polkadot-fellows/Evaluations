@@ -46,9 +46,9 @@ https://app.uniswap.org/explore/tokens/arbitrum/0x8d010bf9c26881788b4e6bf5fd1bdc
 https://github.com/paritytech/polkadot-sdk/pull/10140 - A PR from the Hyperbridge Team which adds an Inherent that would handle Hyperbridge Consensus Updates to the Polkadot Hub
 
 
-### **Contributions to Polakdot-sdk**
+### **Direct Contributions to Polkadot-sdk**
 
-I implemented EIP-7702 for pallet-revive - https://github.com/paritytech/polkadot-sdk/pull/10851
+* I have a PR under review for a spec compliant EIP-7702  implementation for pallet-revive. This will enable Polkadot Hub support account abstraction for EOAs - https://github.com/paritytech/polkadot-sdk/pull/10851
 
 ---
 
