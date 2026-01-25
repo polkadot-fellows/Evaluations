@@ -12,13 +12,13 @@
 - Polkadot address: `1682A5hxfiS1Kn1jrUnMYv14T9EuEnsgnBbujGfYbeEbSK3w`
 - Current rank: 3
 - Date of initial induction: 2024/01/08
-- Date of last report: 2025/04/22
+- Date of last report: 2025/07/10
 - Area(s) of Expertise/Interest: `Cumulus Node`, `Substrate Node`, `Parachain Authoring`, `Weight`
 
 
 ## Reporting period
 
-- Start date: 2025/07/25
+- Start date: 2025/07/10
 - End date: 2026/01/25
 
 
