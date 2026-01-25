@@ -61,8 +61,6 @@ I provided extensive code reviews across repositories:
 
 ## Voting record
 
-*Provide your voting record in relation to required thresholds for your rank.*
-
 | Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 | ----- | ------------------- | -------------------- | -------------------------- | -------- |
 | I     | 90%                 | N/A                  |                            |          |
