@@ -10,7 +10,7 @@
 
 - Matrix username: `@george.pisaltu:parity.io`
 - Polkadot address: `128pmEUBSGjGeXZXNaAmomAJgVn77L74YT7Zdjd3fP63HWNP`
-- Current rank: `1`
+- Current rank: `2`
 - Date of initial induction: `2024/08/16`
 - Date of last report: `2025/10/16`
 - Area(s) of Expertise/Interest: `Proof of Personhood, System Parachains, FRAME`
