@@ -25,7 +25,7 @@
 
 
 ## Argument
-I have worked on the Polkadot SDK from 2019–2022 and from 2024 to the present.
+I have worked on the Polkadot SDK from 2019–2022 and from August 2024 to the present.
 
 In the former period, I implemented various features and improvements to the FRAME APIs. This work is still in the current code of the Polkadot SDK, and I regularly review the changes made to it; therefore, I think my expertise on the foundation of the Polkadot SDK is valuable to Polkadot. During this former period, I achieved the following:
 I rewrote the `decl_*` macros into the new `pallet` macros, which substantially improved the developer experience (https://github.com/paritytech/substrate/pull/6877).
