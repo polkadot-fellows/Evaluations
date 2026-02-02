@@ -25,7 +25,7 @@
 ## Argument
 
 
-Over the recent months, my focus has been primarily on **low-latency networking initiatives** within the Substrate ecosystem. My key achievement during this period was enabling Elastic Scaling with 3 cores for the Kusama and Polkadot Asset Hubs. In addition, I have remained a core contributor to litep2p, focusing on critical fixes and reviewing the ongoing WebRTC implementation.
+Over the recent months, my focus has been primarily on **low-latency networking initiatives** within the Polkadot ecosystem. My key achievement during this period was enabling Elastic Scaling with 3 cores for the Kusama and Polkadot Asset Hubs. In addition, I have remained a core contributor to litep2p, focusing on critical fixes and reviewing the ongoing WebRTC implementation.
 
 ### Elastic Scaling & Networking Optimization
 
