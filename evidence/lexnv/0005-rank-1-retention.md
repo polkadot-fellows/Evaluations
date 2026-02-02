@@ -38,7 +38,7 @@ To validate these changes, a fully manually managed chain was deployed on Paseo 
 
 ### Other work:
 
-Beyond these core projects, I continue to provide expert reviews for the Polkadot-SDK and contribute to relevant RFCs. I have also taken the initiative to support the WebRTC implementation in litep2p, ensuring that the integration remains smooth and efficient for the broader ecosystem.
+Beyond these core projects, I continue to provide reviews for the Polkadot-SDK in my area of expertise. I have also taken the initiative to support the WebRTC implementation in litep2p, ensuring that the integration remains smooth and efficient for the broader ecosystem.
 
 ## Voting record
 *Provide your voting record in relation to required thresholds for your rank.*
