@@ -25,6 +25,29 @@
 
 
 ## Argument
+I am applying for promotion to Rank IV. While I have not held Rank III for a full year, I believe my contributions over the last year were worthy of Rank III.
+
+To justify the promotion to Rank IV:
+
+> Either played a primary role in both the ideation and subsequent formalisation of a major protocol component; or played a primary role in the code-design and implementation of a major protocol component.
+
+I made many significant contributions to improve the feature-set and developer experience of the Polkadot SDK. I believe without them the development of pallet with FRAME and features in FRAME would be significantly slower. Works on this aspect include: the rewrite of `decl_*` macros into `pallet` macros which helped IDE support, readability, maintainability, the instantiable pallet which allowed the reuse of pallets with different configurations this is currently used in Asset-Hub for the critical definition of different Assets pallet, the counted storage map and iterable storage map without linked list which improved performance and usability, and is used is many pallets.
+and many improvements to `construct_runtime` and `parity-scale-codec` which improved ergonomics and safety.
+
+
+> The formalisation should be included in a well-respected peer-reviewed publication or the design implemented and deployed into the protocol.
+
+> The implementation should be subject to expert code-review and included in a functional implementation of the protocol.
+
+> Further presence of advocating or defending Polkadot outside of the ecosystem. A good benchmark would be one pre-advertised presentation on Polkadot to an industry-wide, academic or other such well-aligned audience outside of the ecosystem. It may also be fulfilled within other media of a similar weight (e.g. a professional journal, major news publication or academic article).
+
+
+
+
+
+I contributed to designs such as the new weight reclaim in the context of the new Transaction Extension pipeline, the API for `pallet::authorize`, and the mechanism for Origin Restriction. I implemented many features as listed above. I found genuine solutions for improving APIs and avoiding breaking changes, for example, for the `parity-scale-codec` compile-time check and the implementation of Transaction Extensions for more than 12 extensions. I provided numerous high-quality reviews, found and fixed issues in the codebase, and advocated for Polkadot by presenting the new Transaction Extension feature. I think my work on Proof-of-Personhood contributes to the future of Polkadot, as the project has been approved by the community in Referendum 1783 ([referenda](https://polkadot.subsquare.io/referenda/1783)). Also, although not committed yet, there is a discussion to explicitly add it to the Manifesto ([Issue](https://github.com/polkadot-fellows/help-center/issues/13)).
+
+
 I have worked on the Polkadot SDK from 2019–2022 and from August 2024 to the present.
 
 In the former period, I implemented various features and improvements to the FRAME APIs. This work is still in the current code of the Polkadot SDK, and I regularly review the changes made to it; therefore, I think my expertise on the foundation of the Polkadot SDK is valuable to Polkadot. During this former period, I achieved the following:
