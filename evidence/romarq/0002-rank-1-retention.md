@@ -46,6 +46,8 @@ I opened a PR for deprecating of the `ValidateUnsigned` trait and the `#[pallet:
 
 To support the deprecation efforts and provide a reference implementation, I updated `pallet-example-offchain-worker` to use the modern `TransactionExtension` API instead of the deprecated validation patterns ([**PR #10716**](https://github.com/paritytech/polkadot-sdk/pull/10716)). This work demonstrates the migration path for other pallets and helps developers understand how to adopt the new patterns. The PR was merged on January 21, 2026.
 
+I have also updated `pallet-mixnet` to use the modern `TransactionExtension` API instead of the deprecated validation patterns ([**PR #11010**](https://github.com/paritytech/polkadot-sdk/pull/11010)).
+
 ### XCM Improvements
 
 #### XCM Executor Optimization
