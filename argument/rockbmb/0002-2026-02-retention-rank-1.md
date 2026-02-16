@@ -48,8 +48,9 @@ I worked to improve the reliability and performance of PET in its own repository
 
 ### PET test coverage expansion
 
-1. Fixed an issue where the scheduler pallet would ignore calls scheduled manually via `dev_setStorage` because `incompleteSince` was not being set ([PET#515](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/515), merged) — this was a subtle interaction between Chopsticks' storage injection and the scheduler's `service_agendas` scanning logic, which eliminates one common cause of spuriously failing tests.
-    - This was minor, but in conjunction with the previous point, it should greatly improve overall reliability of PET in `runtimes`' CI.
+I fixed an issue where the scheduler pallet would ignore calls scheduled manually via `dev_setStorage` because `incompleteSince` was not being set ([PET#515](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/515), merged) — this was a subtle interaction between Chopsticks' storage injection and the scheduler's `service_agendas` scanning logic, which eliminates one common cause of spuriously failing tests.
+    - This was minor, and although PET is not included in the Manifesto's scope as Fellowship work, this contribution should be considered in
+      combination with the previous point: an effort to improve overall reliability of PET in `runtimes`' CI.
 
 ## Voting record
 
