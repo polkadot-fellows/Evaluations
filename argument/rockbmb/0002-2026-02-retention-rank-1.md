@@ -34,6 +34,10 @@ I contributed improvements to pallet testing and SDK maintenance:
 2. Added tests for `SenderInSignatories`/`SignatoriesOutOfOrder` error cases in `pallet-multisig` and clarifying notes to `approve_as_multi`/`as_multi` comments ([#10843](https://github.com/paritytech/polkadot-sdk/pull/10843), merged). This was a follow-up from PET end-to-end testing ([PET#305](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/305), [PET#323](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/323)).
 3. Reworked the remote externality child key retrieval test, which was failing since the proxy pallet has no child storages ([#10866](https://github.com/paritytech/polkadot-sdk/pull/10866), merged).
 
+### `try-runtime-cli` maintenance
+
+In line with my focus on testing, I volunteered to become the maintainer of [`try-runtime-cli`](https://github.com/paritytech/try-runtime-cli), a tool for validating runtime upgrades against live chain state. During this period I updated dependencies, fixed CI workflows and cut new releases ([PRs](https://github.com/paritytech/try-runtime-cli/pulls?q=is%3Apr+author%3Arockbmb+is%3Amerged+created%3A%3E%3D2025-12-01)).
+
 ### PET CI infrastructure improvements
 
 I worked to improve the reliability and performance of PET in its own repository, and in the Fellowship runtimes repository's CI pipeline, where it can resume its function as a regression testing tool across Polkadot and Kusama networks:
