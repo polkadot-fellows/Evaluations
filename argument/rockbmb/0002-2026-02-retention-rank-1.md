@@ -54,4 +54,11 @@ I fixed an issue where the scheduler pallet would ignore calls scheduled manuall
 
 ## Voting record
 
-N/A
+|  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
+|---|---|---|---|---|
+|I  |90%   |N/A   |N/A   |No referenda to vote on  |
+|II |80%   |N/A   |   |  |
+|III|70%   |100%  |   |  |
+|IV |60%   |90%   |   |  |
+|V  |50%   |80%   |   |  |
+|VI |40%   |70%   |   |  |
