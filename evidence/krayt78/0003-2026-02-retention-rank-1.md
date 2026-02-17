@@ -1,13 +1,27 @@
 # Argument-0003: Retention at Rank I
 
-|  |  |
-| --- | --- |
-| **Member** | Krayt78 |
-| **Rank** | I |
-| **Date** | 2026-02-17 |
-| **Purpose** | Retention at Rank I |
+|                 |                      |
+| --------------- | ---------------------|
+| **Report Date** | 2026-02-17           |
+| **Submitted by**| Ludovic Domingues    |
 
-## What I've been working on
+## Member details
+
+- Matrix username: @krayt78:matrix.org
+- Polkadot address: 14AgwoPjcRiEEJgjfHmvAqkjdERCG26WEvQUoGLuBzcXKMS2
+- Current rank: Rank I
+- Date of initial induction: 2024-06-18
+- Date of last report: 2025/11/17
+- Area(s) of Expertise/Interest: 
+    - FRAME
+    - Runtime
+
+## Reporting period
+
+- Start date: 2025/12/01
+- End date: 2026/03/01
+
+## Argument
 
 My main focus this period has been chipping away at the `Currency` → `fungible` migration tracked in [polkadot-sdk#226](https://github.com/paritytech/polkadot-sdk/issues/226). This is one of those long-running cleanup efforts that touches a lot of pallets - replacing the old `ReservableCurrency` / `LockableCurrency` patterns with the newer `fungible` hold/freeze model.
 
