@@ -25,13 +25,24 @@
 ## Argument
 
 During this reporting period, my primary focus was driving the collator protocol revamp to
-completion. I finalized @alindima’s work on the collation manager and the main subsystem.
+completion. I finalized @alindima’s work on the collation manager and the main subsystem
+([polkadot-sdk pr-8541](https://github.com/paritytech/polkadot-sdk/pull/8541)).
 Additionally, I developed a comprehensive test plan for the new implementation and a deployment
-strategy for rolling out the changes on Westend.
+strategy for rolling out the changes on Westend. During testing I discovered two new issues:
+- If `request_candidates_pending_availability` runtime call fails during reputation bumps extraction
+  the processing of the rest of the candidates was terminated. Fixed in
+  [polkadot-sdk pr-10610](https://github.com/paritytech/polkadot-sdk/pull/10610).
+- A service race in libp2p (which was also discovered by @lexnv). I helped with the fix validation
+  since it was easy to reproduce with the malus-collator. The fix by @lexnv is in
+  [litep2p pr-525](https://github.com/paritytech/litep2p/pull/525). Disclaimer: I have no
+  contribution for the fix itself.
 
 I also verified the protocol’s resilience against spam attacks and confirmed that the collator scoring
 system functions correctly. Both were validated using malus-collator and local zombienet-sdk tests.
 Finally, I applied minor fixes to malus-collator and extended it with a new malicious behavior.
+
+Since the collator revamp testing and malus-collator development are still not open sourced I can't
+give too much details about the actual test results and contributions to the Polkadot network.
 
 
 ## Voting record
