@@ -33,7 +33,7 @@ In addition to research work, I have been mentoring @dhirajs0 and @cirko33.
 
 With @dhirajs0, I have been working on governance-related topics. Together, we finalized and merged Multi-Asset Bounties for the upcoming Kusama and Polkadot releases ([runtimes/1070](https://github.com/polkadot-fellows/runtimes/pull/1070)). We have also proposed several improvements to existing governance mechanisms ([polkadot-sdk/11100](https://github.com/paritytech/polkadot-sdk/issues/11100), [polkadot-sdk/11199](https://github.com/paritytech/polkadot-sdk/issues/11199), [polkadot-sdk/11099](https://github.com/paritytech/polkadot-sdk/issues/11099)).
 
-I onboarded @cirko33 to the meta-transactions topic. We addressed several security issues in the current implementation and are now preparing practical guidelines for the community on how to configure meta-transactions in a runtime and how dApps can integrate with them.
+I onboarded @cirko33, who is new to the Polkadot ecosystem, to the meta-transactions topic. We addressed several security issues in the current implementation and are now preparing practical guidelines for the community on how to configure meta-transactions in a runtime and how dApps can integrate with them.
 
 ## Voting record
 
