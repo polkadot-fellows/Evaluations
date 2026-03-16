@@ -37,7 +37,7 @@ In March, I joined Parity's runtime team. Since joining, I have started working 
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|I  |90%   |N/A   |   |  |
+|I  |90%   |N/A   | No referenda to vote on  |  |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
