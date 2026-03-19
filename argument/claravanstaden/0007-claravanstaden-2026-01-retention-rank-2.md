@@ -24,7 +24,8 @@
 
 ## Argument
 
-Over the last 3 months, my contributions have been focused on Snowbridge V2 off-chain work and parachain integration, relayer decentralization, Polkadot SDK maintenance, and active code review across the Snowbridge and Polkadot ecosystem.
+The key themes of the last 3 months have been operational efficiency and keeping Snowbridge secure. My contributions have spanned Snowbridge V2 off-chain work and parachain integration, relayer infrastructure optimization, security triage and active code review across the Snowbridge and Polkadot ecosystem,
+as well as continuing to work on the Polkadot social recovery demo app, to expand my contributions outside of Snowbridge.
 
 ### Relayer Decentralization
 
@@ -52,7 +53,7 @@ During this period, I reviewed over 60 PRs across the Snowbridge, polkadot-sdk, 
 
 ### Polkadot Social Account Recovery
 
-I continued work on the [Polkadot Social Account Recovery](https://github.com/claravanstaden/polkadot-social-account-recovery) project, [migrating to PAPI and integrating view functions](https://github.com/claravanstaden/polkadot-social-account-recovery/pull/1), keeping the project aligned with the latest Polkadot tooling.
+Outside of Snowbridge, I continued work on the [Polkadot Social Account Recovery](https://github.com/claravanstaden/polkadot-social-account-recovery) project, [migrating to PAPI and integrating view functions](https://github.com/claravanstaden/polkadot-social-account-recovery/pull/1), keeping the project aligned with the latest Polkadot tooling. I also did a couple of in-depth review rounds of the recovery pallet changes in the Polkadot SDK.
 
 ### Conclusion
 
