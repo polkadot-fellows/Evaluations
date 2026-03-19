@@ -69,12 +69,3 @@ This period has been focused on hardening Snowbridge's production infrastructure
 | IV    |60%   |90%   |                                                          |         |
 | V     |50%   |80%   |                                                          |         |
 | VI    |40%   |70%   |                                                          |         |
-
-
-## Misc
-
-- [ ] Question(s):
-
-- [ ] Concern(s):
-
-- [ ] Comment(s):
