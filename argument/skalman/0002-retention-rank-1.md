@@ -17,8 +17,8 @@
 
 ## Reporting period
 
-- Start date: 2025/09/21
-- End date: 2025/12/20
+- Start date: 2025/12/21
+- End date: 2025/03/20
 
 ## Argument
 I continued my work working on introducing BLS signature into Polkadot which enables many applications including more efficient bridging and various protocols base on aDKG including unbiasable random beacon and encrypt to the future. I also worked on the cryptography related to "Ring Proof" and "Ring VRF" which makes the cryptographic base for the proof of personhood and anonymous voting in Polkadot.
@@ -66,7 +66,7 @@ https://github.com/paritytech/polkadot-sdk/pull/10763#pullrequestreview-37239628
 
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|I  |90%   |N/A   | at Rank I, I am not eligible to vote on referenda. |  |  |
+|I  |90%   |N/A   | at Rank I, I was not eligible to vote on any referendum in this period. |  |  |
 |II |80%   |N/A   |   |  |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
