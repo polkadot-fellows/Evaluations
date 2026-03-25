@@ -38,7 +38,7 @@ I have patched [offline-election-tool](https://github.com/clangenb/offline-elect
 
 ### Additional smaller contributions
 
-### Identify and fix slot-based collator panic (Observed on AHP)
+#### Identify and fix slot-based collator panic (Observed on AHP)
 
 When a parachain collator started with `--authoring=slot-based` and warp-synced from scratch, it panicked and shut down the node as it did not properly wait for aura to be ready. I identified this at a sys-collator I support and [fixed](https://github.com/paritytech/polkadot-sdk/pull/11381) it with the same mechanism that we use for the lookahead collators.
 
