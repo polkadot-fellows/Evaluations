@@ -41,14 +41,13 @@ I continue developing [asset category support](https://github.com/paritytech/pol
 Adapting the [Secretary salary paymaster](https://github.com/polkadot-fellows/runtimes/pull/1067) into the existing Fellowship salary account. Reducing operational complexity and maintenance overhead for the collective's payment systems.
 
 ### Account Transition Notice
-I would like to formally note the transition from the @Doordashcon GitHub and Matrix account to @jessechejieh for all future contributions and communications, as documented in the [Fellowship help-center](https://github.com/polkadot-fellows/runtimes/pull/1067). Both accounts represent my work, and all future contributions will be pushed exclusively from @jessechejieh in Q2 2026.
+I would like to formally note the transition from the @Doordashcon GitHub and Matrix account to @jessechejieh for all future contributions and communications, as documented in the [Fellowship help-center](polkadot-fellows/help-center#15). Both accounts represent my work, and all future contributions will be pushed exclusively from @jessechejieh in Q2 2026.
 
 ## Voting record
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
 |---|---|---|---|---|
-|III|70%   |100%  |I have voted on 0 out of 0 referenda in which I was eligible to vote (i.e undefined% voting activity). Out of 0 referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus 0 times (i.e undefined% voting agreement).  | No referenda requiring Rank II votes during this period |
 |I  |90%   |N/A   |   |  |
-|II |80%   |N/A   |   |  |
+|II|80%   |100%  |I have voted on 0 out of 0 referenda in which I was eligible to vote (i.e undefined% voting activity). Out of 0 referenda in which members of higher ranks were in complete agreement, I have voted in line with the consensus 0 times (i.e undefined% voting agreement).  | No referenda requiring Rank II votes during this period |
 |III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
