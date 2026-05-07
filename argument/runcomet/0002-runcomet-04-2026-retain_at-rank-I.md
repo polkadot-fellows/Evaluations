@@ -34,14 +34,6 @@ This work was not only essential for validating the whitelist pallet but also de
 ### NFT Collection Identity: Origin to Collection ID Mapping
 Introducing direct [origin to collection](https://github.com/paritytech/polkadot-sdk/pull/11212) mapping, eliminating the need to have wrapper pallets extract the ID and call `create_collection_with_id`. This feature will allow a collection to be created with an ID derived directly from the calling origin, solving a critical pain point for DAOs and other pallets that require a one to one mapping between an on-chain entity and a collection ID.
 
-### Coretime Observability: Introducing Sale ID
-Working on improving developer experience and observability of coretime sales with the intorduction of `sale_id`, a crucial [data point](https://github.com/paritytech/polkadot-sdk/pull/10188) that tracks individual coretime sales. This allows off-chain agents and UIs track and respond to individual sales with precision, eliminating the ambiguity that previously made coretime tooling unnecessarily difficult. 
-
-Developers building on top of coretime no longer face the friction of identifying which sale generated which event, enabling more responsive and reliable applications. This PR builds on prior work done and includes the necessary migration logic and comprehensive testing.
-
-### Governance Participation: Crowdsourced Decision Deposits
-To further strengthen governance participation and decentralization, I continue implementing  [crowdsourced decision deposits](https://github.com/paritytech/polkadot-sdk/pull/10715). Curently the full decision deposit is funded by a single address, a barrier to participation and a concentration of power. This feature allows multiple contributors to collectively fund the deposit up to a configurable maximum `MaxDepositContributions`, with the system automatically refunding lower contributions when higher ones arrive. Contributions are monotonically non-decreasing to prevent griefing.
-
 ### Network Reliability: Import Queue Backpressure
 On the networking front, I have taken ownership of adding [import queue backpressure](https://github.com/paritytech/polkadot-sdk/pull/11998), which addresses the unbounded growth of the block import channel between `BasicQueueHandle` and `BlockImportWorker` under heavy load. The goal is to propagate backpressure from the import queue all the way back to individual syncing strategies, so that nodes can slow down block requests from the network when they cannot import fast enough, improving stability and reliability under load.
 
