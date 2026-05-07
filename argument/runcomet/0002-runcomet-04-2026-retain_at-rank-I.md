@@ -32,7 +32,7 @@ Added full [E2E test coverage](https://github.com/open-web3-stack/polkadot-ecosy
 This work was not only essential for validating the whitelist pallet but also demonstrates how to unblock testing efforts by pragmatically configuring live runtime environments, leaving behind a reusable pattern for others to follow.
 
 ### NFT Collection Identity: Origin to Collection ID Mapping
-Introducing direct [origin to collection](https://github.com/paritytech/polkadot-sdk/pull/11212) mapping, eliminating the need to have wrapper pallets extract the ID and call `create_collection_with_id`. This feature will allow a collection to be created with an ID derived directly from the calling origin, solving a critical pain point for DAOs and other pallets that require a one to one mapping between an on chain entity and a collection ID.
+Introducing direct [origin to collection](https://github.com/paritytech/polkadot-sdk/pull/11212) mapping, eliminating the need to have wrapper pallets extract the ID and call `create_collection_with_id`. This feature will allow a collection to be created with an ID derived directly from the calling origin, solving a critical pain point for DAOs and other pallets that require a one to one mapping between an on-chain entity and a collection ID.
 
 ### Coretime Observability: Introducing Sale ID
 Working on improving developer experience and observability of coretime sales with the intorduction of `sale_id`, a crucial [data point](https://github.com/paritytech/polkadot-sdk/pull/10188) that tracks individual coretime sales. This allows off-chain agents and UIs track and respond to individual sales with precision, eliminating the ambiguity that previously made coretime tooling unnecessarily difficult. 
