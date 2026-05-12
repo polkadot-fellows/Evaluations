@@ -23,11 +23,10 @@
 
 
 ## Argument
-
-During this reporting period I sustained technical contributions to the PolkadotSDK and the broder ecosystem, focusing on expanding coretime observability, governance ecosystem testing, technical design discussions and ensuring network reliability.
+During this reporting period I sustained technical contributions to the Polkadot SDK, focusing on governance ecosystem testing and network reliability.
 
 ### Governance Testing: Whitelist Pallet Deferred Dispatch
-Added full [E2E test coverage](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/595) for the `pallet-whitelist` deferred dispatch feature on both Polkadot and Kusama AssetHub. This feature is not yet merged upstream and required direct addition to generate custom WASM binaries. The resulting test suite validates both success and failure paths, ensuring this complex feature works correctly in production. 
+Added full [E2E test coverage](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/595) for the `pallet-whitelist` deferred dispatch feature on both Polkadot and Kusama AssetHub. This feature is not yet merged upstream and required direct addition to generate custom WASM binaries. The resulting test suite validates both success and failure paths, ensuring this complex feature works correctly in production.
 
 This work was not only essential for validating the whitelist pallet but also demonstrates how to unblock testing efforts by pragmatically configuring live runtime environments, leaving behind a reusable pattern for others to follow.
 
