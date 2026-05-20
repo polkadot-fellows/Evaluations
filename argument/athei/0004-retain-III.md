@@ -29,7 +29,7 @@ without any changes to the runtime/contract boundary.
 In parallel I shipped `pallet_revive` on Polkadot AssetHub. This is the production launch on the
 main relay, following the Kusama release from my previous reporting period.
 
-The rest of my work continued as described in my [previous argument](https://github.com/polkadot-fellows/Evaluations/blob/main/argument/athei/0003-retain-III.md):
+The rest of my work continued as described in my [previous argument](https://github.com/polkadot-fellows/Evaluations/pull/217):
 coaching new hires, Discord support for Solidity builders on Westend AssetHub, gas mapping
 follow-ups and `pallet_revive` maintenance.
 
