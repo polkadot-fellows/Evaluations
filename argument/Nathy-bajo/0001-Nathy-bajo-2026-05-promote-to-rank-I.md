@@ -58,7 +58,7 @@ Below are my most relevant contributions for this period:
 - **[Align runtimes (runtimes #1175)](https://github.com/polkadot-fellows/runtimes/pull/1175)**: Aligned all system-parachain runtimes on shared `system_parachains_constants` for `TransactionByteFee`, migrated `MaxFreezes` to `VariantCountOf<RuntimeFreezeReason>`, and cleaned up legacy `# Substrate` / `# Polkadot` / `# Cumulus` delimiter comments in crate manifests. Reduces drift between system-chain configurations.
 - **[Asset Hub Kusama & Polkadot: wire `pallet-revive` to native benchmarked weights (runtimes #1182)](https://github.com/polkadot-fellows/runtimes/pull/1182)**: Replaced the `SubstrateWeight` (kitchensink) fallback for `pallet_revive` on Asset Hub Kusama and Polkadot with each runtime's own benchmarked weights, restored the benchmark entry in `define_benchmarks!`, and cleared the outstanding `TODO` markers so the weight surface on these system chains reflects their actual execution costs.
 
-### 5. Issue Discovery & Project Hygiene (polkadot-sdk)
+### 5. Issue Discovery & Project Hygiene (polkadot-sdk and json-rpc-interface-spec)
 
 Beyond direct code contributions, I actively identify and document gaps, edge cases, and improvements in the polkadot-sdk to guide future work and lower the contribution barrier. This reporting period, I have opened numerous issues, particularly around pallet-revive and JSON-RPC infrastructure, many of which are now being implemented by myself.
 
