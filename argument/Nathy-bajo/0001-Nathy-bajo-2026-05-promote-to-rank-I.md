@@ -58,6 +58,15 @@ Below are my most relevant contributions for this period:
 - **[Align runtimes (runtimes #1175)](https://github.com/polkadot-fellows/runtimes/pull/1175)**: Aligned all system-parachain runtimes on shared `system_parachains_constants` for `TransactionByteFee`, migrated `MaxFreezes` to `VariantCountOf<RuntimeFreezeReason>`, and cleaned up legacy `# Substrate` / `# Polkadot` / `# Cumulus` delimiter comments in crate manifests. Reduces drift between system-chain configurations.
 - **[Asset Hub Kusama & Polkadot: wire `pallet-revive` to native benchmarked weights (runtimes #1182)](https://github.com/polkadot-fellows/runtimes/pull/1182)**: Replaced the `SubstrateWeight` (kitchensink) fallback for `pallet_revive` on Asset Hub Kusama and Polkadot with each runtime's own benchmarked weights, restored the benchmark entry in `define_benchmarks!`, and cleared the outstanding `TODO` markers so the weight surface on these system chains reflects their actual execution costs.
 
+### 5. Issue Discovery & Project Hygiene (polkadot-sdk)
+
+Beyond direct code contributions, I actively identify and document gaps, edge cases, and improvements in the polkadot-sdk to guide future work and lower the contribution barrier. This reporting period, I have opened numerous issues, particularly around pallet-revive and JSON-RPC infrastructure, many of which are now being implemented by myself.
+
+Some of the currently open issues I authored can be found here:
+
+- [`polkadot-sdk` issues (open, author: Nathy-bajo)](https://github.com/paritytech/polkadot-sdk/issues?q=is%3Aissue+state%3Aopen+author%3ANathy-bajo)
+- [`json-rpc-interface-spec` pull requests (open, author: Nathy-bajo)](https://github.com/paritytech/json-rpc-interface-spec/pulls?q=is%3Apr+is%3Aopen+author%3ANathy-bajo)
+
 ### Summary
 
 I'm genuinely passionate about building on Polkadot and want to keep deepening my contributions across the entire ecosystem. I'd like to continue this work at Rank I and take on more review responsibility.
