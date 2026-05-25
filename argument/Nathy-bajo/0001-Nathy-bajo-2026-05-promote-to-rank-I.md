@@ -60,7 +60,7 @@ Below are my most relevant contributions for this period:
 
 ### 5. Issue Discovery & Project Hygiene (polkadot-sdk and json-rpc-interface-spec)
 
-Beyond direct code contributions, I actively identify and document gaps, edge cases, and improvements in the polkadot-sdk to guide future work and lower the contribution barrier. This reporting period, I have opened numerous issues, particularly around pallet-revive and JSON-RPC infrastructure, many of which are now being implemented by myself.
+Beyond direct code contributions, I actively identify and document gaps, edge cases, and improvements across the ecosystem to guide future work and lower the contribution barrier. This reporting period, I have opened numerous issues, particularly around pallet-revive and JSON-RPC infrastructure, many of which are now being implemented by myself.
 
 Some of the currently open issues I authored can be found here:
 
