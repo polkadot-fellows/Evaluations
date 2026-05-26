@@ -55,6 +55,7 @@ Deprecation cleanup as part of [polkadot-sdk#11561](https://github.com/paritytec
 - [polkadot-sdk#12145](https://github.com/paritytech/polkadot-sdk/pull/12145) — removes `polkadot_runtime_common::NegativeImbalance` (use `fungible::Credit`)
 - [polkadot-sdk#12131](https://github.com/paritytech/polkadot-sdk/pull/12131) — removes `parachains_common::ToStakingPot` (use `ResolveTo`)
 - [polkadot-sdk#12169](https://github.com/paritytech/polkadot-sdk/pull/12169) — removes `frame_support::EnsureOneOf` (use `EitherOfDiverse`)
+- [polkadot-sdk#12158](https://github.com/paritytech/polkadot-sdk/pull/12158) — removes deprecated `sp_core` hashing re-exports (use `sp_crypto_hashing`)
 
 Further merged removals under #11561 may land separately; see open PRs below.
 
