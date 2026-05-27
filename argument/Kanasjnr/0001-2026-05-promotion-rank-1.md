@@ -56,6 +56,7 @@ Deprecation cleanup as part of [polkadot-sdk#11561](https://github.com/paritytec
 - [polkadot-sdk#12131](https://github.com/paritytech/polkadot-sdk/pull/12131) — removes `parachains_common::ToStakingPot` (use `ResolveTo`)
 - [polkadot-sdk#12169](https://github.com/paritytech/polkadot-sdk/pull/12169) — removes `frame_support::EnsureOneOf` (use `EitherOfDiverse`)
 - [polkadot-sdk#12158](https://github.com/paritytech/polkadot-sdk/pull/12158) — removes deprecated `sp_core` hashing re-exports (use `sp_crypto_hashing`)
+- [polkadot-sdk#12149](https://github.com/paritytech/polkadot-sdk/pull/12149) — removes deprecated `frame_support::error` re-export module (use `sp_runtime::traits::{BadOrigin, LookupError}`)
 
 Further merged removals under #11561 may land separately; see open PRs below.
 
