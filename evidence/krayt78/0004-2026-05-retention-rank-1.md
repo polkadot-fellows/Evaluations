@@ -26,7 +26,7 @@
 ## Argument
 
 My focus throughout the period has mainly been on mentoring some new devs coming from the latest PBA program in Lisbon.
-In terms of actual code i am still tracking the ongoing Product `Currency` → `fungible`
+In terms of actual code I finished working on the pallet-multisig migration and am still tracking the ongoing Product `Currency` → `fungible`
 migration in `polkadot-sdk`, tracked under
 [paritytech/polkadot-sdk#226](https://github.com/paritytech/polkadot-sdk/issues/226):
 replacing the legacy `ReservableCurrency` / `LockableCurrency` patterns across
