@@ -9,12 +9,12 @@
 
 ## Member details
 
-- Matrix username: @kanas0:[matrix.org](http://matrix.org)
+- Matrix username: @kanas0:matrix.org
 - Polkadot address: **12pCUGSwoW4Xek48TLUHCFhrvAdjmciMMLJoRJD8HWP5saXH**
 - Current rank: Candidate 
 - Date of initial induction: 2025/10/31
 - Date of last report: N/A
-- Area(s) of Expertise/Interest: FRAME, XCM, Omni-Node, System parachain runtimes
+- Area(s) of Expertise/Interest: FRAME, XCM, Omni-Node, consensus (BABE/GRANDPA), System parachain runtimes
 
 ## Reporting period
 
@@ -60,15 +60,19 @@ Deprecation cleanup as part of [polkadot-sdk#11561](https://github.com/paritytec
 
 Further merged removals under #11561 may land separately; see open PRs below.
 
+Manifesto §6.2 expects **knowledge-discovery and knowledge-sharing** (forums, public discussion), not only merged code. Alongside SDK work I have published protocol-focused analysis on the [Polkadot Forum](https://forum.polkadot.network/) and built [substrate-consensus-lab](https://github.com/Kanasjnr/substrate-consensus-lab), a minimal discrete-event simulator (SCALE + Blake3) to explore consensus behavior without FRAME macros.
+
+**Sassafras / future consensus:** [Can Sassafras make Polkadot faster and safer?](https://forum.polkadot.network/t/can-sassafras-make-polkadot-faster-and-safer/16980), [Part 2](https://forum.polkadot.network/t/can-sassafras-make-polkadot-faster-and-safer-part-2/17250) synthesis of SSLE, Ring VRF ticket mechanics, and validator operational trade-offs.
+
+**Consensus lab series:** [Slot collisions & forks](https://forum.polkadot.network/t/the-anatomy-of-a-fork-simulating-slot-collisions-in-substrate/17514) → [P2P gossip & visibility lag](https://forum.polkadot.network/t/beyond-the-broadcast-simulating-p2p-gossip-and-visibility-lag/17517) → [Partition re-org depth](https://forum.polkadot.network/t/partition-induced-re-org-depth-a-comparative-study-in-a-babe-like-model/17542) → [GRANDPA-lite & finality bounds](https://forum.polkadot.network/t/the-immutable-wall-bounding-re-org-depth-with-grandpa-lite/17572) → [Mempool flood control & state roots](https://forum.polkadot.network/t/under-pressure-simulating-mempool-flood-control-and-state-determinism/17618).
+
 ### Ongoing work
 
-I have further [open PRs in polkadot-sdk](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3AKanasjnr+is%3Aopen) and [polkadot-fellows/runtimes](https://github.com/polkadot-fellows/runtimes/pulls?q=is%3Apr+author%3AKanasjnr+is%3Aopen), including more deprecation removals for #11561.
+Further [open PRs in polkadot-sdk](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3AKanasjnr+is%3Aopen) and [polkadot-fellows/runtimes](https://github.com/polkadot-fellows/runtimes/pulls?q=is%3Apr+author%3AKanasjnr+is%3Aopen), including descriptive module invalidity ([#11724](https://github.com/paritytech/polkadot-sdk/pull/11724)), storage visibility deprecation ([#11695](https://github.com/paritytech/polkadot-sdk/pull/11695)), XCM weight accounting ([#11302](https://github.com/paritytech/polkadot-sdk/pull/11302)), benchmark weight fixes ([#11732](https://github.com/paritytech/polkadot-sdk/pull/11732)), and Asset Hub safe-mode / tx-pause ([runtimes#1164](https://github.com/polkadot-fellows/runtimes/pull/1164)). 
 
 ### Commitment
 
 I intend to continue contributing to core `polkadot-sdk` and Fellowship runtimes, including #11561 and other in-flight work. I will increase participation in Fellowship channels and RFC discussion as my rank allows.
-
-[All merged polkadot-sdk PRs](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3AKanasjnr+is%3Amerged).
 
 ## Voting record
 
