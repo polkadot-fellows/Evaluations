@@ -31,7 +31,7 @@ During this period I worked on the Substrate node, the fork-aware transaction po
 
 **Test tooling — Zombienet snapshots.** Building DB snapshots for warp-sync and light-client smoke tests had been hand-rolled in each test. I proposed ([zombienet-sdk#541](https://github.com/paritytech/zombienet-sdk/issues/541)) and added a snapshot API to the SDK.
 
-**JAM / PolkaJam.** I continued the metrics observability work on [jamtart](https://github.com/paritytech/jamtart): after some further [events-streaming improvements](https://github.com/paritytech/jamtart/pull/14), I worked on [#15](https://github.com/paritytech/jamtart/pull/15) (a cross-event enricher, Grafana endpoints for JIP-3 telemetry, on-chain endpoints from JAM RPC, some database schema and query changes, and Grafana dashboards). This is still very much work in progress that I plan to get back to.
+**JAM / PolkaJam.** I continued the metrics observability work on [jamtart](https://github.com/paritytech/jamtart): after some further [events-streaming improvements](https://github.com/paritytech/jamtart/pull/14), I worked on [#15](https://github.com/paritytech/jamtart/pull/15) (a cross-event enricher, Grafana endpoints for JIP-3 telemetry, some database schema and query changes, and Grafana dashboards). This is still very much work in progress that I plan to get back to.
 
 The [PoV size reclaim fix (#10215)](https://github.com/paritytech/polkadot-sdk/pull/10215) and [RFC-158](https://github.com/polkadot-fellows/RFCs/pull/158) remain open and carried over from the previous period.
 
