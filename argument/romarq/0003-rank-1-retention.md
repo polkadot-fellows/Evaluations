@@ -34,7 +34,7 @@ The deprecation of the `ValidateUnsigned` trait and the `#[pallet::validate_unsi
 
 #### `pallet-im-online` Migration
 
-I opened a PR migrating `pallet-im-online` from the deprecated `ValidateUnsigned` trait to the `TransactionExtension` API ([**PR #11235**](https://github.com/paritytech/polkadot-sdk/pull/11235)). This is one of the larger pallets still relying on the legacy validation pattern, and the migration provides another reference example for downstream parachain teams.
+I migrated `pallet-im-online` from the deprecated `ValidateUnsigned` trait to the `TransactionExtension` API ([**PR #11235**](https://github.com/paritytech/polkadot-sdk/pull/11235), merged on June 9, 2026). This was one of the larger pallets still relying on the legacy validation pattern, and the migration provides another reference example for downstream parachain teams.
 
 #### `pallet-mixnet` Migration
 
