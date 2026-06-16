@@ -1,4 +1,4 @@
-# Argument-0004: Retention at Rank 3
+# Argument-0006: Retention at Rank 3
 
 |                  |            |
 | ---------------- | ---------- |
