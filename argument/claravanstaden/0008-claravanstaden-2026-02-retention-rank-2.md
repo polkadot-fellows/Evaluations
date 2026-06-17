@@ -24,7 +24,7 @@
 
 ## Argument
 
-The last few months I have been focused on mainly on Snowbridge security hardening, which seems fitting at a time where bridge hacks are at a high and AI tools become more proficient at surfacing security issues.
+The last few months I have been focused on mainly on Snowbridge security hardening, which seems fitting at a time where bridge hacks are at a high and AI tools are becoming more proficient at surfacing security issues.
 
 ### Snowbridge Security Hardening
 
