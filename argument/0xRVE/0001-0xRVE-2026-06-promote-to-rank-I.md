@@ -43,8 +43,10 @@ The pallet-assets precompile had been deviating from the ERC-20 specification by
 
 
 3. **Security hardening of the precompile surface.**
-   - rejected delegatecall into precompiles, closing a class of delegatecall-based attacks [#11715](https://github.com/paritytech/polkadot-sdk/pull/11715), [#11676](https://github.com/paritytech/polkadot-sdk/pull/11676)
-   - corrected event-charging to bill by data length rather than topic count [#11912](https://github.com/paritytech/polkadot-sdk/pull/11912)
+[#11676](https://github.com/paritytech/polkadot-sdk/pull/11676) and [#11715](https://github.com/paritytech/polkadot-sdk/pull/11715) fixed a bug where a malicious intermediary contract was able to act on the caller's assets. 
+[#12387](https://github.com/paritytech/polkadot-sdk/pull/12387) fixed a bug where tload and sload were always charged a fixed storage regardless of the actual size of the storage. This would allow a malicious actor to spam storage load without paying proportionally.
+
+
 
 ### Independence and component ownership
 
