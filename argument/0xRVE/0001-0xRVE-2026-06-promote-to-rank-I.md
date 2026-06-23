@@ -37,9 +37,8 @@ A major focus of mine has been EVM/Solidity compatibility for pallet-revive: mak
 
 
 2. **Identifying and correcting non-trivial issues in core execution code.** 
-[#11279](https://github.com/paritytech/polkadot-sdk/pull/11279) fixed an issue where the pallet-assets precompile deviated from the ERC-20 specification by adding to the existing allowance in stead of replacing it.
-[#10920](https://github.com/paritytech/polkadot-sdk/pull/10920) fixed an issue where storage refunds were calculated incorrectly when a contract allocated storage. This bug caused some refunds to be ignored and other to be double refunded.
-[#12069](https://github.com/paritytech/polkadot-sdk/pull/12069) fixed an issue where the pallet-revive tracer underreported gas for some transactions. This bug would cause indexers and explores to report the wrong number for gas usage.
+The pallet-assets precompile had been deviating from the ERC-20 specification by adding to an account's existing allowance instead of replacing it, which I corrected in [#11279](https://github.com/paritytech/polkadot-sdk/pull/11279). In [#10920](https://github.com/paritytech/polkadot-sdk/pull/10920) I fixed storage refunds being calculated incorrectly when a contract allocated storage, a bug that caused some refunds to be ignored and others to be double-refunded. And in [#12069](https://github.com/paritytech/polkadot-sdk/pull/12069) I fixed the pallet-revive tracer underreporting gas for some transactions, which had been causing indexers and explorers to report the wrong gas usage.
+
 
 
 
