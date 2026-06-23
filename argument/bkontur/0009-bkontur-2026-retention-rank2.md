@@ -45,7 +45,7 @@ To keep technical debt in check I opened an initiative to remove deprecated code
 
 ### Web3 Storage — MVP/Demo
 
-**Web3 Storage** is a decentralized storage system built on Substrate with game-theoretic guarantees, where storage providers lock stake and face slashing for data loss while the chain acts as a credible threat rather than the hot path. I drove much of its MVP/Demo [[20]](https://github.com/paritytech/web3-storage) by creating and triaging issues, pushing PRs, and reviewing others' work across the repository, and deployed it to PreviewNet. The design (by Robert Klotzner (@eskimor)) and demo were also successfully presented at Web3 Summit 2026 by Robert and Naren Mudigal (@mudigal).
+**Web3 Storage** is a decentralized storage system built on Substrate with game-theoretic guarantees, where storage providers lock stake and face slashing for data loss while the chain acts as a credible threat rather than the hot path. I drove much of its MVP/Demo [[20]](https://github.com/paritytech/web3-storage) by creating and triaging issues, pushing PRs, and reviewing others' work across the repository, and deployed it to PreviewNet. The design (by Robert Klotzner ([@eskimor](https://github.com/eskimor))) and demo were also successfully presented at Web3 Summit 2026 by Robert and Naren Mudigal ([@mudigal](https://github.com/mudigal)).
 
 ### Mentoring, external contributors and ecosystem support
 
