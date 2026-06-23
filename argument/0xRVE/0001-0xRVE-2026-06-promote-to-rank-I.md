@@ -26,7 +26,7 @@ I am applying for promotion to Rank 1, I Dan: Humble Member. I believe the scope
 
 I am Robert van Eerdewijk (0xRVE), a Fellowship Candidate inducted on 2026-04-21, seeking promotion to Dan 1. My work has been focused on polkadot-sdk, specifically on pallet-revive: Polkadot's EVM-compatible smart-contract execution layer.
 
-My contributions are concentrated in a coherent, high-value area: **bringing EVM-contract compatibility to pallet-revive**, building the precompile bridge that exposes core Substrate pallets to Solidity contracts, and fixing correctness and security issues in the surrounding execution and metering code. Since December 2025 I have landed over 30 PRs into `paritytech/polkadot-sdk`.
+My contributions are concentrated in a coherent, high-value area: **bringing EVM-contract compatibility to pallet-revive**, building the precompile bridge that exposes core Substrate pallets to Solidity contracts, and fixing correctness and security issues in the surrounding execution code. Since December 2025 I have landed over 30 PRs into `paritytech/polkadot-sdk`.
 
 The requirements for Rank I in §6.2.1 of the Manifesto ask for three clear examples of a modest but substantial contribution to protocol development, alongside independence of work, involvement in the design of a component, and a working awareness of the protocol. The contributions below speak to each of these, and I have ordered them by significance.
 
@@ -40,11 +40,8 @@ A major focus of mine has been EVM/Solidity compatibility for pallet-revive: mak
 The pallet-assets precompile had been deviating from the ERC-20 specification by adding to an account's existing allowance instead of replacing it, which I corrected in [#11279](https://github.com/paritytech/polkadot-sdk/pull/11279). In [#10920](https://github.com/paritytech/polkadot-sdk/pull/10920) I fixed storage refunds being calculated incorrectly when a contract allocated storage, a bug that caused some refunds to be ignored and others to be double-refunded. And in [#12069](https://github.com/paritytech/polkadot-sdk/pull/12069) I fixed the pallet-revive tracer underreporting gas for some transactions, which had been causing indexers and explorers to report the wrong gas usage.
 
 
-
-
-3. **Security hardening of the precompile surface.**
-[#11676](https://github.com/paritytech/polkadot-sdk/pull/11676) and [#11715](https://github.com/paritytech/polkadot-sdk/pull/11715) fixed a bug where a malicious intermediary contract was able to act on the caller's assets. 
-[#12387](https://github.com/paritytech/polkadot-sdk/pull/12387) fixed a bug where tload and sload were always charged a fixed storage regardless of the actual size of the storage. This would allow a malicious actor to spam storage load without paying proportionally.
+3. **Security hardening of pallet-revive.**
+In [#11676](https://github.com/paritytech/polkadot-sdk/pull/11676) and [#11715](https://github.com/paritytech/polkadot-sdk/pull/11715) I fixed a bug where a malicious intermediary contract could act on the caller's assets. In [#12387](https://github.com/paritytech/polkadot-sdk/pull/12387) I fixed a bug where `tload` and `sload` were always charged a fixed storage cost regardless of the actual storage size, which would have let a malicious actor spam storage loads without paying proportionally.
 
 
 
