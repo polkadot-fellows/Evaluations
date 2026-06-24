@@ -12,7 +12,8 @@
 - Polkadot address: 
 - Current rank: 
 - Date of initial induction:
-- Date of last report: 
+- Date of last report:
+- Link to last report: https://github.com/polkadot-fellows/Evaluations/pull/XXX
 - Area(s) of Expertise/Interest: 
 
 
