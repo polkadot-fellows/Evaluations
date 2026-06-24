@@ -16,7 +16,7 @@
 ## Reporting period
 
 - Start date: 2025/12/01
-- End date: 2026/06/10
+- End date: 2026/06/23
 
 ## Argument
 
