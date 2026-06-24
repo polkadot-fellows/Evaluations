@@ -42,7 +42,7 @@ As part of a drive to work on Polkadot core protocol besides Snowbridge, I am go
 
 ### Code Reviews
 
-During this period I reviewed 40+ PRs across the ecosystem.
+During this period I reviewed 40+ PRs across the ecosystem, mostly related to Snowbridge security hardening. The time spent on PR review is critical at this stage, given that any regressions may impact the bridge. We've seen how easy it is for [seemingly simple PRs](https://github.com/paritytech/polkadot-sdk/pull/9204) can open up [new attack vectors](https://github.com/paritytech/polkadot-sdk/pull/11739), so this remains an important task in Snowbridge' security.
 
 ### Conclusion
 
