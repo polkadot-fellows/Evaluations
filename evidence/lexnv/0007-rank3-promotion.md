@@ -276,7 +276,7 @@ the evidence presented stands well alongside that of fellow members.
 |---|---|---|---|---|
 |I  |90%   |N/A   | I have voted on 0 out of 0 referenda in which I was eligible to vote (i.e. 100% voting activity). | No referenda were open to my rank during the period. |
 |II |80%   |N/A   |   |  |
-|III|70%   |100%  | Of the referenda in which members of Rank IV and higher were in complete agreement, I intend to vote in line with that consensus (100% agreement is the Rank III threshold). |  |
+|III|70%   |100%  |   |  |
 |IV |60%   |90%   |   |  |
 |V  |50%   |80%   |   |  |
 |VI |40%   |70%   |   |  |
