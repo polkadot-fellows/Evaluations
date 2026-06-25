@@ -13,6 +13,7 @@
 - Current rank: `2`
 - Date of initial induction: `2024/03/27`
 - Date of last report: `2026/03/25`
+- Link to last report: [0008 Retention at Rank II](https://collectives.subsquare.io/fellowship/members/16YCL3UVpVWQLGW3p3Zx4k5WAEp9W1DwdDnxAbyAaPxVxnp3/evidences/8549237-3)
 - Area(s) of Expertise/Interest: `Parachain Builder, Runtime, Clients`
 
 
