@@ -12,7 +12,8 @@
 - Polkadot address: 
 - Current rank: 
 - Date of initial induction:
-- Date of last report: 
+- Date of last report:
+- Link to last report: 
 - Area(s) of Expertise/Interest: 
 
 
