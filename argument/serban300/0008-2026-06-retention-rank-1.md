@@ -13,6 +13,7 @@
 - Current rank: `1`
 - Date of initial induction: `2024/04/22`
 - Date of last report: `2026/04/02`
+- Link to last report: https://github.com/polkadot-fellows/Evaluations/pull/274
 - Area(s) of Expertise/Interest:
     - `Bridges`
     - `BEEFY`
