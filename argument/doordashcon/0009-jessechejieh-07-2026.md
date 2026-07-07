@@ -26,7 +26,7 @@
 During this reporting period, focus remained on FRAME governance automation and treasury resilience: the permissionless scheduler moved from design to a working implementation, both open RFC implementations advanced through review, and I began hosting the Fellowship's monthly OpenDev calls.
 
 ### Permissionless Scheduling ([#9966](https://github.com/paritytech/polkadot-sdk/issues/9966), ongoing)
-The permissionless scheduler moved from design to a [proof-of-concept](https://hackmd.io/sLGQCmxiQyO4zXH46J6c4A) pallet: one-time and recurring `RuntimeCall` execution on the FRAME Task System. Community input shaped the cost and safety model. Storage deposits go through `Consideration`, each run is charged at execution-time prices from prepaid funds, scheduled calls share a per-block weight budget, and call filters are re-checked at execution. [#12227](https://github.com/paritytech/polkadot-sdk/pull/12227) (merged) auto-bounds `RuntimeTask: From<Task<Self>>` in FRAME, removing per-pallet boilerplate for pallets built on the Task System.
+The permissionless scheduler moved from design to a [proof-of-concept](https://hackmd.io/sLGQCmxiQyO4zXH46J6c4A) pallet: one-time and recurring `RuntimeCall` execution on the FRAME Task System. Community input shaped the cost and safety model. Storage deposits go through `Consideration`, each run is charged at execution-time prices from prepaid funds, scheduled calls share a per-block weight budget, and call filters are re-checked at execution. [#12227](https://github.com/paritytech/polkadot-sdk/pull/12227) auto-bounds `RuntimeTask: From<Task<Self>>` in FRAME, removing per-pallet boilerplate for pallets built on the Task System.
 
 ### RFC: [Deferred Dispatch](https://github.com/paritytech/polkadot-sdk/pull/11336) (ongoing)
 Continued deferred dispatch for `pallet-whitelist`: a referendum-enacted whitelisted call is banked in storage instead of consuming the authorization when enactment races ahead of whitelisting. This period addressed review feedback and integration-tested the pallet against the Fellowship runtimes.
@@ -34,7 +34,7 @@ Continued deferred dispatch for `pallet-whitelist`: a referendum-enacted whiteli
 ### RFC: [Ordered Spend Payouts](https://github.com/paritytech/polkadot-sdk/pull/11603) (ongoing)
 Continued the FIFO-per-`AssetKind` treasury payout ordering. It overlaps with Treasury Asset Categories ([#10381](https://github.com/paritytech/polkadot-sdk/pull/10381)) on the same dispatchables and `Spends` migration, so the two implementations are being reconciled.
 
-### Runtime Maintenance & Operations
+### Runtime Operations
 The [Secretary Collective budget increase](https://github.com/polkadot-fellows/runtimes/pull/1172) doubles the collective's monthly budget for onboarding a Technical Coordinator.
 
 ### OpenDev Hosting Pilot
