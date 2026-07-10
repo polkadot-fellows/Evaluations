@@ -38,7 +38,7 @@ The FRAME scheduler is privileged, so contracts and ordinary accounts cannot sch
 The [Secretary Collective budget increase](https://github.com/polkadot-fellows/runtimes/pull/1172) doubles its monthly budget to onboard a Technical Coordinator. The collective runs the Fellowship's operational load; a dedicated coordinator moves that off individual Fellows so it no longer depends on ad-hoc volunteering.
 
 ### OpenDev Hosting Pilot
-OpenDev is the Fellowship's open technical call, and it had lapsed, leaving technical coordination without a regular synchronous venue. Under the [hosting pilot](https://hackmd.io/529HcCT2TCGYQVRIYoeDzg) I resumed and now host these calls. The [2026/06/30 session](https://forum.polkadot.network/t/opendev-call-proceedings-30-june-2026/18029) centred on asset-based storage deposits and settled on migrating pallets off hardcoded `Currency` deposits onto `Consideration`.
+OpenDev is the Fellowship's open technical call, and it had lapsed, leaving technical coordination without a regular synchronous venue. Under the [hosting pilot](https://hackmd.io/529HcCT2TCGYQVRIYoeDzg) I resumed and now host these calls. The [2026/06/30 session](https://forum.polkadot.network/t/opendev-call-proceedings-30-june-2026/18029) centered on asset-based storage deposits and settled on migrating pallets off hardcoded `Currency` deposits onto `Consideration`.
 
 ## Voting record
 |  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
