@@ -30,7 +30,7 @@
 
 ## Argument
 
-During this reporting period, the majority of my time went into the JAM (Join-Accumulate Machine) implementation in Go at ChainSafe. Alongside that, I maintained a steady stream of upstream contributions across the Polkadot stack: networking (litep2p), the virtual machine (PolkaVM), the node and runtime (polkadot-sdk), the trie database, and the Fellowship runtimes. Below I present this work against the requirements and qualities the Manifesto sets out for Rank I (§6.2, "I Dan: Humble Member").
+During this reporting period, the majority of my time went into the JAM (Join-Accumulate Machine) implementation in Go at ChainSafe. At the end of April I completed the Protocol Builders Program (PBP) in Lisbon — the in-person program that deepened my grounding in Polkadot's protocol internals — after which I took a few weeks of leave before returning to full-time contribution. Alongside the JAM work, I maintained a steady stream of upstream contributions across the Polkadot stack: networking (litep2p), the virtual machine (PolkaVM), the node and runtime (polkadot-sdk), the trie database, and the Fellowship runtimes. Below I present this work against the requirements and qualities the Manifesto sets out for Rank I (§6.2, "I Dan: Humble Member").
 
 Among the Rank I requirements, §6.2.1 of the Manifesto states:
 
