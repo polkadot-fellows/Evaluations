@@ -94,4 +94,4 @@ I authored a public [forum post](https://forum.polkadot.network/t/re-introducing
 
 ## Acknowledgements
 
-Thanks to [ggwpez](https://collectives.subsquare.io/user/16a357f5Sxab3V2ne4emGQvqJaCLeYpTMx3TCjnQhmJQ71DX/fellowship), seadanda, muharem, Ankan, kianenigma, and [Bryan Chen](https://collectives.subsquare.io/user/14DsLzVyTUTDMm2eP3czwPbH53KgqnQRp3CJJZS9GR7yxGDP/fellowship) for review and collaboration across the SDK, Fellowship runtimes, PET, and Chopsticks.
+Thanks to [ggwpez](https://collectives.subsquare.io/user/16a357f5Sxab3V2ne4emGQvqJaCLeYpTMx3TCjnQhmJQ71DX/fellowship), [Bryan Chen](https://collectives.subsquare.io/user/14DsLzVyTUTDMm2eP3czwPbH53KgqnQRp3CJJZS9GR7yxGDP/fellowship), [seadanda](https://collectives.subsquare.io/user/142zGifFwRrDbFLJD7LvbyoHQAqDaXeHjkxJbUVwmDYBD7Gf/fellowship), and [kianenigma](https://collectives.subsquare.io/user/1eTPAR2TuqLyidmPT9rMmuycHVm9s9czu78sePqg2KHMDrE/fellowship) for review and collaboration across the SDK, Fellowship runtimes, PET, and Chopsticks.
