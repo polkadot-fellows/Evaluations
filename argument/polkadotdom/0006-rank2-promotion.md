@@ -47,7 +47,7 @@ As superhuman programmers emerge and RFC submission count rises, I have tried to
 
 In the same vein, I took the time to review the larger design docs shaping Polkadot's next chapter: [pUSD](https://github.com/polkadot-fellows/RFCs/pull/155), the ['pragmatic Web3 storage' design](https://github.com/paritytech/polkadot-sdk/pull/10731) - where my review produced meaningful changes - and the ['low latency' design](https://github.com/paritytech/polkadot-sdk/pull/10449).
 
-### The Work That Didn't Land
+### Work That Didn't Land
 
 Not everything lands, but I feel it's worth speaking on none the less.
 
