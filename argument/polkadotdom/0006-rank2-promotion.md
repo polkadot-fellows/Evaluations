@@ -23,13 +23,13 @@
 
 ## Argument
 
-Hello all, my name is Dom (alias polkadotdom). My tenure as a rank 1 member approaches 1 year, and my cumulative tenure is now 2+. Over that time I have designed, implemented, and launched important protocol changes, helped review the designs and changes of others, and promolgated/elucidated Polkadot as a whole through presentations and general presence. I delineate below my contributions thus far and humbly argue for promotion to rank 2. Thank you.
+Hello all, my name is Dom (alias polkadotdom). My tenure as a rank 1 member now exceeds 1 year, and my cumulative tenure is now 2+. Over that time I have designed, implemented, and launched important protocol changes, helped review the designs and changes of others, and promulgated/elucidated Polkadot as a whole through presentations and general presence. I delineate below my contributions thus far and humbly argue for promotion to rank 2. Thank you.
 
 ### RFC 150, AHM, Hard Pressure Issuance, & DAP
 
 I'll begin with the work I consider most important, each piece touching a core part of the protocol.
 
-**RFC 150 - Voting While Delegating.** It had long been requested that a user be able to vote simultaneous to their delegating. I proposed [RFC-150](https://github.com/polkadot-fellows/RFCs/pull/150), refined it through several rounds of fellow feedback, and saw it accepted in December of 2025. The [implementation](https://github.com/paritytech/polkadot-sdk/pull/9026) is complete and under review. I chose this work because I believe it allows our governance system to more accurately approximate ground truth voter preferences - by increasing delegation, and therefore turnout, everyone is better represented when decisions are made.
+**RFC 150 - Voting While Delegating.** It had long been requested that a user be able to vote simultaneously while delegating. I proposed [RFC-150](https://github.com/polkadot-fellows/RFCs/pull/150), refined it through several rounds of fellow feedback, and saw it accepted in December of 2025. The [implementation](https://github.com/paritytech/polkadot-sdk/pull/9026) is complete and under review. I chose this work because I believe it allows our governance system to more accurately approximate ground truth voter preferences - by increasing delegation, and therefore turnout, everyone is better represented when decisions are made.
 
 **AHM.** As the ecosystem approached the Asset Hub Migration, the Parity team needed state tests for each pallet migrating from relay to AH, functioning as a secondary assurance that all data was moving smoothly through XCM. I constructed these for [pallet-bounties](https://github.com/polkadot-fellows/runtimes/pull/669), [pallet-referenda](https://github.com/polkadot-fellows/runtimes/pull/672), [pallet-scheduler](https://github.com/polkadot-fellows/runtimes/pull/680), and [pallet-staking/staking-async](https://github.com/polkadot-fellows/runtimes/pull/727), a few complicated by cross-pallet state dependencies. Given the immutable and difficult-to-amend nature of a finalized blockchain, this struck me very much as a 'measure twice, cut once' situation. I am happy to report the state piping of these pallets went smoothly.
 
@@ -43,13 +43,13 @@ Next, work that is perhaps less headline-worthy, but substantial all the same.
 
 I [added serialization to the BoundedBTreeMap](https://github.com/paritytech/parity-common/pull/870) data structure to enable its use in genesis storage, and followed up by [exposing the derives through the umbrella crate](https://github.com/paritytech/polkadot-sdk/pull/7764). A small quality-of-life win for anyone seeking the same functionality.
 
-As superhuman programmers emerge and RFC submission count rises, I have tried to act accordingly. Over this tenure I reviewed, among others, [RFC 164 (open Aura authoring)](https://github.com/polkadot-fellows/RFCs/pull/164) - where I contributed meaningfully to the security considerations - [RFC 165 (post-quantum accounts)](https://github.com/polkadot-fellows/RFCs/pull/165), the Snowbridge [circuit breaker](https://github.com/polkadot-fellows/RFCs/pull/167) and [emergency pause](https://github.com/polkadot-fellows/RFCs/pull/166) proposals, [RFC 171 (asset-based storage deposits)](https://github.com/polkadot-fellows/RFCs/pull/171), and [RFC 173 (transaction replay prevention)](https://github.com/polkadot-fellows/RFCs/pull/173).
+As superhuman programmers emerge and RFC submission count rises, I have tried to act in response. Over this tenure I reviewed, among others, [RFC 164 (open Aura authoring)](https://github.com/polkadot-fellows/RFCs/pull/164) - where I contributed meaningfully to the security considerations - [RFC 165 (post-quantum accounts)](https://github.com/polkadot-fellows/RFCs/pull/165), the Snowbridge [circuit breaker](https://github.com/polkadot-fellows/RFCs/pull/167) and [emergency pause](https://github.com/polkadot-fellows/RFCs/pull/166) proposals, [RFC 171 (asset-based storage deposits)](https://github.com/polkadot-fellows/RFCs/pull/171), and [RFC 173 (transaction replay prevention)](https://github.com/polkadot-fellows/RFCs/pull/173).
 
 In the same vein, I took the time to review the larger design docs shaping Polkadot's next chapter: [pUSD](https://github.com/polkadot-fellows/RFCs/pull/155), the ['pragmatic Web3 storage' design](https://github.com/paritytech/polkadot-sdk/pull/10731) - where my review produced meaningful changes - and the ['low latency' design](https://github.com/paritytech/polkadot-sdk/pull/10449).
 
 ### Work That Didn't Land
 
-Not everything lands, but I feel it's worth speaking on none the less.
+Not everything lands, but I feel it's worth speaking on nonetheless.
 
 I identified a signaling issue with our referenda system and proposed [RFC 151, Crowdsourced Decision Deposits](https://github.com/polkadot-fellows/RFCs/pull/151). Following Basti's initial implementation, I completed the logic portion, guarding against several possible griefs that could wipe deposits or otherwise 'jab' at participants, before passing the remaining work to an eager candidate, runcomet. The RFC was ultimately set aside as priorities shifted.
 
