@@ -25,7 +25,7 @@
 
 Hello all, my name is Dom (alias polkadotdom). My tenure as a rank 1 member approaches 1 year, and my cumulative tenure is now 2+. Over that time I have designed, implemented, and launched important protocol changes, helped review the designs and changes of others, and promolgated/elucidated Polkadot as a whole through presentations and general presence. I delineate below my contributions thus far and humbly argue for promotion to rank 2. Thank you.
 
-### Number 1 RFC 150, AHM, Hard Pressure Issuance, DAP
+### RFC 150, AHM, Hard Pressure Issuance, & DAP
 
 I'll begin with the work I consider most important, each piece touching a core part of the protocol.
 
@@ -37,31 +37,31 @@ I'll begin with the work I consider most important, each piece touching a core p
 
 **DAP.** Finally, I helped push the new DAP staking changes through in accordance with [Jonas' designs](https://hackmd.io/@jonasW3F/rkN6BXE2ex), reviewing the relevant PRs from Ankan, Paolo, Andrei, and Cirko - including the [move of era reward minting into DAP itself](https://github.com/paritytech/polkadot-sdk/pull/11616). I found several bugs that were otherwise missed, [for ex.](https://github.com/paritytech/polkadot-sdk/pull/11651#discussion_r3073307397) The new system addresses long-standing concerns with flexibility in our treasury management and sets us up nicely for pUSD.
 
-### Number 2 Serialize BTreeMap, RFC Reviews, Design Reviews (pUSD, Web3Storage, Low Latency)
+### Serialization, RFC Reviews, & Design Reviews
 
 Next, work that is perhaps less headline-worthy, but substantial all the same.
 
 I [added serialization to the BoundedBTreeMap](https://github.com/paritytech/parity-common/pull/870) data structure to enable its use in genesis storage, and followed up by [exposing the derives through the umbrella crate](https://github.com/paritytech/polkadot-sdk/pull/7764). A small quality-of-life win for anyone seeking the same functionality.
 
-As superhuman programmers emerge and RFC submission count rises, review is slowly becoming the main component of our jobs as fellows. I have tried to act accordingly. Over this tenure I reviewed, among others, [RFC 164 (open Aura authoring)](https://github.com/polkadot-fellows/RFCs/pull/164) - where I contributed meaningfully to the security considerations - [RFC 165 (post-quantum accounts)](https://github.com/polkadot-fellows/RFCs/pull/165), the Snowbridge [circuit breaker](https://github.com/polkadot-fellows/RFCs/pull/167) and [emergency pause](https://github.com/polkadot-fellows/RFCs/pull/166) proposals, [RFC 171 (asset-based storage deposits)](https://github.com/polkadot-fellows/RFCs/pull/171), and [RFC 173 (transaction replay prevention)](https://github.com/polkadot-fellows/RFCs/pull/173). Often I am the only reviewer, even on important submissions.
+As superhuman programmers emerge and RFC submission count rises, I have tried to act accordingly. Over this tenure I reviewed, among others, [RFC 164 (open Aura authoring)](https://github.com/polkadot-fellows/RFCs/pull/164) - where I contributed meaningfully to the security considerations - [RFC 165 (post-quantum accounts)](https://github.com/polkadot-fellows/RFCs/pull/165), the Snowbridge [circuit breaker](https://github.com/polkadot-fellows/RFCs/pull/167) and [emergency pause](https://github.com/polkadot-fellows/RFCs/pull/166) proposals, [RFC 171 (asset-based storage deposits)](https://github.com/polkadot-fellows/RFCs/pull/171), and [RFC 173 (transaction replay prevention)](https://github.com/polkadot-fellows/RFCs/pull/173).
 
 In the same vein, I took the time to review the larger design docs shaping Polkadot's next chapter: [pUSD](https://github.com/polkadot-fellows/RFCs/pull/155), the ['pragmatic Web3 storage' design](https://github.com/paritytech/polkadot-sdk/pull/10731) - where my review produced meaningful changes - and the ['low latency' design](https://github.com/paritytech/polkadot-sdk/pull/10449).
 
-### Number 3 RFC 151 & its logic portion, Parameterization of Inflation, Ambassador Fellowship Work, Stored Proc Macro
+### The Work That Didn't Land
 
-Not everything lands, and I think an honest accounting should include the work that didn't.
+Not everything lands, but I feel it's worth speaking on none the less.
 
 I identified a signaling issue with our referenda system and proposed [RFC 151, Crowdsourced Decision Deposits](https://github.com/polkadot-fellows/RFCs/pull/151). Following Basti's initial implementation, I completed the logic portion, guarding against several possible griefs that could wipe deposits or otherwise 'jab' at participants, before passing the remaining work to an eager candidate, runcomet. The RFC was ultimately set aside as priorities shifted.
 
-I set up the [parameterization of yearly DOT emission](https://github.com/polkadot-fellows/runtimes/pull/732), giving the people a voice in their own economic parameters. It was merged and live, but soon superseded by the hard pressure model above - and so I removed it with my own hands. Such is the way of things.
+I set up the [parameterization of yearly DOT emission](https://github.com/polkadot-fellows/runtimes/pull/732), giving the people a voice in their own economic parameters. It was merged and live, but soon superseded by the hard pressure model above.
 
-I built the [`stored` procedural macro](https://github.com/paritytech/polkadot-sdk/pull/8032), consolidating FRAME's confusing sprawl of storage-related derives into a simpler, more intuitive format. Though complete, it was closed when the maintenance churn was judged to outweigh the benefit.
+I built the [`stored` procedural macro](https://github.com/paritytech/polkadot-sdk/pull/8032), consolidating FRAME's confusing sprawl of storage-related derives into a simpler, more intuitive format. Though complete, it was closed when another fellow pushed their version through.
 
 Lastly, I worked alongside Clara to help the ambassador fellowship come online, largely through liaison with Lucy of the ambassadors, until they discontinued the approach this February under a shift of priorities.
 
 While none of these live in the runtime today, each sharpened my judgement of what the protocol needs, and several seeded work now carried by others.
 
-### Number 4 Fellowship calls, Element presence, Sub0 Presentation, Staking Dashboard Help
+### Community & Indirect Work
 
 Beyond the code, I try to be a consistently present member of this collective. I have attended the fellowship and OpenDev calls throughout my tenure, giving updates on my work, and have remained generally available on Matrix - joining discussions on security, providing assurance to community advocates during the hard pressure transition, and helping newcomers find their footing.
 
@@ -69,9 +69,9 @@ At the annual Sub0 conference, I [presented](https://www.youtube.com/watch?v=yAY
 
 I also worked with Ross on [new features](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/3362) for the Polkadot staking dashboard - one of which, surfacing how much validators are liquidating, I hope will produce a meaningful signal when selecting validators - and [flagged bugs](https://github.com/opensquare-network/subsquare/issues/7259) in our governance serving software that are now fixed.
 
-### Number 5 A number of other smaller changes across Parity repos
+### Odds & Ends
 
-Finally, the steady stream of smaller contributions that I believe keeps a codebase healthy. Before my induction I carried out the deprecation of the `pallet::getter` macro across a dozen pallets, from [authority-discovery](https://github.com/paritytech/polkadot-sdk/pull/4091) to [democracy](https://github.com/paritytech/polkadot-sdk/pull/4472) to [grandpa](https://github.com/paritytech/polkadot-sdk/pull/4529). Since then I have moved the [core-fellowship pallet to BlockNumberProvider](https://github.com/paritytech/polkadot-sdk/pull/6978) - a needed change before we can elastically scale the collectives chain - with the [salary pallet](https://github.com/paritytech/polkadot-sdk/pull/12403) now following. Sprinkled throughout are the little things: [try-runtime-cli documentation](https://github.com/paritytech/try-runtime-cli/pull/106), a [runtimes release bump](https://github.com/polkadot-fellows/runtimes/pull/987), an [AHM indexing fix](https://github.com/paritytech/polkadot-sdk/pull/8401), and other small patches across Parity repos. None individually noteworthy, but together I hope they paint a picture of someone who simply shows up.
+Finally, the steady stream of smaller contributions that I believe keeps a codebase healthy. Before my induction I carried out the deprecation of the `pallet::getter` macro across a dozen pallets, from [authority-discovery](https://github.com/paritytech/polkadot-sdk/pull/4091) to [democracy](https://github.com/paritytech/polkadot-sdk/pull/4472) to [grandpa](https://github.com/paritytech/polkadot-sdk/pull/4529). Since then I have moved the [core-fellowship pallet to BlockNumberProvider](https://github.com/paritytech/polkadot-sdk/pull/6978) - a needed change before we can elastically scale the collectives chain - with the [salary pallet](https://github.com/paritytech/polkadot-sdk/pull/12403) now following. Sprinkled throughout are the little things: [try-runtime-cli documentation](https://github.com/paritytech/try-runtime-cli/pull/106), a [runtimes release bump](https://github.com/polkadot-fellows/runtimes/pull/987), an [AHM indexing fix](https://github.com/paritytech/polkadot-sdk/pull/8401), and other small patches across Parity repos. None individually noteworthy, but together I hope they paint a picture of someone willing to do the unglamorous as well.
 
 ## Voting record
 
