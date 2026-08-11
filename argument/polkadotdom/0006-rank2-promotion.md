@@ -69,7 +69,7 @@ At the annual Sub0 conference, I [presented](https://www.youtube.com/watch?v=yAY
 
 I also worked with Ross on [new features](https://github.com/polkadot-cloud/polkadot-staking-dashboard/issues/3362) for the Polkadot staking dashboard - one of which, surfacing how much validators are liquidating, I hope will produce a meaningful signal when selecting validators - and [flagged bugs](https://github.com/opensquare-network/subsquare/issues/7259) in our governance serving software that are now fixed.
 
-### Odds & Ends
+### The Inbetweeners
 
 Finally, the steady stream of smaller contributions that I believe keeps a codebase healthy. Before my induction I carried out the deprecation of the `pallet::getter` macro across a dozen pallets, from [authority-discovery](https://github.com/paritytech/polkadot-sdk/pull/4091) to [democracy](https://github.com/paritytech/polkadot-sdk/pull/4472) to [grandpa](https://github.com/paritytech/polkadot-sdk/pull/4529). Since then I have moved the [core-fellowship pallet to BlockNumberProvider](https://github.com/paritytech/polkadot-sdk/pull/6978) - a needed change before we can elastically scale the collectives chain - with the [salary pallet](https://github.com/paritytech/polkadot-sdk/pull/12403) now following. In between are the little things: [try-runtime-cli documentation](https://github.com/paritytech/try-runtime-cli/pull/106), a [runtimes release bump](https://github.com/polkadot-fellows/runtimes/pull/987), an [AHM indexing fix](https://github.com/paritytech/polkadot-sdk/pull/8401), and other small patches across Parity repos. None individually noteworthy, but together I hope they paint a picture of someone willing to do the unglamorous as well.
 
