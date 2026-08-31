@@ -1,8 +1,8 @@
-# Argument-0001: Promotion to Rank III
+# Argument-0002: Promotion to Rank II
 
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
-| **Report Date** | 2026/06/02                                                                                  |
+| **Report Date** | 2026/08/31                                                                                  |
 | **Submitted by**| Seun Lanlege                                                                                |
 
 
@@ -13,27 +13,22 @@
 - Current rank: `1`
 - Date of initial induction: Seeding
 - Date of last report: 2025/12/15 (Retention at Rank II, [#231](https://github.com/polkadot-fellows/Evaluations/pull/231))
-- Area(s) of Expertise/Interest: Hyperbridge, BEEFY, trust-free bridges, BLS cryptography
+- Area(s) of Expertise/Interest: Hyperbridge, BEEFY, MMR/consensus proofs, trust-free bridges, BLS cryptography
 
 
 ## Reporting period
 
-- Start date: 2024/06/01
-- End date: 2026/06/02
+- Start date: 2025/12/15
+- End date: 2026/08/31
 
 
 ## Context
 
-I was demoted from Rank II to Rank I on 2026-06-01 by the Fellowship Secretary
-after missing the Rank II retention defense window during the Hyperbridge
-security incident response
-([extrinsic](https://collectives.statescan.io/#/extrinsics/8993139-2)). The
-work below is what I would have submitted in defense had I filed in time, and
-the scope of what has shipped since my last successful retention is in my view
-beyond Rank II. I am therefore requesting promotion directly to Rank III, to
-be enacted via `fellowshipCore.promote_fast`, which the pallet explicitly
-supports for out-of-band promotions
-([`core-fellowship/src/lib.rs:531`](https://github.com/paritytech/polkadot-sdk/blob/master/substrate/frame/core-fellowship/src/lib.rs#L531)).
+I held Rank II from seeding until 2026-06-01, when I was demoted to Rank I for
+missing the retention defence window while leading the response to the
+Hyperbridge security incident
+([extrinsic](https://collectives.statescan.io/#/extrinsics/8993139-2)). This
+argument asks the Fellowship to restore that rank.
 
 
 ## Argument
