@@ -12,6 +12,7 @@
 - Current rank: Rank I (Humble Member)
 - Date of initial induction: 2024-06-18
 - Date of last report: 2026-05-28
+- Link to last report: [0004-2026-05-retention-rank-1.md](https://github.com/polkadot-fellows/Evaluations/blob/main/evidence/krayt78/0004-2026-05-retention-rank-1.md)
 - Area(s) of Expertise/Interest: 
     - FRAME
     - Runtime
@@ -92,6 +93,3 @@ The five PRs from my previous reports are still open and were up to date as of m
 
 - [ ] Comment(s): 
 
-## Previous retention
-
-My last retention evidence: [0004-2026-05-retention-rank-1.md](https://github.com/polkadot-fellows/Evaluations/blob/main/evidence/krayt78/0004-2026-05-retention-rank-1.md)
