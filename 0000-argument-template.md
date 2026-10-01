@@ -16,7 +16,7 @@
 - Date of initial induction:
 - Date of last report:
 - Link to last report:
-- Sub-systems developed/maintained: 
+- Subsystems developed/maintained: 
 
 ## Reporting period
 
