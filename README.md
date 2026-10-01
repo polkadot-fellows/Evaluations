@@ -60,7 +60,7 @@ Any reviewer should be able consume your entire argument, including any auxillia
 
 The Polkadot Technical Fellowship mandates that its members who are in full-time employment cannot draw an active salary from the Fellowship salary account. Should members who hold a full-time position continue to claim an active salary, they will be considered in breach of the Tenets and will be expelled from the Fellowship.
 
-The document [Subsystems.md](subsystems.md) assigns the various platform responsibilities to specific Fellows. Such Fellows may draw Active salary if not in FTE, however they must include a short monthly report on their subsystem to include goals (3-12 month initiatives), tasks (1-14 day workloads), unexpected issues and a rough breakdown in terms of Members who are helping.
+The document [Subsystems](subsystems.md) assigns the various platform responsibilities to specific Fellows. Such Fellows may draw Active salary if not in FTE, however they must include a short monthly report on their subsystem to include goals (3-12 month initiatives), tasks (1-14 day workloads), unexpected issues and a rough breakdown in terms of Members who are helping.
 
 Members on Active salary must include atop their Argument for Retention such a Fellow under whose supervision they are working. Fellowship mandates that their retention must be disapproved unless the named Fellow specifically "sponsors" them (i.e. agrees that they are directly helping toward developing/maintaining that subsystem, that they are among the best-placed to do so).
 
