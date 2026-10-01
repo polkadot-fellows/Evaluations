@@ -4,7 +4,7 @@
 | --------------- | ------------------------------------------------------------------------------------------- |
 | **Report Date** | Date of submission (YYYY/MM/DD)                                                             |
 | **Submitted by**| Name of the proposer                                                                        |
-| **Endorsed by** | Name of the assignee(s)                                                                     |
+| **Sponsored by**| Name of the assignee(s)                                                                     |
 
 
 
