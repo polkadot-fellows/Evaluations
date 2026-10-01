@@ -20,7 +20,7 @@ Specifically, this expertise may cover contributions in the following areas:
  * trust-free bridges relying on said consensus algorithms utilised by system chains;
  * parachain consensus;
  * cross-chain message passing (XCMP, HRMP, DMP \& UMP);
- * the Polkadot libp2p-based peer networking protocol;
+ * the Polkadot networking stack;
  * the Polkadot topology strategies;
  * chain synchronisation strategies utilised by Polkadot;
  * the Polkadot business-logic (aka the 'runtime');
@@ -29,7 +29,8 @@ Specifically, this expertise may cover contributions in the following areas:
  * runtime and host APIs;
  * the XCM specification and realisation;
  * standard RPCs;
- * user-interface code required to practically execute upgrades to the Polkadot (Main) Network; and
+ * core technologies needed to enable the existence of the Polkadot Network and its Native feature set;
+ * user-interface code required to carry out the technical work (designing, programming, debugging) required to maintain Polkadot (Main) Network, including operational upgrades; and
  * code or technology required by, and utilised primarily for, any code or technology already included.
 
 However, some technologies/code fall out of this scope, notably:
