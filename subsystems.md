@@ -8,8 +8,8 @@
 | Individuality (Proof-of-Personhood, Statement store) | Guillaume, George | | | 
 | JAM (Parachain service) | Bastian | | | 
 | JAM (PVM) | Jan | | | 
-| JAM (Clients) | JAM M1 nominees 
-| JAM (Services and tooling) | JAM M1 nominees
+| JAM (Clients) | JAM M1 nominees | | | 
+| JAM (Services and tooling) | JAM M1 nominees | | | 
 | Revive (Smart Contracts, EVM precompiles, compatibility) | Alex | | | 
 | Scalability (Agile Coretime, Async backing, Elastic scaling) | Robert, Andrei | | | 
 | Economics (Infra: Coretime sales, Stablecoins; Governance: Issuance, DAP) | Donál | | |
