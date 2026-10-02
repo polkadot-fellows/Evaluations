@@ -13,7 +13,7 @@
 | Revive (Smart Contracts, EVM precompiles, compatibility) | Alex | | | 
 | Scalability (Agile Coretime, Async backing, Elastic scaling) | Robert, Andrei | | | 
 | Economics (Infra: Coretime sales, Stablecoins; Governance: Issuance, DAP) | Donál | | |
-| Cryptography (Applied) | Davxy | | |
+| Cryptography (Applied) | Davide | | |
 | Staking | Kian | | |
 | XCM | Bryan, Adrian | | |
 | Trustless bridges | Adrian | | |
