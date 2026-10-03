@@ -58,7 +58,15 @@ Any reviewer should be able consume your entire argument, including any auxillia
 
 ## Accountability
 
-The Fellowship mandates that its members who are in full-time employment cannot draw an active salary from the Fellowship salary account. Should members who hold a full-time position continue to claim an active salary, they will be considered in breach of the Tenets and will be expelled from the Fellowship.
+The Fellowship mandates that its members who are in full-time employment cannot draw an active salary from the Fellowship salary account. 
+
+Members who are claiming a salary must fit into the hierarchy of responsibility for the overall system described below:
+
+| Status       | Descriptors | Other FTE       | Responsibilities |
+|--------------|-------------|-----------------| -----------------|
+| Active       | Working "Full-time" on Fellowship activities. | Not allowed | Fellows: Specifically responsible for a subsystem and the delivery of agreed upon goals/features/fixes for that subsystem. Members: Explicitly sponsored by a Fellow. |
+| Passive      | Working "Part-time" on Fellowship activities. | Allowed | Fellows: Specifically responsible for a subsystem and the delivery of agreed upon goals/features/fixes for that subsystem. Members: Explicitly sponsored by a Fellow. |
+| Non-salaried | Not required to be actively contributing. | Allowed | Fellows and Members: Responsible for own knowledge-retention. |
 
 The document [Subsystems](subsystems.md) assigns the various platform responsibilities to specific Fellows. Such Fellows may draw an active salary if not in full-time employment, however they must include a short monthly report on their subsystem to include goals (3-12 month initiatives), tasks (1-14 day workloads), unexpected issues, and a rough breakdown in terms of Members who are helping.
 
