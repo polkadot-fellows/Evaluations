@@ -60,7 +60,7 @@ Any reviewer should be able consume your entire argument, including any auxillia
 
 The Fellowship mandates that its members who are in full-time employment cannot draw an active salary from the Fellowship salary account. 
 
-Members who are claiming a salary must fit into the hierarchy of responsibility for the overall system described below:
+Members who are claiming a salary must fit into the hierarchy of responsibility for the overall system, as described below:
 
 | Status       | Descriptors | Other FTE       | Responsibilities |
 |--------------|-------------|-----------------| -----------------|
