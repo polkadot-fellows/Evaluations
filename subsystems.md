@@ -8,7 +8,7 @@
 | Individuality (Proof-of-Personhood, Statement store) | Guillaume, George | | | 
 | JAM (Parachain service) | Bastian | | | 
 | JAM (Polkajam) | Arkadiy | | | 
-| JAM (PVM) | Jan | | | 
+| JAM (PolkaVM) | Jan | | | 
 | JAM (Clients) | JAM Prize M1 nominees | | | 
 | JAM (Services and tooling) | JAM Prize M1 nominees | | | 
 | Revive (Smart Contracts, EVM precompiles, compatibility) | Alex | | | 
