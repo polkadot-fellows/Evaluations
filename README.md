@@ -6,7 +6,10 @@ More information about Membership management can be found on the [Polkadot Techn
 
 ## History
 
-Arguments used to be called simply "Evidence" and you may sometimes see this defunct term used. It was deprecated in favour of "Arguments", since people misconstrued their responsibilities regarding this information and tended to simply submit a list of code changes.
+1. Arguments used to be called simply "Evidence" and you may sometimes see this defunct term used. It was deprecated in favour of "Arguments", since people misconstrued their responsibilities regarding this information and tended to simply submit a list of code changes.
+
+2. The Fellowship is reconsidering both its Mandate and logic so that compensation must be in proportion to accountability. Arguments for retention/promotion is adequate accountability for low-value, passive "retainer" component (e.g. ~$100-$1000 pppm). For higher-value, active "salary" component, much better accountability is needed to justify the expense.
+
 
 ## Scope
 
@@ -20,7 +23,7 @@ Specifically, this expertise may cover contributions in the following areas:
  * trust-free bridges relying on said consensus algorithms utilised by system chains;
  * parachain consensus;
  * cross-chain message passing (XCMP, HRMP, DMP \& UMP);
- * the Polkadot libp2p-based peer networking protocol;
+ * the Polkadot networking stack;
  * the Polkadot topology strategies;
  * chain synchronisation strategies utilised by Polkadot;
  * the Polkadot business-logic (aka the 'runtime');
@@ -29,7 +32,8 @@ Specifically, this expertise may cover contributions in the following areas:
  * runtime and host APIs;
  * the XCM specification and realisation;
  * standard RPCs;
- * user-interface code required to practically execute upgrades to the Polkadot (Main) Network; and
+ * core technologies needed to enable the existence of the Polkadot Network and its Native feature set;
+ * user-interface code required to carry out the technical work (designing, programming, debugging) required to maintain Polkadot (Main) Network, including operational upgrades; and
  * code or technology required by, and utilised primarily for, any code or technology already included.
 
 However, some technologies/code fall out of this scope, notably:
@@ -50,6 +54,23 @@ Arguments must directly address each of the Rank Requirements as stated in the M
 The Argument is not a place to insert primary sources. No deep code review should be needed to evaluate the argument and its proofs. Pre-existing peer reviews (whether code or academic writing), accepted answers on Q&A sites, presentation at high-quality conferences or publication in high-quality media may be used to help understand the depth and quality of the work.
 
 Any reviewer should be able consume your entire argument, including any auxilliary proofs, within __10 minutes__. 
+
+
+## Accountability
+
+The Fellowship mandates that its members who are in full-time employment cannot draw an active salary from the Fellowship salary account. 
+
+Members who are claiming a salary must fit into the hierarchy of responsibility for the overall system, as described below:
+
+| Status       | Descriptors | Other FTE       | Responsibilities |
+|--------------|-------------|-----------------| -----------------|
+| Active       | Working "Full-time" on Fellowship activities. | Not allowed | Fellows: Specifically responsible for a subsystem and the delivery of agreed upon goals/features/fixes for that subsystem. Members: Explicitly sponsored by a Fellow. |
+| Passive      | Working "Part-time" on Fellowship activities. | Allowed | Fellows: Specifically responsible for a subsystem and the delivery of agreed upon goals/features/fixes for that subsystem. Members: Explicitly sponsored by a Fellow. |
+| Non-salaried | Not required to be actively contributing. | Allowed | Fellows and Members: Responsible for own knowledge-retention. |
+
+The document [Subsystems](subsystems.md) assigns the various platform responsibilities to specific Fellows. Such Fellows may draw an active salary if not in full-time employment, however they must include a short monthly report on their subsystem to include goals (3-12 month initiatives), tasks (1-14 day workloads), unexpected issues, and a rough breakdown in terms of Members who are helping.
+
+Members on an active salary must include atop their argument for retention such a Fellow under whose supervision they are working. The Fellowship mandates that their retention must be disapproved unless the named Fellow specifically "sponsors" them (i.e. agrees that they are directly helping toward developing/maintaining that subsystem, that they are among the best-placed to do so).
 
 
 ## Significance
