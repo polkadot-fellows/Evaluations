@@ -20,7 +20,7 @@
 | Runtimes (Engineering, Security, Benchmarking) | Oliver | | | 
 | Runtimes (Metadata, DevX, tooling) | Shawn | | |
 | Scalability (Agile Coretime, Async backing, Elastic scaling) | Robert, Andrei | | | 
-| Staking | Kian | | |
+| Staking | Kian | Paolo | |
 | System chains | Muharem | | | 
 | Trustless bridges | Adrian | | |
 | XCM | Bryan, Adrian | | |
