@@ -6,6 +6,7 @@
 |---|---|---|---|
 | Cryptography (Applied) | Davide | | |
 | Economics (Infra: Coretime sales, Stablecoins; Governance: Issuance, DAP) | Donál | | |
+| Encointer (system chain) | | Christian | |
 | Individuality (Proof-of-Personhood, Statement store) | Guillaume, George | | | 
 | JAM (Parachain service) | Bastian | | | 
 | JAM (Polkajam) | Arkadiy | | | 
