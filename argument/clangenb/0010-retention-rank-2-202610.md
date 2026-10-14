@@ -15,7 +15,7 @@
 - Date of initial induction: `2024/03/27`
 - Date of last report: `2026/06/25`
 - Link to last report: [0009 Retention at Rank II](https://collectives.subsquare.io/fellowship/members/16YCL3UVpVWQLGW3p3Zx4k5WAEp9W1DwdDnxAbyAaPxVxnp3/evidences/9187922-3)
-- [Subsystems](../../subsystems.md) developed/maintained: `Runtimes (Engineering, Security, Benchmarking)` (primary), `Runtimes (FRAME, APIs, integrations)`
+- [Subsystems](../../subsystems.md) developed/maintained: `Runtimes (Engineering, Security, Benchmarking)` (primary), `Runtimes (FRAME, APIs, integrations)`, `Encointer (system chain)`
 
 
 ## Reporting period
