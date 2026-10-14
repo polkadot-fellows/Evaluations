@@ -40,6 +40,10 @@ My work falls primarily into the Runtimes (Engineering, Security) subsystem: the
 upgrades, state hygiene on the relay chains, and keeping the Runtimes repository and its integration tests
 maintainable. The multi-block migration work also extends upstream into FRAME.
 
+I have also listed myself for the Encointer system chain in the [Subsystems](../../subsystems.md), which
+I will own. However, as Encointer has been deemed non-essential, my work on it does not count towards my
+Fellowship contributions and is hence not part of this argument.
+
 ### A safety net for stuck multi-block migrations
 
 As part of the TODO cleanup from my last report, I switched the Polkadot Hub runtimes to the upstream
