@@ -3,8 +3,8 @@
 |                 |                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------- |
 | **Report Date** | Date of submission (2026/10/14)                                                             |
-| **Submitted by**| Tsvetomir Dimitrov.                                                                         |
-| **Sponsored by**| Name of the assignee(s)                                                                     |
+| **Submitted by**| Tsvetomir Dimitrov                                                                          |
+| **Sponsored by**| Andrei Sandu                                                                                |
 
 
 
@@ -36,6 +36,17 @@ project is to outline a set of checks which helps the operators understand if th
 as expected. The difference from the metrics already provided in polkadot-sdk is a limited set of
 checks, with expected reference values and concrete actionable advise for the operator if the check
 fails. The design is under internal discussions and hopefully will be made public after that.
+
+What I have done so far:
+- Studied prior work on the subject (a document by @Overkillus on Validator set quality from network
+  point of view).
+- Analyzed the reported issues in polkadot-sdk and extracted the patterns for common operator
+  complains.
+- Studied how this problem is solved in other ecosystems.
+- Prepared a list of duties and checks which should be implemented in the validator/metanode binary
+  (pending review).
+
+The current state of the document can be found [here](https://docs.google.com/document/d/18rup2mZ8jgCDpzbGqh6CVZ3i_yyUZhP4gSYujtlrFXo/).
 
 I am also maintaining the stop-gap AH security fix (the list of preferred AH collators) for Polkadot
 until the revamp lands there too
