@@ -46,7 +46,7 @@ What I have done so far:
 - Prepared a list of duties and checks which should be implemented in the validator/metanode binary
   (pending review).
 
-The current state of the document can be found [here](https://docs.google.com/document/d/18rup2mZ8jgCDpzbGqh6CVZ3i_yyUZhP4gSYujtlrFXo/).
+The current state of the document can be found [here](https://hackmd.io/@tdimitrov/H1Ys1H7hMx).
 
 I am maintaining the stop-gap AH security fix (the list of preferred AH collators) for Polkadot until
 the revamp lands there too
