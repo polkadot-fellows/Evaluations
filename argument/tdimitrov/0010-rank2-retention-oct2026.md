@@ -48,10 +48,14 @@ What I have done so far:
 
 The current state of the document can be found [here](https://docs.google.com/document/d/18rup2mZ8jgCDpzbGqh6CVZ3i_yyUZhP4gSYujtlrFXo/).
 
-I am also maintaining the stop-gap AH security fix (the list of preferred AH collators) for Polkadot
-until the revamp lands there too
+I am maintaining the stop-gap AH security fix (the list of preferred AH collators) for Polkadot until
+the revamp lands there too
 ([polkadot-sdk pr-13320](https://github.com/paritytech/polkadot-sdk/pull/13320)).
 
+I reviewed some collator protocol v4 related PRs, e.g.
+[polkadot-sdk pr-12172](https://github.com/paritytech/polkadot-sdk/pull/12172),
+[polkadot-sdk pr-12255](https://github.com/paritytech/polkadot-sdk/pull/12255) and
+[polkadot-sdk pr-12396](https://github.com/paritytech/polkadot-sdk/pull/12396).
 
 ## Voting record
 
