@@ -1,0 +1,39 @@
+name: Sponsorship ping
+
+# A member adds their handle under their subsystem in subsystems.yml as part
+# of a retention or promotion PR; this pings the assignees, whose approval
+# marks sponsorship. Follow-up arguments are plain markdown, so those PRs
+# route by argument directory instead.
+#
+# pull_request_target because arguments arrive from member forks, where a
+# pull_request token is read-only and could not comment. Safe here: the
+# workflow and script run from the base repo, and PR content is only ever
+# parsed as data (safe_load of the YAML, path names from the diff).
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+    paths: [subsystems.yml, "argument/**"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    # Routing is best-effort: an API hiccup must not read as a failing check
+    # on a member's retention PR.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: pip install pyyaml
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BASE_REF: ${{ github.base_ref }}
+        run: python3 .github/scripts/sponsor_ping.py

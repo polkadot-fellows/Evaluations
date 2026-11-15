@@ -1,0 +1,170 @@
+# Machine-readable subsystem list of the Polkadot Technical Fellowship.
+#
+# Source of truth for the sponsorship flow in the retention and salary
+# requirements: a member filing a retention or promotion argument adds their
+# GitHub handle under their subsystem, and the subsystem's assignees are
+# asked to review; their approval marks sponsorship.
+#
+# Subsystems are created, renamed or removed through the regular PR process.
+# A row with no named members uses `note` to say who covers it for now.
+# Delegates are split by rank (rank2, rank1) so promotions move between lists.
+#
+# `aliases` maps a GitHub handle to argument/ directory names that differ
+# from it, so routing finds members whose directory predates their handle.
+aliases:
+  jessechejieh:
+    - doordashcon
+
+subsystems:
+  - name: Cryptography (Applied)
+    assignees:        # Rank 3+ Fellows responsible for the subsystem
+      - davxy
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: "Economics (Infra: Coretime sales, Stablecoins; Governance: Issuance, DAP)"
+    assignees:
+      - seadanda
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Encointer (system chain)
+    assignees: []
+    delegates:
+      rank2:
+        - clangenb
+      rank1: []
+
+  - name: Individuality (Proof-of-Personhood, Statement store)
+    assignees:
+      - gui1117
+      - georgepisaltu
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: JAM (Parachain service)
+    assignees:
+      - bkchr
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: JAM (PolkaJAM)
+    assignees:
+      - arkpar
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: JAM (PolkaVM)
+    assignees:
+      - koute
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: JAM (Clients)
+    note: JAM Prize M1 nominees
+    assignees: []
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: JAM (Services and tooling)
+    note: JAM Prize M1 nominees
+    assignees: []
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Nodes (SDK, Omni-Node, RPCs, Light-clients, tooling)
+    assignees:
+      - skunert
+      - michalkucharczyk
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Nodes (Networking, Security)
+    assignees:
+      - lexnv
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Parachains (Consensus, PVF execution, disputes, collator protocol)
+    assignees:
+      - alindima
+      - sandreim
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Revive (Smart Contracts, EVM precompiles, compatibility)
+    assignees:
+      - athei
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Runtimes (FRAME, APIs, integrations)
+    assignees:
+      - joepetrowski
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Runtimes (Engineering, Security, Benchmarking)
+    assignees:
+      - ggwpez
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Runtimes (Metadata, DevX, tooling)
+    assignees:
+      - shawntabrizi
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Scalability (Agile Coretime, Async backing, Elastic scaling)
+    assignees:
+      - eskimor
+      - sandreim
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Staking
+    assignees:
+      - kianenigma
+    delegates:
+      rank2:
+        - sigurpol
+      rank1: []
+
+  - name: System chains
+    assignees:
+      - muharem
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: Trustless bridges
+    assignees:
+      - acatangiu
+    delegates:
+      rank2: []
+      rank1: []
+
+  - name: XCM
+    assignees:
+      - xlc
+      - acatangiu
+    delegates:
+      rank2: []
+      rank1: []
