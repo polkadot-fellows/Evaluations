@@ -24,7 +24,8 @@
 
 ## Evidence
 
-I spent most of this period on security findings against the SDK and the Fellowship runtimes, from the security working group's private repositories and from the bug bounty programme. I fixed the real reports, with regression tests, and refuted the false ones, with tests or with the commit that had already fixed them. The remainder was the `pallet-psm` verification work from my last report, and PET maintenance.
+I spent most of this period on security findings against the SDK and the Fellowship runtimes, from the security working group's private repositories and from the bug bounty programme. This included fixing some of the real reports, validating some as false positives, and appropriately closing them.
+The remainder was the `pallet-psm` verification work from my last report, and PET maintenance.
 
 ### Security findings: triage and fixes
 
