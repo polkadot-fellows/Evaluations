@@ -47,7 +47,6 @@ I spent most of this period on the third: findings from the security working gro
 The same methods, applied at review time, find defects before enactment. `pallet-psm` mints the dotUSD stablecoin against collateral and is now live on Asset Hub:
 
 - Runtime invariants, checked on every upgrade: merged for `pallet-psm` ([#12154](https://github.com/paritytech/polkadot-sdk/pull/12154)) and `pallet-recovery` ([#12490](https://github.com/paritytech/polkadot-sdk/pull/12490)).
-- Coverage-guided and stateful fuzzers, with a CI smoke job ([#12155](https://github.com/paritytech/polkadot-sdk/pull/12155), awaiting review).
 - Quint state-machine models, with a harness that tests the pallet against them ([#13291](https://github.com/paritytech/polkadot-sdk/pull/13291), [#13292](https://github.com/paritytech/polkadot-sdk/pull/13292), awaiting review). I settled a triage verdict with one of the model invariants this period.
 - The PET E2E suite, rewritten for the pallet's multi-instance form ([PET#694](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/694), merged).
 
