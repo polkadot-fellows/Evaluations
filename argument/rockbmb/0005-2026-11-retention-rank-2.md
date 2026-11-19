@@ -42,7 +42,7 @@ I spent most of this period on the third: findings from the security working gro
 - `pallet-broker` wrote a revenue claim's storage changes even when the claim's transfer failed ([#13040](https://github.com/paritytech/polkadot-sdk/pull/13040), merged).
 - `pallet-psm` set its admin origins at creation and never updated them, so the previous owner of a transferred asset kept control of its PSM. A new `pallet-assets` owner-change callback updates them ([#13171](https://github.com/paritytech/polkadot-sdk/pull/13171), under review).
 
-### Verification before deployment
+### Pallet verification and release testing
 
 The same methods, applied at review time, find defects before enactment. `pallet-psm` mints the dotUSD stablecoin against collateral and is now live on Asset Hub:
 
@@ -50,8 +50,6 @@ The same methods, applied at review time, find defects before enactment. `pallet
 - Coverage-guided and stateful fuzzers, with a CI smoke job ([#12155](https://github.com/paritytech/polkadot-sdk/pull/12155), awaiting review).
 - Quint state-machine models, with a harness that tests the pallet against them ([#13291](https://github.com/paritytech/polkadot-sdk/pull/13291), [#13292](https://github.com/paritytech/polkadot-sdk/pull/13292), awaiting review). I settled a triage verdict with one of the model invariants this period.
 - The PET E2E suite, rewritten for the pallet's multi-instance form ([PET#694](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/694), merged).
-
-### Release validation
 
 I maintain PET, which runs the E2E suites against every Fellowship release, and I triage its results when a release is cut. This period that covered runtimes 2.4 ([PET#683](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/683), merged) and 2.5.1/2.5.2 ([PET#711](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/711), [PET#719](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/719), [PET#720](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/720), merged), plus new suites for Fellowship referenda with real whitelisting ([PET#663](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/663), merged) and for upgrades during relay cooldown windows ([PET#666](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/666), merged). I reviewed other contributors' governance suites ([PET#595](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/595), [PET#670](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/670)).
 
