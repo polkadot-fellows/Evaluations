@@ -6,7 +6,6 @@
 | **Submitted by**| Davide Gessa (dakk) |
 
 
-
 ## Member details
 
 - Matrix username: @dakkk:matrix.org
@@ -72,4 +71,16 @@ I was also promptly checking inconsistent results that arose in all the batches 
 
 ## Voting record
 
-N/A: I have not been eligible to vote on any referendum.
+|  Ranks | Activity thresholds | Agreement thresholds | Member's voting activities | Comments |
+|---|---|---|---|---|
+|I  |90%   |N/A   | N/A | As a Rank 0 Candidate, I was not eligible to vote on any referenda during the reporting period. |
+|II |80%   |N/A   |   |  |
+|III|70%   |100%  |   |  |
+|IV |60%   |90%   |   |  |
+|V  |50%   |80%   |   |  |
+|VI |40%   |70%   |   |  |
+
+## Misc
+- [ ] Question(s):
+- [ ] Concern(s):
+- [ ] Comment(s):
