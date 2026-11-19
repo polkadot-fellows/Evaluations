@@ -28,6 +28,8 @@
 
 I request retention at Rank II. My area is the correctness of SDK pallets and of the Fellowship runtimes: the code that holds user funds and executes what governance approves. The work is one responsibility at three points in time: review, before a defect merges; release, before it deploys; and security triage, after a report arrives.
 
+For Rank II, Section 6 of the Manifesto asks for deep familiarity with at least one major area of the protocol and for the increased availability of a would-be network maintainer. The two sections below are those terms exercised: the security triage is the availability, on the pallets I know best; the verification and release testing is the familiarity, spent where it prevents the next report.
+
 I spent most of this period on the third: findings from the security working group's private repositories and from the bug bounty programme. I reproduced each report, fixed the real ones with regression tests, and refuted the false ones with the test or commit that proves them wrong. Due to their sensitive nature, the reports remain private in their corresponding Fellowship repository; the fixes and tests are public.
 
 ### Security findings
@@ -36,7 +38,7 @@ Several of the reports concerned the governance pipeline, the referenda and sche
 
 A second group concerned funds and permissions. `pallet-vesting` locked the maximum of an account's genesis schedules instead of their sum ([#13016](https://github.com/paritytech/polkadot-sdk/pull/13016), merged); `pallet-broker` wrote a revenue claim's storage changes even when its transfer failed ([#13040](https://github.com/paritytech/polkadot-sdk/pull/13040), merged); `pallet-psm` never updated its admin origins after the underlying asset changed owner, fixed with a new `pallet-assets` owner-change callback ([#13171](https://github.com/paritytech/polkadot-sdk/pull/13171), under review); and the relay runtimes' proxy hierarchy named `NonTransfer` a superset of `Auction` while the call filters enforced the opposite, fixed with property tests on both relays that compare every superset relation against the filters ([runtimes#1281](https://github.com/polkadot-fellows/runtimes/pull/1281), merged).
 
-A false report is worth as much as a fix when its refutation becomes a test. A claimed proxy privilege escalation on the Asset Hubs is now a PET suite that covers `add_proxy` across all proxy type pairs ([PET#691](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/691), merged).
+One report claimed a proxy privilege escalation on the Asset Hubs. It was false, and the refutation is now a PET suite that covers `add_proxy` across all proxy type pairs ([PET#691](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/691), merged).
 
 ### Pallet verification and release testing
 
