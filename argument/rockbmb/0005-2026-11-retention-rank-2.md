@@ -28,22 +28,16 @@
 
 I request retention at Rank II. My area is the correctness of SDK pallets and of the Fellowship runtimes: the code that holds user funds and executes what governance approves. The work is one responsibility at three points in time: review, before a defect merges; release, before it deploys; and security triage, after a report arrives.
 
-I spent most of this period on the third: findings from the security working group's private repositories and from the bug bounty programme. I reproduced each report, fixed the real ones with regression tests, and refuted the false ones with the test or commit that proves them wrong. The reports stay private; the fixes and tests below are public, grouped by what each defect threatened.
+I spent most of this period on the third: findings from the security working group's private repositories and from the bug bounty programme. I reproduced each report, fixed the real ones with regression tests, and refuted the false ones with the test or commit that proves them wrong. Due to their sensitive nature, the reports remain private in their corresponding Fellowship repository; the fixes and tests are public.
 
-### Governance liveness
+### Security findings
 
 - `pallet-referenda` never removed the `TrackQueue` entry of a cancelled or killed referendum ([#13236](https://github.com/paritytech/polkadot-sdk/pull/13236), awaiting review).
 - `pallet-referenda` could leave a referendum with `in_queue` set but no queue entry. An external contributor fixed one of the two paths that create this state; I took the PR over and fixed the other ([#12451](https://github.com/paritytech/polkadot-sdk/pull/12451), awaiting review).
 - `pallet-scheduler` lets ordinary referendum submissions fill a block's agenda, and a passing referendum then misses its enactment slot. I reserved agenda capacity for governance tasks ([#12854](https://github.com/paritytech/polkadot-sdk/pull/12854), under review).
 - An E2E test now covers the `DecidingCount` accounting that the queue fixes touch ([PET#684](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/684), merged).
-
-### Permission boundaries
-
 - The relay runtimes' `is_superset` lists `NonTransfer` as a superset of `Auction`, but the `NonTransfer` call filter blocks a call that the `Auction` filter allows. I fixed the hierarchy and added property tests on both relays that compare every superset relation against the filters ([runtimes#1281](https://github.com/polkadot-fellows/runtimes/pull/1281), merged).
 - A reported proxy privilege escalation on the Asset Hubs was false. The refutation is now a PET suite that covers `add_proxy` across all proxy type pairs ([PET#691](https://github.com/open-web3-stack/polkadot-ecosystem-tests/pull/691), merged).
-
-### Fund accounting
-
 - `pallet-vesting` locked the maximum of an account's genesis schedules instead of their sum ([#13016](https://github.com/paritytech/polkadot-sdk/pull/13016), merged).
 - `pallet-broker` wrote a revenue claim's storage changes even when the claim's transfer failed ([#13040](https://github.com/paritytech/polkadot-sdk/pull/13040), merged).
 - `pallet-psm` set its admin origins at creation and never updated them, so the previous owner of a transferred asset kept control of its PSM. A new `pallet-assets` owner-change callback updates them ([#13171](https://github.com/paritytech/polkadot-sdk/pull/13171), under review).
