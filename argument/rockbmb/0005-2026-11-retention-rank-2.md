@@ -4,7 +4,7 @@
 | --------------- | ------------------------------------------------------------------------------------------- |
 | **Report Date** | 2026/11/19                                                                                  |
 | **Submitted by**| rockbmb                                                                                     |
-| **Sponsored by**| N/A: full-time Parity employee, no Fellowship salary drawn                                  |
+| **Sponsored by**| N/A: no active Fellowship salary drawn                                                      |
 
 
 ## Member details
