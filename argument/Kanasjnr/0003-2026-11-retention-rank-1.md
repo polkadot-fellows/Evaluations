@@ -69,6 +69,33 @@ The PR is in review with Basti and Bryan. I also posted the design for the secon
 
 **The solution.** An explicit `known_messages.get()` check now runs before the insert, matching the incoming-message path ([#12694](https://github.com/paritytech/polkadot-sdk/pull/12694), merged).
 
+### Ongoing maintenance
+
+I continued the deprecation cleanup from my last period. This period's merges removed `BuildModuleGenesisStorage` ([#12990](https://github.com/paritytech/polkadot-sdk/pull/12990)), the `build-spec` CLI subcommand ([#12586](https://github.com/paritytech/polkadot-sdk/pull/12586)), the deprecated `BlockLength` constructors ([#13348](https://github.com/paritytech/polkadot-sdk/pull/13348)) and the `construct_runtime!` where clause ([#13349](https://github.com/paritytech/polkadot-sdk/pull/13349)). I also re-exported the hashing free functions via `sp_io` ([#12753](https://github.com/paritytech/polkadot-sdk/pull/12753)).
+
+I removed dead code as well: the unused `ChildBountyCount` storage ([#13333](https://github.com/paritytech/polkadot-sdk/pull/13333), with the runtime side in [runtimes#1328](https://github.com/polkadot-fellows/runtimes/pull/1328)) and the stale `pallet-people` / `pallet-dummy-dim` crates ([#13585](https://github.com/paritytech/polkadot-sdk/pull/13585)). To find more cases like these, I filed [#13507](https://github.com/paritytech/polkadot-sdk/issues/13507), an audit for other unused storage items, and [#13513](https://github.com/paritytech/polkadot-sdk/issues/13513), for `RingBuildingPeopleLimit`, which is never read or set.
+
+These PRs are open and in review:
+
+- [#12696](https://github.com/paritytech/polkadot-sdk/pull/12696): state-trie-migration RPC panics on malformed child roots.
+- [#13612](https://github.com/paritytech/polkadot-sdk/pull/13612): `pallet-session` releases the key deposit from the wrong account.
+- [#13645](https://github.com/paritytech/polkadot-sdk/pull/13645): `fungible` doesn't allow deposits below ED into accounts that have funds on hold.
+
+Status of the PRs carried over from my last argument:
+
+- [#11732](https://github.com/paritytech/polkadot-sdk/pull/11732) (`ExtrinsicBaseWeight`): I addressed the requested changes and it is waiting on a final review.
+- [#11302](https://github.com/paritytech/polkadot-sdk/pull/11302) (XCM barrier `Outcome::Incomplete`): benchmarks were re-run, and it is waiting on review.
+- [#11695](https://github.com/paritytech/polkadot-sdk/pull/11695) (deprecating private pallet storage types): this is blocked on how to handle storage that existing migrations still access.
+
+### Reviews
+
+I reviewed [#13699](https://github.com/paritytech/polkadot-sdk/pull/13699) and [#13674](https://github.com/paritytech/polkadot-sdk/pull/13674) in `polkadot-sdk`, and [runtimes#1285](https://github.com/polkadot-fellows/runtimes/pull/1285) (the AHMv2 migrator). I want to do much more reviewing next period, especially in Runtimes and XCM.
+
+### Next period
+
+- Get runtimes#1344 merged and put the Fellowship commitments up as a referendum.
+- Open the inbound-XCM PR, the second phase of #1338.
+- Land the PRs still open from 0002.
 
 ## Voting record
 
