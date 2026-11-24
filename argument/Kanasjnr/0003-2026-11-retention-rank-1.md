@@ -27,75 +27,75 @@
 
 ## Argument
 
-This period most of my time went into one piece of system-chain safety work, a kill switch for Asset Hub Polkadot, alongside steady correctness and cleanup work in `polkadot-sdk`. Eleven of my `polkadot-sdk` pull requests were merged in the period ([list](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3AKanasjnr+is%3Amerged+merged%3A2026-08-26..2026-11-24)). They include [descriptive module invalidity (#11724)](https://github.com/paritytech/polkadot-sdk/pull/11724), which was still pending when I submitted my last argument.
+Most of this period went into a kill switch for Asset Hub Polkadot. Next to that I kept fixing bugs and cleaning up in `polkadot-sdk`, where eleven of my PRs were merged ([list](https://github.com/paritytech/polkadot-sdk/pulls?q=is%3Apr+author%3AKanasjnr+is%3Amerged+merged%3A2026-08-26..2026-11-24)). One of them is [descriptive module invalidity (#11724)](https://github.com/paritytech/polkadot-sdk/pull/11724), which was still waiting to be merged when I wrote my last argument.
 
-The sections below are organised by subsystem.
+I've grouped the work by subsystem.
 
 ### Runtimes / System chains: a kill switch for Asset Hub Polkadot
 
-**The problem.** The dotUSD incident showed that once something goes wrong on Asset Hub, the chain has no quick way to stop the affected calls. Even the Fellowship fast track takes longer than an exploit needs to drain funds. Basti opened [runtimes#1338](https://github.com/polkadot-fellows/runtimes/issues/1338) to fix that. My earlier safe-mode / tx-pause deployment ([runtimes#1164](https://github.com/polkadot-fellows/runtimes/pull/1164), listed as ongoing in my last argument) only gave governance-controlled switches, which doesn't solve the reaction-time problem. I closed it in favour of the design below, which builds on tx-pause rather than replacing it.
+**The problem.** The dotUSD incident made it clear that when something breaks on Asset Hub, we can't stop the affected calls quickly. Even the Fellowship fast track is slower than an attacker needs to drain funds. Basti opened [runtimes#1338](https://github.com/polkadot-fellows/runtimes/issues/1338) for this. My earlier safe-mode / tx-pause PR ([runtimes#1164](https://github.com/polkadot-fellows/runtimes/pull/1164), which I listed as ongoing last time) didn't help here, because only governance could flip the switches, so it was just as slow. I closed it and started again with the design below, which still uses tx-pause underneath.
 
-**The solution.** [runtimes#1344](https://github.com/polkadot-fellows/runtimes/pull/1344) adds a new `pallet-kill-switch` and wires it into Asset Hub Polkadot:
+**The solution.** [runtimes#1344](https://github.com/polkadot-fellows/runtimes/pull/1344) adds `pallet-kill-switch` and wires it into Asset Hub Polkadot. How it works:
 
-- **Pausing.** Anyone can pause a target by putting up a deposit. The pause expires on its own after a day.
-- **Ending a pause.** The Fellowship or Root can end a pause early with `unpause(target, slash)`: an honest pause gets its deposit back, and a griefing pause is slashed and the target put on cooldown.
-- **Extending a pause.** Anyone can extend a pause with another deposit, and the Fellowship can extend one without a deposit, up to a cap.
-- **Root.** Root can `force_pause`, and only Root can change a pause that Root started.
-- **Targets.** Targets are runtime-defined groups of calls, each with its own deposit: `Psm`, `Swaps`, `AssetTransfers` and `XcmTransfers` to start with. Deposits are `pallet-parameters` values that only Root can change.
-- **Enforcement.** Pauses are enforced through tx-pause, whose own origins are set to nobody. The kill switch sits in both the base call filter and the XCM `SafeCallFilter`, so a paused call is also blocked inside `utility`/`proxy`/`multisig` and through `Transact`. System, governance and the pallets the chain needs to keep running can never be paused.
-- **Testing and tooling.** The PR includes a `KillSwitchApi` runtime API, benchmarks, tests and try-runtime checks.
+- Anyone can pause a target by putting down a deposit, and the pause ends by itself after a day.
+- The Fellowship or Root can end it early with `unpause(target, slash)`. An honest pause gets its deposit back. A griefing one gets slashed, and the target goes on cooldown so it can't be paused again straight away.
+- Anyone can extend a pause with another deposit. The Fellowship can extend it without one, up to a cap.
+- Root can `force_pause`, and only Root can touch a pause that Root started.
+- A target is a group of calls with its own deposit. There are four to start with: `Psm`, `Swaps`, `AssetTransfers` and `XcmTransfers`. The deposits are `pallet-parameters` values that only Root can change.
+- Under the hood it pauses through tx-pause, whose own origins are set to nobody. It's in the base call filter and the XCM `SafeCallFilter`, so a paused call stays blocked inside `utility`, `proxy` and `multisig`, and through `Transact` too. System, governance and anything the chain needs to keep running can never be paused.
+- The PR also adds a `KillSwitchApi` runtime API, along with benchmarks, tests and try-runtime checks.
 
-The PR is in review with Basti and Bryan. I also posted the design for the second phase, covering inbound XCM, on [#1338](https://github.com/polkadot-fellows/runtimes/issues/1338#issuecomment-7100017909). I've written an operational runbook and a proposed set of Fellowship commitments (who reacts, how fast, and when to slash or refund). Once there's feedback on the pallet, I'll put the commitments up as a Members-track remark.
+Basti and Bryan are reviewing it. For the second part (inbound XCM), I posted a design on [#1338](https://github.com/polkadot-fellows/runtimes/issues/1338#issuecomment-7100017909). I've also written a runbook and a draft of what the Fellowship would commit to: who reacts, how fast, and when to slash or refund. Once the pallet has had some feedback, I'll put that up as a Members-track remark.
 
-### Runtimes (Engineering, Security): FRAME correctness
+### Runtimes (Engineering, Security): FRAME fixes
 
-**The problem.** `pallet-core-fellowship`, the Fellowship's own pallet, read salary and period values by indexing directly into `Params` vectors. Those vectors are only bounded by `MaxRank`, so a `set_params` call could store a shorter vector, and `get_salary`, `bump` and `promote` would then panic for any member ranked past its end ([#13141](https://github.com/paritytech/polkadot-sdk/issues/13141)).
+**The problem.** `pallet-core-fellowship`, the Fellowship's own pallet, read salaries and periods by indexing straight into the `Params` vectors. Those vectors are only bounded by `MaxRank`, so `set_params` could store a shorter one. `get_salary`, `bump` and `promote` would then panic for any member whose rank was past the end ([#13141](https://github.com/paritytech/polkadot-sdk/issues/13141)).
 
-**The solution.** All three call sites now look values up with `get` and fall back to the default, so an out-of-range rank degrades the same way rank 0 already does. Each case has a unit test ([#13182](https://github.com/paritytech/polkadot-sdk/pull/13182), merged).
+**The solution.** All three places now use `get` and fall back to the default, so a rank past the end gets treated like rank 0 already is. There's a unit test for each one ([#13182](https://github.com/paritytech/polkadot-sdk/pull/13182), merged).
 
-**The problem.** When a transaction failed validation inside a pallet, the transaction pool reported only a generic `InvalidTransaction`, so wallets and indexers couldn't tell users why it was rejected ([#11337](https://github.com/paritytech/polkadot-sdk/issues/11337)).
+**The problem.** If a pallet rejected a transaction during validation, the pool only said `InvalidTransaction`, so wallets and indexers couldn't tell the user what went wrong ([#11337](https://github.com/paritytech/polkadot-sdk/issues/11337)).
 
-**The solution.** I appended a `Module(ModuleError)` variant to `InvalidTransaction`, without changing any existing encoding. Clients can now resolve the rejection against metadata the same way they resolve `DispatchError::Module` ([#11724](https://github.com/paritytech/polkadot-sdk/pull/11724), merged). While doing this I found that the error data shape is inconsistent across RPC methods, and filed it as [json-rpc-interface-spec#188](https://github.com/paritytech/json-rpc-interface-spec/issues/188).
+**The solution.** I added a `Module(ModuleError)` variant at the end of `InvalidTransaction`, so none of the existing encodings change. Clients can now look the error up in metadata, the same way they already do for `DispatchError::Module` ([#11724](https://github.com/paritytech/polkadot-sdk/pull/11724), merged). While Reviewing it Basti noticed the error data comes back in different shapes from different RPC methods, so I opened [json-rpc-interface-spec#188](https://github.com/paritytech/json-rpc-interface-spec/issues/188).
 
 ### Staking: bags-list rebagging
 
-**The problem.** `pallet-bags-list::on_idle` set its resume cursor from a count budget computed *before* the loop. If the weight meter ran out or the pallet locked partway through, the cursor still jumped past nodes that had never been processed, and those nodes stayed in the wrong bag until the scan eventually wrapped around ([#13138](https://github.com/paritytech/polkadot-sdk/issues/13138)).
+**The problem.** `pallet-bags-list::on_idle` decided where to resume before its loop even ran. If it ran out of weight or got locked halfway, the cursor still skipped ahead past nodes it never processed. Those nodes then sat in the wrong bag until the scan wrapped around to the start again ([#13138](https://github.com/paritytech/polkadot-sdk/issues/13138)).
 
-**The solution.** The resume point is now computed after the loop, from the number of items it actually processed, which is correct however the loop ends. A regression test covers the case where weight runs out before the count budget ([#13184](https://github.com/paritytech/polkadot-sdk/pull/13184), merged).
+**The solution.** It now works out the resume point after the loop, from how many items it actually got through, so it's right however the loop ends. I added a test where the weight runs out before the count limit ([#13184](https://github.com/paritytech/polkadot-sdk/pull/13184), merged).
 
 ### Nodes: gossip deduplication
 
-**The problem.** `sc-network-gossip` used `LruMap::insert` as its dedup guard. `insert` returns `true` for replacements too, so calling `register_message` or `multicast` twice with the same message added duplicate cache entries, which could then be rebroadcast ([#12607](https://github.com/paritytech/polkadot-sdk/issues/12607)).
+**The problem.** `sc-network-gossip` relied on `LruMap::insert` to catch duplicates. But `insert` also returns `true` when it replaces an existing entry, so calling `register_message` or `multicast` twice with the same message added it to the cache twice, and the copy could get rebroadcast ([#12607](https://github.com/paritytech/polkadot-sdk/issues/12607)).
 
-**The solution.** An explicit `known_messages.get()` check now runs before the insert, matching the incoming-message path ([#12694](https://github.com/paritytech/polkadot-sdk/pull/12694), merged).
+**The solution.** It now checks `known_messages.get()` before inserting, which is what the incoming-message path already did ([#12694](https://github.com/paritytech/polkadot-sdk/pull/12694), merged).
 
 ### Ongoing maintenance
 
-I continued the deprecation cleanup from my last period. This period's merges removed `BuildModuleGenesisStorage` ([#12990](https://github.com/paritytech/polkadot-sdk/pull/12990)), the `build-spec` CLI subcommand ([#12586](https://github.com/paritytech/polkadot-sdk/pull/12586)), the deprecated `BlockLength` constructors ([#13348](https://github.com/paritytech/polkadot-sdk/pull/13348)) and the `construct_runtime!` where clause ([#13349](https://github.com/paritytech/polkadot-sdk/pull/13349)). I also re-exported the hashing free functions via `sp_io` ([#12753](https://github.com/paritytech/polkadot-sdk/pull/12753)).
+I kept going with the deprecation cleanup from last period. This time I removed `BuildModuleGenesisStorage` ([#12990](https://github.com/paritytech/polkadot-sdk/pull/12990)), the `build-spec` CLI subcommand ([#12586](https://github.com/paritytech/polkadot-sdk/pull/12586)), the old `BlockLength` constructors ([#13348](https://github.com/paritytech/polkadot-sdk/pull/13348)) and the `construct_runtime!` where clause ([#13349](https://github.com/paritytech/polkadot-sdk/pull/13349)). I also re-exported the hashing free functions through `sp_io` ([#12753](https://github.com/paritytech/polkadot-sdk/pull/12753)).
 
-I removed dead code as well: the unused `ChildBountyCount` storage ([#13333](https://github.com/paritytech/polkadot-sdk/pull/13333), with the runtime side in [runtimes#1328](https://github.com/polkadot-fellows/runtimes/pull/1328)) and the stale `pallet-people` / `pallet-dummy-dim` crates ([#13585](https://github.com/paritytech/polkadot-sdk/pull/13585)). To find more cases like these, I filed [#13507](https://github.com/paritytech/polkadot-sdk/issues/13507), an audit for other unused storage items, and [#13513](https://github.com/paritytech/polkadot-sdk/issues/13513), for `RingBuildingPeopleLimit`, which is never read or set.
+I also cut some dead code: the unused `ChildBountyCount` storage ([#13333](https://github.com/paritytech/polkadot-sdk/pull/13333), plus the runtime side in [runtimes#1328](https://github.com/polkadot-fellows/runtimes/pull/1328)), and the stale `pallet-people` and `pallet-dummy-dim` crates ([#13585](https://github.com/paritytech/polkadot-sdk/pull/13585)). There's probably more like this, so I opened [#13507](https://github.com/paritytech/polkadot-sdk/issues/13507) to audit for other unused storage, and [#13513](https://github.com/paritytech/polkadot-sdk/issues/13513) for `RingBuildingPeopleLimit`, which nothing ever reads or sets.
 
-These PRs are open and in review:
+Still in review:
 
-- [#12696](https://github.com/paritytech/polkadot-sdk/pull/12696): state-trie-migration RPC panics on malformed child roots.
+- [#12696](https://github.com/paritytech/polkadot-sdk/pull/12696): the state-trie-migration RPC panics on child roots of the wrong length.
 - [#13612](https://github.com/paritytech/polkadot-sdk/pull/13612): `pallet-session` releases the key deposit from the wrong account.
-- [#13645](https://github.com/paritytech/polkadot-sdk/pull/13645): `fungible` doesn't allow deposits below ED into accounts that have funds on hold.
+- [#13645](https://github.com/paritytech/polkadot-sdk/pull/13645): `fungible` won't accept a deposit below ED into an account that has funds on hold.
 
-Status of the PRs carried over from my last argument:
+Where the PRs from my last argument stand:
 
-- [#11732](https://github.com/paritytech/polkadot-sdk/pull/11732) (`ExtrinsicBaseWeight`): I addressed the requested changes and it is waiting on a final review.
-- [#11302](https://github.com/paritytech/polkadot-sdk/pull/11302) (XCM barrier `Outcome::Incomplete`): benchmarks were re-run, and it is waiting on review.
-- [#11695](https://github.com/paritytech/polkadot-sdk/pull/11695) (deprecating private pallet storage types): this is blocked on how to handle storage that existing migrations still access.
+- [#11732](https://github.com/paritytech/polkadot-sdk/pull/11732) (`ExtrinsicBaseWeight`): I've made the requested changes, and it needs one last review.
+- [#11302](https://github.com/paritytech/polkadot-sdk/pull/11302) (XCM barrier `Outcome::Incomplete`): the benchmarks have been re-run, and it's waiting on review.
+- [#11695](https://github.com/paritytech/polkadot-sdk/pull/11695) (deprecating private pallet storage types): this is stuck on what to do about storage that old migrations still use.
 
 ### Reviews
 
-I reviewed [#13699](https://github.com/paritytech/polkadot-sdk/pull/13699) and [#13674](https://github.com/paritytech/polkadot-sdk/pull/13674) in `polkadot-sdk`, and [runtimes#1285](https://github.com/polkadot-fellows/runtimes/pull/1285) (the AHMv2 migrator). I want to do much more reviewing next period, especially in Runtimes and XCM.
+I reviewed [#13699](https://github.com/paritytech/polkadot-sdk/pull/13699) and [#13674](https://github.com/paritytech/polkadot-sdk/pull/13674) in `polkadot-sdk`, and [runtimes#1285](https://github.com/polkadot-fellows/runtimes/pull/1285) (the AHMv2 migrator). That's not a lot. Next period I want to review more, mainly in Runtimes and XCM.
 
 ### Next period
 
-- Get runtimes#1344 merged and put the Fellowship commitments up as a referendum.
-- Open the inbound-XCM PR, the second phase of #1338.
-- Land the PRs still open from 0002.
+- Get runtimes#1344 merged, and put the Fellowship commitments up for a vote.
+- Open the inbound XCM PR (the second part of #1338).
+- Get the PRs left over from 0002 merged.
 
 ## Voting record
 
