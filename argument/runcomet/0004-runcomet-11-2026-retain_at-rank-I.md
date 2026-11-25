@@ -1,7 +1,7 @@
 # Argument-0004: Retention at Rank I
 
 | Report Date | 2026/24/11 |
--|---|---|
+|---|---|
 | Submitted by | Enoch(runcomet) |
 | Sponsored by | Donál |
 
