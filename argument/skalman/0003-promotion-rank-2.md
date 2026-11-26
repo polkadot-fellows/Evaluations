@@ -10,7 +10,7 @@
 
 - Matrix username: @skalman:matrix.org
 - Polkadot address: 13zbXMsJgQbMkrjai3JUaQmVERZHKLNt42xaGjqJq7mBasDk
-- Current rank: 0 (dempoted from Rank I)
+- Current rank: 0 (demoted from Rank I)
 - Date of initial induction: 2023/10/30
 - Date of last report: 2026/03/20 (Argument-0002)
 - Area(s) of Expertise/Interest: Cryptographic research and implementation
@@ -35,41 +35,37 @@ My work during this period has been centred on bringing advanced cryptographic p
 
 ### Requirement 1: Primary individual responsible for the formalisation, implementation or analytical improvement of a major component of the protocol
 
-I have been the primary individual responsible for the implementation of **BLS signature support in Polkadot**, a cryptographic component intended to improve BEEFY's efficiency trustlessly bridging Polkadot to other chains and enable aDKG-based protocols (unbiasable random beacon, encrypt-to-the-future). This work is a direct match for the Manifesto's scope item on "cryptographic data-structures, algorithms, languages and APIs required for the continued upkeep of the Polkadot (Main) Network" and "trust-free bridges relying on said consensus algorithms".
+I have been the primary individual responsible for the implementation of **BLS signature support in Polkadot**, a cryptographic component intended to improve BEEFY's efficiency in trustlessly bridging Polkadot to other chains and to enable aDKG-based protocols (unbiasable random beacon, encrypt-to-the-future). This work is a direct match for the Manifesto's scope item on "cryptographic data-structures, algorithms, languages and APIs required for the continued upkeep of the Polkadot (Main) Network" and "trust-free bridges relying on said consensus algorithms".
 
 Primary implementation work (subject to expert code-review and merged into the functional Polkadot implementation):
 
 - Initial introduction of a BLS crypto scheme into Substrate / polkadot-sdk, in collaboration with @davxy, enabling BEEFY to handle BLS alongside ECDSA:
-  - https://github.com/paritytech/substrate/pull/13618
-  - https://github.com/paritytech/polkadot-sdk/pull/1705
-  - https://github.com/paritytech/polkadot-sdk/pull/1816
-  - https://github.com/paritytech/polkadot-sdk/pull/1739 (Rogue-key-attack-safe proof of possession, merged)
+  - Core BLS crypto primitives in Substrate, generic over BLS12-377/BLS12-381 and following the Nugget BLS scheme: https://github.com/paritytech/substrate/pull/13618
+  - Paired-key BEEFY scheme — validators sign each payload with both ECDSA and BLS: https://github.com/paritytech/polkadot-sdk/pull/1705
+  - Makes the BEEFY client generic over `AuthorityId`, as required by the paired-key scheme for handling BLS keys in the runtime: https://github.com/paritytech/polkadot-sdk/pull/1816
+  - Adds real verification of the `proof` argument to `frame_session::set_keys` — previously unchecked — giving a rogue-key-attack-safe proof-of-possession for aggregatable schemes: https://github.com/paritytech/polkadot-sdk/pull/1739
 
 - Redesign and re-implementation of proof-of-possession in the Substrate cryptography module to be resistant to multiple attack vectors, and follow-up work with @bkchr to update runtime generation and verification of proof-of-possession across runtimes authored after the original code (AssetHub and test runtimes):
-  - https://github.com/paritytech/polkadot-sdk/pull/9471
-  - https://github.com/paritytech/polkadot-sdk/pull/9949
-  - https://github.com/paritytech/polkadot-sdk/pull/10002
-  - https://github.com/paritytech/polkadot-sdk/pull/10033
-  - https://github.com/paritytech/polkadot-sdk/pull/11369
+  - Redesigned PoP so the signer signs both the owner and the authority key, with a separate domain for aggregatable schemes: https://github.com/paritytech/polkadot-sdk/pull/9471
+  - Adds a dedicated API for PoP rather than reusing `sign`/`verify`, because BLS proofs are more complex: https://github.com/paritytech/polkadot-sdk/pull/9949
+  - Adapts some runtimes to the owner-aware form: https://github.com/paritytech/polkadot-sdk/pull/10002, https://github.com/paritytech/polkadot-sdk/pull/10033
+  - Cleanly separates PoP from ownership proofs: https://github.com/paritytech/polkadot-sdk/pull/11369
 
-Draft PR enabling Westend validators to include BLS keys in their session keys (pending approval), together with the host-call changes required by the final RFC 156 design:
-  - https://github.com/paritytech/polkadot-sdk/pull/11149
+Draft PR enabling Westend validators to include BLS keys in their session keys (pending approval), together with the host-call changes required by the final RFC 156 design: https://github.com/paritytech/polkadot-sdk/pull/11149
 
 I am the **principal maintainer** of the `w3f-bls` library — the BLS library used by Polkadot's BLS signature implementation — and have been responsible for its sustained improvement over the whole three-year period:
 
-- Implementation of the fast BLS variant described in Web3 Foundation's paper: https://github.com/w3f/bls/pull/66
-- Implementation and benchmarking of Chaum–Pedersen signatures on a third sister curve and various other optimisation, and benchmarking of double- vs triple-nugget BLS; and resolving all pertinent issues raised by the auditor: 
-  - https://github.com/w3f/bls/compare/master...skalman--cp-on-sister-curve, 
-  - https://github.com/paritytech/bls/pull/81, 
-  - https://github.com/w3f/bls/pull/57, 
-  - https://github.com/w3f/bls/pull/86 (Addressing audits findings)
+  - Implementation of the fast BLS variant described in Web3 Foundation's paper — adds double-public-key verification in both G1 and G2 and DLEQ-verifiable signatures, which is the shape the fast flavour requires: https://github.com/w3f/bls/pull/66
+  - Implementation and benchmarking of Chaum–Pedersen signatures on a third sister curve and various other optimisations, benchmarking of double- vs triple-nugget BLS, and resolving all pertinent issues raised by the auditor:
+  - Chaum–Pedersen on a separate sister curve, migrates to Arkworks 0.5.0, investigates sister-curve speedups and implements dual scalar multiplication via Straus: https://github.com/paritytech/bls/pull/81
+  - Migrates `w3f-bls` hash-to-curve onto the new Arkworks framework, with compressed serialisation and tests: https://github.com/w3f/bls/pull/57
+  - Addresses the findings of the external code audit of the library as well as implementation of multi-message multi-signature aggregation for Nugget BLS: https://github.com/w3f/bls/pull/86
 
 Enabling cryptographic work in the broader Arkworks ecosystem (required for the BLS and Ring Proof stacks to work on Polkadot's curves and missing upstream prior to my contribution): hash-to-curve for all curves used in Polkadot:
 
-- https://github.com/arkworks-rs/algebra/pull/343
-- https://github.com/arkworks-rs/algebra/pull/659
-- https://github.com/w3f/arkworks-curves/pull/11
-- https://github.com/arkworks-rs/curves/pull/138
+  - Adds the Wahby–Boneh hash-to-curve construction to `arkworks-rs/algebra`, the generic prerequisite for hashing to the curves Polkadot uses: https://github.com/arkworks-rs/algebra/pull/343
+  - Implements the IETF-standard Elligator2 map-to-curve for Twisted Edwards curves in `arkworks-rs/algebra`, enabling hash-to-curve on TE curves used downstream: https://github.com/arkworks-rs/algebra/pull/659
+  - Instantiates WB hash-to-curve for BLS12-381 and BLS12-377: https://github.com/w3f/arkworks-curves/pull/11 and https://github.com/arkworks-rs/curves/pull/138
 
 Formalisation and analytical improvement work supporting the same component:
 
@@ -79,7 +75,7 @@ Formalisation and analytical improvement work supporting the same component:
 
 - Co-author / implementer of the fast BLS flavour designed by Web3 Foundation, written up as a preprint on IACR ePrint: https://eprint.iacr.org/2022/1611
 
-- I authored a long-form, step-by-step educational walkthrough of Web3Sum / APK proofs — intended specifically to make this piece of Polkadot's bridging cryptography accessible to other researchers and ecosystem developers:
+- I authored a long-form, step-by-step educational walkthrough of Web3Sum / APK proofs — intended specifically to make this piece of Polkadot's bridging cryptography accessible to other researchers and ecosystem developers.
 
 - "APK Proofs by Hand and Sage", Web3 Foundation blog: https://medium.com/web3foundation/apk-proofs-by-hand-and-sage-3f5feb3fcca4
 
@@ -94,8 +90,8 @@ The following sections cover further contributions of mine to Polkadot.
 - Early contributions to the Polkadot Specification:
   - https://github.com/w3f/polkadot-spec/graphs/contributors
 - RFC 156 (BLS host functions): review, discussion, and modifications so BLS could be moved into production, including the follow-up code changes required by the final design:
-  - https://github.com/polkadot-fellows/RFCs/pull/156
-  - https://github.com/paritytech/polkadot-sdk/pull/11369
+  - The Fellowship RFC that defines the BLS12-381 host-function surface — I participated in the review and the design modifications that unblocked moving BLS into production: https://github.com/polkadot-fellows/RFCs/pull/156
+  - The follow-up polkadot-sdk change required by the final RFC 156 design — splits proof-of-possession cleanly from ownership proofs and renames the trait family to `KeyProofs` (also cited under the PoP redesign above): https://github.com/paritytech/polkadot-sdk/pull/11369
 
 ### Ring Proof / Ring VRF
 - Collaborated on batched verification of multiple ring proofs: https://github.com/paritytech/ring-proof/pull/72
@@ -106,9 +102,9 @@ The following sections cover further contributions of mine to Polkadot.
 
 - Developed the ZK module of the Polkadot Blockchain Academy (PBA) curriculum, and taught the cryptography module at PBA Hong Kong and PBA Singapore.
 - Mentored a PBA alumnus submitting a grant for a Web3Sum-based bridge prototype, and reviewed grants on JAM cryptography and ZK cryptography on Polkadot:
-  - https://github.com/PolkadotOpenSourceGrants/apply/pull/46#issuecomment-3529911905
-  - https://github.com/w3f/Grants-Program/pull/2603/files
-  - https://github.com/PolkadotOpenSourceGrants/delivery/pull/8
+  - Mentoring comment on the Polkadot–Kusama APK Bridge PoC grant application: https://github.com/PolkadotOpenSourceGrants/apply/pull/46#issuecomment-3529911905
+  - Review of the Cumulus MultiBlock Prover grant proposal: https://github.com/w3f/Grants-Program/pull/2603/files
+  - Review of the DotRing Milestone 1 delivery: https://github.com/PolkadotOpenSourceGrants/delivery/pull/8
 
 ### Time-of-service
 
